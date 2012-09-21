@@ -1,0 +1,295 @@
+/*
+ * @fileoverview 论坛2012新版首页
+ * @desc 论坛首页css
+ * @author fatedm
+ * @date 2012-9-20
+ */
+ /*>>> +++ sprite +++ <<<*/
+ .word{
+ 	background: url(../images/word.png) no-repeat 0 9999px;
+ }
+ .icon{
+ 	background: url(../images/bbs.png) no-repeat 0 9999px
+ }
+/*>>> +++ global +++ <<<*/
+#content{
+	width: 990px;
+	margin: 0 auto;
+}
+.layout{
+	clear: both;
+	width: 990px;
+}
+.layout .col-main{
+	float: left;
+	width: 642px;
+	padding-right: 19px;
+	margin-right: 15px;
+}
+.layout .col-sub{
+	float: left;
+	width: 298px;
+}
+.icon{
+	position: absolute;
+	overflow: hidden;
+}
+/*>>> +++ first screen +++ <<<*/
+.layout-fs .col-main{
+	border-right: 1px solid #ececec;
+}
+.focus{
+	height: 279px;
+	position: relative;
+	margin-bottom: 19px;
+}
+.focus .hot-img{
+	float: left;
+	width: 423px;
+	height: 279px;
+}
+.focus .hot-info{
+	float: left;
+	width: 200px;
+	height: 279px;
+	background-color: #fffae6;
+	padding-left: 19px;
+	display: inline;
+}
+.focus .hot-info dt{
+	padding-top: 18px;
+	padding-bottom: 11px;
+	font: 30px/38px "Microsoft YaHei", Tahoma;
+	border-bottom: 1px dotted #dfdfdf; 
+	margin-bottom: 9px; 
+}
+.focus .hot-info dt a{
+	color: #333;
+}
+.focus .hot-info dd{
+	color: #777;
+	line-height: 20px;
+}
+.focus .hot-info dd a{
+	color: #d84300;
+}
+.focus .read-count{
+	position: absolute;
+	bottom: 5px;
+	right: 14px;
+	font-size: 14px;
+	color: #777;
+}
+.focus .focus-read{
+	margin-right: 18px;
+}
+.focus .read-count a{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #eb5500;
+	font-weight: bold;
+}
+/*>>> +++ hots*/
+.hots{
+	border-top: 5px solid #ff5d00;
+	clear:both;
+}
+.hots .hots-title{
+	height: 18px;
+	padding: 15px 8px;
+	border-bottom: 1px dashed #e4e4e4;
+}
+.hots .hots-title .word{
+	float: left;
+	width: 72px;
+	height:18px;
+	background-position: 0 0;
+}
+.hots .hots-title dd a{
+	float: left;
+	margin-left: 15px;
+	color: #333;
+	font: 14px/18px "Microsoft YaHei", Tahoma;
+}
+.hots .hots-title dd a.highlight{
+	color: #f05a05;
+}
+/*hot list*/
+
+#hot{
+    clear:both;
+}
+.hot-list{
+    height: 90px;
+    padding: 18px 0;
+    width: 635px;
+    padding-left: 7px;
+    clear:both;
+    border-bottom: 1px dashed #e4e4e4;
+}
+#hot li.first{
+
+}
+.hot-list-hover,.hot-list:hover{
+	padding-top: 19px;
+	padding-bottom: 16px;
+	_margin-top: -2px;
+	_padding-top: 21px;
+
+    position:relative;
+    left:0;
+    top: -2px;
+    border-bottom: 1px dashed #f1cc95;
+    border-top: 1px dashed #f1cc95;
+    background-color: #fff9ed;
+}
+
+.hot-list a.hot-img{
+    width: 130px;
+    height:90px;
+    float: left;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+}
+.hot-list a.hot-img img{
+	width: 130px;
+    height: 90px;
+	display: block;
+}
+#hot .hot-info{
+    float: right;
+    width: 485px;
+	_display: inline;
+	overflow: hidden;
+	height: 90px;	
+}
+#hot .hot-info .title{
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+#hot .hot-info .title h3{
+    float: left;
+}
+#hot .hot-info .title h3 a{
+    color: #333;
+    font: 18px/24px "Microsoft YaHei",Tahoma;
+}
+#hot .hot-info .title h3 a:hover,
+#hot .hot-list:hover .title h3 a,
+#hot .hot-list-hover .title h3 a{
+    color: #da4000;
+}
+.hot-list .view-reply{
+	float: right;
+}
+.hot-list .post-view{
+	border-right: 1px solid #ecdfc7;
+}
+.hot-info .detail{
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    color: #777;
+}
+.hot-info .time{
+    color: #aaa;
+}
+.hot-read{
+	float: right;
+	margin-right: 20px;
+	color: #828282;
+}
+.hot-read:hover{
+	color: #DA4000;
+}
+.hot-read b{
+	color: #fe0005;
+}
+/*>>> +++ fs col-sub*/
+.col-sub .hot-post{
+	margin: 0;
+	height: 280px;
+
+}
+.hot-post .post-title{
+	position: relative;
+	width: 277px;
+	height: 20px;
+	border: 5px solid #ededed;
+	padding: 9px 0 10px 11px;
+	font: 16px/20px "Microsoft YaHei",Tahoma;
+	color: #333;
+	margin-bottom: 10px;
+}
+.hot-post .post-title a{
+	color: #d84300;
+}
+.hot-post .icon{
+	top: 43px;
+	left: 10px;
+	width: 16px;
+	height: 10px;
+	background-position: 0 -90px;
+}
+.hot-post .hot-img{
+	float: left;
+	width: 120px;
+	height: 221px;
+	background-color: #383838;
+	color: #fff;
+}
+.hot-post .hot-img img{
+	width: 120px;
+	height: 120px;
+	display: block;
+}
+.hot-post .hot-detail{
+	width: 100px;
+	height: 85px;
+	padding: 8px 8px 8px 12px;
+	overflow: hidden;
+}
+.hot-post .hot-detail a{
+	color: #d84300;
+	text-decoration: underline;
+}
+.hot-post .info{
+	float: left;
+	display: inline;
+	margin-left: 12px;
+	width: 166px;
+}
+.hot-post .post-view-reply{
+	height: 14px;
+	padding-top: 8px 0;
+	line-height: 14px;
+}
+.post-view{
+	color: #777;
+	padding-right: 14px;
+	margin-right: 10px;
+	border-right: 1px solid #e9e9e9;
+}
+.post-reply{
+	color: #777;
+}
+.post-view .J_View,
+.post-reply .J_Reply{
+	color: #eb5500;
+	font: bold 12px/14px Verdana,Tahoma;
+}
+.reply-list dt{
+	padding-top: 8px;
+}
+.reply-list dt a{
+	font-weight: bold;
+	color: #333;
+}
+.reply-list dd{
+	color: #b3b3b3;
+	height: 36px;
+	overflow: hidden;
+	line-height: 18px;
+	margin-bottom: 8px;
+}
