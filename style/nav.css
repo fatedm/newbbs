@@ -131,7 +131,7 @@
 }
 #header .search-box .ts-show {
     display: block;
-    background-position: -60px 0;
+    background-position: -1px -60px;
 }
 #header .search-box .ts-keyword {
     width: 170px;
@@ -202,12 +202,12 @@
 #nav .nav-trigger .icon{
     width:7px;
     height:4px;
-    background-position:-80px -60px;
+    background-position:-30px -60px;
     top:14px;
     right:9px;
 }
 #nav .nav-trigger-on .icon{
-	background-position:-80px -75px;	
+	background-position:-40px -60px;	
 }
 /*>>> µ¼º½¸¡³ö²ã */
 .category{
@@ -418,7 +418,7 @@
 #nav .person-center .icon{
     width:19px;
     height:14px;
-    background-position: -80px 0;
+    background-position: -30px -81px;
     top:8px;
     left:20px;
 }
@@ -429,7 +429,7 @@
 #nav .message .icon{
     width:16px;
     height:14px;
-    background-position:-80px -27px;
+    background-position:0 -81px;
     top:8px;
     left:16px;
 }
@@ -497,7 +497,7 @@
 	width: 8px;
 	height: 15px;
 	line-height:15px;
-	background-position: -62px -80px;
+	background-position: 0 -100px;
 	overflow: hidden;
 	vertical-align: middle;
 	text-indent: -999px;
