@@ -31,7 +31,7 @@
 	                    </span>
 	                </div>
                 </div>
-                
+                                
             </div>
             <div class="hots">
             	<dl class="hots-title">
@@ -51,6 +51,70 @@
                             <div class="title">
                                 <h3><a href="#">夏日激情奥运</a></h3>
                                 
+                                <div class="view-reply">
+                                    <span class="post-view"><a class="J_View" href="#" target="_blank">589</a> 阅读</span>
+                                    <span class="post-reply"><a class="J_Reply" href="#" target="_blank">589</a> 回帖</span>
+                                </div>
+                            </div>
+                            <p class="detail">比赛上半场，安哥拉队进攻犀利，防守强悍，内外线均有出色表现。命中率不高的中国队以2分的微弱优势结束前两节。</p>
+                            <p class="time">发表于 2012-08-02 00:00:00</p>
+                        </div>
+                    </li>
+                    <li class="hot-list">
+                        <a class="hot-img" target="_blank" href="http://bbs.daily.taobao.net/catalog/thread/5649002-10790350261.htm">
+                            <img class="image" src="http://img.f2e.taobao.net/img.png_130x90.jpg">
+                        </a>
+                        <div class="hot-info">
+                            <div class="title">
+                                <h3><a href="#">夏日激情奥运</a></h3>
+                                <div class="view-reply">
+                                    <span class="post-view"><a class="J_View" href="#" target="_blank">589</a> 阅读</span>
+                                    <span class="post-reply"><a class="J_Reply" href="#" target="_blank">589</a> 回帖</span>
+                                </div>
+                            </div>
+                            <p class="detail">比赛上半场，安哥拉队进攻犀利，防守强悍，内外线均有出色表现。命中率不高的中国队以2分的微弱优势结束前两节。</p>
+                            <p class="time">发表于 2012-08-02 00:00:00</p>
+                        </div>
+                    </li>
+                    <li class="hot-list">
+                        <a class="hot-img" target="_blank" href="http://bbs.daily.taobao.net/catalog/thread/5649002-10790350261.htm">
+                            <img class="image" src="http://img.f2e.taobao.net/img.png_130x90.jpg">
+                        </a>
+                        <div class="hot-info">
+                            <div class="title">
+                                <h3><a href="#">夏日激情奥运</a></h3>
+                                <div class="view-reply">
+                                    <span class="post-view"><a class="J_View" href="#" target="_blank">589</a> 阅读</span>
+                                    <span class="post-reply"><a class="J_Reply" href="#" target="_blank">589</a> 回帖</span>
+                                </div>
+                            </div>
+                            <p class="detail">比赛上半场，安哥拉队进攻犀利，防守强悍，内外线均有出色表现。命中率不高的中国队以2分的微弱优势结束前两节。</p>
+                            <p class="time">发表于 2012-08-02 00:00:00</p>
+                        </div>
+                    </li>
+                    <li class="hot-list">
+                        <a class="hot-img" target="_blank" href="http://bbs.daily.taobao.net/catalog/thread/5649002-10790350261.htm">
+                            <img class="image" src="http://img.f2e.taobao.net/img.png_130x90.jpg">
+                        </a>
+                        <div class="hot-info">
+                            <div class="title">
+                                <h3><a href="#">夏日激情奥运</a></h3>
+                                <div class="view-reply">
+                                    <span class="post-view"><a class="J_View" href="#" target="_blank">589</a> 阅读</span>
+                                    <span class="post-reply"><a class="J_Reply" href="#" target="_blank">589</a> 回帖</span>
+                                </div>
+                            </div>
+                            <p class="detail">比赛上半场，安哥拉队进攻犀利，防守强悍，内外线均有出色表现。命中率不高的中国队以2分的微弱优势结束前两节。</p>
+                            <p class="time">发表于 2012-08-02 00:00:00</p>
+                        </div>
+                    </li>
+                    <li class="hot-list">
+                        <a class="hot-img" target="_blank" href="http://bbs.daily.taobao.net/catalog/thread/5649002-10790350261.htm">
+                            <img class="image" src="http://img.f2e.taobao.net/img.png_130x90.jpg">
+                        </a>
+                        <div class="hot-info">
+                            <div class="title">
+                                <h3><a href="#">夏日激情奥运</a></h3>
                                 <div class="view-reply">
                                     <span class="post-view"><a class="J_View" href="#" target="_blank">589</a> 阅读</span>
                                     <span class="post-reply"><a class="J_Reply" href="#" target="_blank">589</a> 回帖</span>
@@ -654,6 +718,29 @@
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="layout seller-tools">
+        <h2 class="icon-title"><strong></strong></h2>
+        <ul class="seller-tools-list">
+            <li>
+                <a href="#" class="juhuasuan"></a>
+            </li>
+            <li>
+                <a href="#" class="taojinbi"></a>
+            </li>
+            <li>
+                <a href="#" class="tejia"></a>
+            </li>
+            <li>
+                <a href="#" class="cuxiaohui"></a>
+            </li>
+            <li>
+                <a href="#" class="try"></a>
+            </li>
+            <li>
+                <a href="#" class="pinpaitemai"></a>
+            </li>
+        </ul>
     </div>
 </div>
 <?php

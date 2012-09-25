@@ -6,7 +6,7 @@
  */
  /*>>> +++ sprite +++ <<<*/
  .word,
- .icon-title strong{
+ .icon-title strong{ 
  	background: url(../images/word.png) no-repeat 0 9999px;
  }
  .icon,
@@ -41,6 +41,7 @@
 /*>>> +++ first screen +++ <<<*/
 .layout-fs .col-main{
 	border-right: 1px solid #ececec;
+	margin-bottom: 17px;
 }
 .focus{
 	height: 279px;
@@ -124,7 +125,7 @@
 }
 .hot-list{
     height: 90px;
-    padding: 18px 0;
+    padding: 28px 0;
     width: 635px;
     padding-left: 7px;
     clear:both;
@@ -134,8 +135,8 @@
 
 }
 .hot-list-hover,.hot-list:hover{
-	padding-top: 19px;
-	padding-bottom: 16px;
+	padding-top: 29px;
+	padding-bottom: 26px;
 	_margin-top: -2px;
 	_padding-top: 21px;
 
@@ -256,7 +257,6 @@
 }
 .hot-post .hot-detail a{
 	color: #d84300;
-	text-decoration: underline;
 }
 .hot-post .info{
 	float: left;
@@ -579,7 +579,7 @@
 .rank-list{
 	padding-left: 46px;
 	width: 244px;
-	background-position: 0 -253px;
+	background-position: 0 -246px;
 	height: 228px;
 }
 .rank-list li{
