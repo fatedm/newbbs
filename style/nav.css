@@ -10,7 +10,7 @@
 #header .search-box .ts-show,
 #header .search-box .J_SearchMarket,
 #header .search-box .ts-hover{
-    background: url(../images/bbs.png) 0 -999em no-repeat;
+    background: url(http://img02.taobaocdn.com/tps/i2/T1gsHQXf0hXXX1sykM-75-475.png) 0 -999em no-repeat;
 }
 /*>>> +++ sprite line+++ <<<*/
 
@@ -297,9 +297,9 @@
 }
 .single-nav a.current,
 .single-nav a.current:hover{
-    background-color:#fffef2;
+    background-color:#fff;
     text-decoration:none;
-	border-top:1px solid #f7e0b6;
+	border-top:1px solid #dc3e01;
 	color:#d93801!important;
 }
 .single-nav a.hover,
@@ -321,8 +321,8 @@
 }
 #sub-nav{
 	width:100%;
-	height:32px;	
-	border-bottom:1px solid #faebce;
+	height:33px;	
+	border-bottom:2px solid #fafafa;
 	position:absolute;
 	top:30px;
 	left:0;
@@ -330,8 +330,13 @@
 	background-image:none;
 	display:none;
 }
+#sub-nav .sub-nav-wrap{
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    height: 32px;
+}
 .nav-select{
-	background-color:#fffef2;
+	background-color:#fff;
 }
 .nav-hover{
 	background-color:#fffac9;
@@ -380,14 +385,14 @@
 }
 .sub-nav-box li a:link,
 .sub-nav-box li a:visited{
-	color:#D83800;
+	color:#dc3d05;
 }
 .sub-nav-box li a{
 	padding:2px 4px;
 }
 .sub-nav-box li a:hover,
 .sub-nav-box li.current-sub a{
-	background:#f46d13;
+	background:#dc3d05;
 	color:#fff;
 	text-decoration:none;
 }

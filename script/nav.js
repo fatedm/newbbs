@@ -1,3 +1,4 @@
+
 KISSY.namespace('App');
 KISSY.add('search', function(S){
 	var D = S.DOM,
@@ -245,7 +246,8 @@ KISSY.add('nav', function(S) {
 					
                     if(self.headerWrap) {
 						
-                        D.css(self.headerWrap, 'margin-bottom', '40px');
+                        D.css(self.headerWrap, 'margin-bottom', '48px');
+                        
                     }
                 }
             }else{
@@ -353,6 +355,7 @@ KISSY.App.SlideAllChl = function(){
 	});      		
 	
 }
+
 KISSY.ready(function(S){
 	//异步请求消息数
 	new S.App.Msg();

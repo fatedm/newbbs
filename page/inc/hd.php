@@ -6,7 +6,7 @@
 		<link href="http://a.tbcdn.cn/p/global/1.0/global-min.css" rel="stylesheet">
 		<link href="../style/nav.css" rel="stylesheet">
 		<link href="../style/<?php echo $page; ?>.css" rel="stylesheet">
-		<script src="http://a.tbcdn.cn/s/kissy/1.2.0/kissy-min.js"></script>
+		<script src="http://a.tbcdn.cn/s/kissy/1.1.6/kissy-min.js"></script>
 		<script src="../script/nav.js"></script>
 	</head>
 	<body>
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="main-nav" style="margin-bottom: 40px; ">
+		<div id="main-nav">
 <div id="nav">
 <div class="navigation">
 <div class="multi-nav">
@@ -130,14 +130,11 @@
 <a href="http://bbs.taobao.com/catalog/963001.htm" id="J_Nav_maijia" class="trigger-maijia">卖家交流</a>
 <a href="http://bbs.taobao.com/catalog/10290010.htm?spm=0.0.0.84.b257" id="J_Nav_guanfang" class="trigger-guanfang">官方专区</a>
 </div>
-<div class="menu">
-<a class="person-center" href="http://bbs.taobao.com/forum/pc/my_forum_thread.htm"><s class="icon"></s>个人中心</a>
-<a href="http://bbs.taobao.com/forum/pc/my_message_list.htm" class="message"><s class="icon"></s>消息</a>
-</div>
-<div class="msg-tip"></div>
+
 </div>
 </div>
 <div id="sub-nav" class="nav-select" style="display: block; ">
+	<div class="sub-nav-wrap">
 <div class="sub-nav-box">
 <ul class="J_IsSubnav" id="J_Sub_index" style="display: block; ">
 <li id="J_Subnav_zatan"><a href="http://bbs.taobao.com/catalog/424015.htm" target="_blank">淘宝杂谈</a></li>
@@ -170,6 +167,7 @@
 <li class="subnav-last" id="J_Subnav_yingxiao"><a href="http://bbs.taobao.com/catalog/963001-11632011.htm#ThreadList" target="_blank">促销汇</a></li>
 
 </ul>
+</div>
 </div>
 </div>
 </div>

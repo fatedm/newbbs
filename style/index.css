@@ -7,18 +7,21 @@
  /*>>> +++ sprite +++ <<<*/
  .word,
  .icon-title strong{ 
- 	background: url(../images/word.png) no-repeat 0 9999px;
+ 	background: url(http://img03.taobaocdn.com/tps/i3/T1Z5jLXilnXXXlREAI-120-370.png) no-repeat 0 9999px;
  }
  .icon,
  .dot,
  .line-list,
  .rank-list{
- 	background: url(../images/bbs.png) no-repeat 0 9999px
+ 	background: url(http://img02.taobaocdn.com/tps/i2/T1gsHQXf0hXXX1sykM-75-475.png) no-repeat 0 9999px
  }
 /*>>> +++ global +++ <<<*/
 #content{
 	width: 990px;
 	margin: 0 auto;
+}
+#content a:hover{
+	text-decoration: none;
 }
 .layout{
 	clear: both;
@@ -39,19 +42,27 @@
 	overflow: hidden;
 }
 /*>>> +++ first screen +++ <<<*/
+.layout-fs{
+	padding-bottom: 17px;
+}
 .layout-fs .col-main{
 	border-right: 1px solid #ececec;
-	margin-bottom: 17px;
 }
 .focus{
 	height: 279px;
 	position: relative;
 	margin-bottom: 19px;
+	overflow: hidden;
 }
 .focus .hot-img{
 	float: left;
 	width: 423px;
 	height: 279px;
+}
+.focus .hot-img img{
+	width: 423px;
+	height: 279px;
+	display: block;
 }
 .focus .hot-info{
 	float: left;
@@ -71,27 +82,36 @@
 .focus .hot-info dt a{
 	color: #333;
 }
+.focus .hot-info dt a:hover{
+	color: #D84300;
+}
 .focus .hot-info dd{
 	color: #777;
 	line-height: 20px;
+	width: 185px;
 }
 .focus .hot-info dd a{
 	color: #d84300;
 }
 .focus .read-count{
 	position: absolute;
-	bottom: 5px;
+	bottom: 10px;
 	right: 14px;
 	font-size: 14px;
 	color: #777;
 }
-.focus .focus-read{
+.focus .post-view{
 	margin-right: 18px;
+	border-right: 1px solid #e9e9e9;
 }
-.focus .read-count a{
+.focus .post-reply a{
 	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 	color: #eb5500;
 	font-weight: bold;
+}
+.focus .post-view .J_View, .post-reply .J_Reply {
+	color: #EB5500;
+	font: bold 14px/21px Verdana,Tahoma;
 }
 /*>>> +++ hots*/
 .hots{
@@ -115,6 +135,7 @@
 	color: #333;
 	font: 14px/18px "Microsoft YaHei", Tahoma;
 }
+.hots .hots-title dd a:hover,
 .hots .hots-title dd a.highlight{
 	color: #f05a05;
 }
@@ -125,7 +146,7 @@
 }
 .hot-list{
     height: 90px;
-    padding: 28px 0;
+    padding: 27px 0;
     width: 635px;
     padding-left: 7px;
     clear:both;
@@ -135,10 +156,10 @@
 
 }
 .hot-list-hover,.hot-list:hover{
-	padding-top: 29px;
-	padding-bottom: 26px;
+	padding-top: 28px;
+	padding-bottom: 25px;
 	_margin-top: -2px;
-	_padding-top: 21px;
+	_padding-top: 30px;
 
     position:relative;
     left:0;
@@ -269,7 +290,7 @@
 	padding-top: 8px 0;
 	line-height: 14px;
 }
-.post-view{
+.hot-list .post-view{
 	color: #777;
 	padding-right: 14px;
 	margin-right: 10px;
@@ -285,10 +306,14 @@
 }
 .reply-list dt{
 	padding-top: 8px;
+	font-weight: bold;
 }
 .reply-list dt a{
 	font-weight: bold;
 	color: #333;
+}
+.reply-list dt a:hover{
+	color: #EB5500;
 }
 .reply-list dd{
 	color: #b3b3b3;
@@ -300,6 +325,10 @@
 /*>>> +++ first screen right box */
 .right-box{
 	clear: both;
+}
+.service,
+.assess{
+	margin-top: 7px;
 }
 .icon-title{
 	height: 18px;
@@ -367,11 +396,30 @@
 .post-list li p a{
 	color: #666;
 }
-.post-list li .reply-num{
+.post-list li p a:hover{
+	color: #EB5500;
+}
+.right-box .post-list li .J_Reply{
 	float: right;
-	color: #818181;
+	color: #cfcfcf;
 	line-height: 24px;
 	margin-right: 8px;
+}
+.post-list li .J_Reply,
+.post-list li .J_Reply_Num,
+.rank-list li .J_Reply_Num{
+	line-height: 30px;
+	float: right;
+	color: #cfcfcf;
+	margin-right: 8px;
+}
+.post-list li .J_Reply:hover,
+.rank-list li .J_Reply_Num:hover,
+.{
+	color: #EB5500;
+}
+.rank-list li.top .J_Reply{
+	line-height: 46px;
 }
 .news-img-info{
 	height: 100px;
@@ -397,8 +445,12 @@
 	font: 16px/20px "Microsoft YaHei",Tahoma;
 	color: #333;
 }
+.news-info h4 a:hover{
+	color: #EB5500;
+}
 .news-info p{
 	color: #8c8c8c;
+	line-height: 20px;
 }
 .news-info p a{
 	color: #e04601;
@@ -421,12 +473,16 @@
 	overflow: hidden;
 }
 .ss-box .icon-title,
-.ts-box .icon-title{
+.ts-box .icon-title,
+.seller-tools .icon-title,
+.seller-nav .icon-title{
 	height: 20px;
-	padding: 22px 0 11px 0;
+	padding: 15px 0 11px 0;
 }
 .ss-box .icon-title strong,
-.ts-box .icon-title strong{
+.layout-ts .icon-title strong,
+.seller-tools .icon-title strong,
+.seller-nav .icon-title strong{
 	height: 20px;
 	width: 80px;
 }
@@ -456,7 +512,7 @@
 .ss-box .post-list p a,
 .ts-box .post-list p a{
 	font-size: 14px;
-	color:  #333;
+	color:  #666;
 }
 .online-active{
 
@@ -471,6 +527,7 @@
 }
 .service .icon-title strong{
 	background-position: 0 -75px;
+	width: 107px;
 }
 .assess .icon-title strong{
 	background-position: 0 -100px;
@@ -499,6 +556,15 @@
 }
 .carve .icon-title strong{
 	background-position: 0 -300px;
+}
+.seller-nav .icon-title strong{
+	background-position: 0 -325px;
+}
+.seller-tools .icon-title strong{
+	background-position: 0 -350px;
+}
+.seller-tools .icon-title strong{
+	width: 117px;
 }
 /*>>> +++ line active */
 .slide-nav{
@@ -541,6 +607,7 @@
 .line-list{
 	height: 120px;
 	background-position: 0 -124px;
+	*background-position: 0 -125px;
 }
 .line-list li{
 	height: 20px;
@@ -563,10 +630,15 @@
 	font-weight: bold;
 }
 .line-list .line-title{
-	width: 170px;
+	width: 165px;
 	height: 20px;
 	overflow: hidden;
 	display: block;
+	float: left;
+}
+.line-list .line-subject:hover,
+.line-list .line-title:hover{
+	color: #EB5500;
 }
 /*line active*/
 .line-active,
@@ -594,6 +666,7 @@
 }
 .rank-list li.third{
 	margin-bottom: 5px;
+	*margin-bottom: 2px;
 }
 .rank-list li p{
 	width: 175px;
@@ -604,7 +677,8 @@
 .rank-list li p a{
 	color: #666666;
 }
-.rank-list li.first p a{
+.rank-list li.first p a,
+.rank-list li p a:hover{
 	color: #f25b2b;
 }
 .rank-list .reply-num{
@@ -615,13 +689,16 @@
 .layout-ts{
 	border-top: 5px solid #f25b2b;
 }
+.layout-ts .post-list li .J_Reply{
+	margin-right: 0;
+}
 .ts-box{
 	float: left;
 	width: 300px;
 	padding: 0 15px;
 	height: 445px;
-	border-right: 1px dotted #e4e4e4;
-	border-bottom: 1px dotted #e4e4e4;
+	border-right: 1px dashed #e4e4e4;
+	border-bottom: 1px dashed #e4e4e4;
 }
 .carve{
 	float: left;
@@ -636,6 +713,14 @@
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
+}
+.zatan .ts-img,
+.carve .ts-img{
+	margin-top: 3px;
+	margin-bottom: 9px;
+}
+.seller-speak .ts-img{
+	margin-top: 14px;
 }
 .ts-img img{
 	width: 300px;
@@ -656,16 +741,94 @@
 	font: 16px/28px "Microsoft YaHei",Tahoma;
 }
 .zatan .ts-img span{
-	background-color: #ec420a;
+	background-color: #ee4409;
 }
 .seller-speak .ts-img span{
-	background-color: #a8bd02;
+	background-color: #b5cd00;
 }
 .carve .ts-img span{
-	background-color: #109ee8;
+	background-color: #009dee;
 }
 .ts-list li{
 	height: 30px;
 	line-height: 30px;
 	padding-left: 
+}
+/*seller tools*/
+.seller-tools-list{
+	float: left;
+	border-top: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+	width: 988px;
+	margin-bottom: 15px;
+}
+.seller-tools-list li{
+	float: left;
+	width: 164px;
+	border-right: 1px dashed #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	height: 124px;
+}
+.seller-tools-list li img{
+	width: 164x;
+	height: 124px;
+}
+.seller-tools-list li.last{
+	width: 163px;
+	border-right: none;
+}
+.seller-tools-list li.last img{
+	width: 163px;
+	height: 124px;
+}
+/*table*/
+#seller-table{
+	border:1px solid #faeed8;
+	border-top:4px solid #faeed8;
+	width:988px;
+	background-color:#fffbf2;
+	table-layout: fixed;
+}
+
+#seller-table tr.last{
+	border-bottom:none;
+}
+#seller-table td{
+	width:300px;
+	padding:10px 15px;
+	border-right:1px dashed #f3dcb3;
+	border-bottom:1px dashed #f3dcb3;
+	vertical-align:top;
+}
+#seller-table td.first{
+	padding: 10px 14px 10px 15px;
+}
+#seller-table td.spe{
+	padding: 10 13px;
+}
+#seller-table tr.last td{
+	border-bottom:none;
+}
+#seller-table .spe td{
+	width:289px;
+}
+#seller-table p{
+	font:16px/26px "Microsoft YaHei";
+	color:#333;
+    margin-bottom:3px;
+}
+#seller-table span{
+	margin-right:30px;
+	line-height:24px;
+	white-space: nowrap;
+	word-break: normal;
+    word-wrap: normal;
+	font-family:"宋体";
+
+}
+#seller-table span a{
+	color:#818181;
+}
+#seller-table span a:hover{
+    color:#DA4000;
 }
