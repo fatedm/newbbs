@@ -8,6 +8,7 @@
 		<link href="../style/<?php echo $page; ?>.css" rel="stylesheet">
 		<script src="http://a.tbcdn.cn/s/kissy/1.1.6/kissy-min.js"></script>
 		<script src="../script/nav.js"></script>
+        
 	</head>
 	<body>
 		<div id="header">
@@ -162,9 +163,6 @@
 <li id="J_Subnav_tejia"><a href="http://bbs.taobao.com/catalog/11383510.htm" target="_blank">直通车</a></li>
 <li id="J_Subnav_cuxiaohui"><a href="http://bbs.taobao.com/catalog/11298010.htm" target="_blank">服务之声</a></li>
 <li class="subnav-last" id="J_Subnav_zhuanqu"><a href="http://bbs.taobao.com/catalog/424022.htm" target="_blank">诚信防骗</a></li>
-<li id="J_Subnav_jingyan"><a href="http://bbs.taobao.com/catalog/963001-1061105.htm#ThreadList" target="_blank">试用中心</a></li>
-<li id="J_Subnav_xueyuan"><a href="http://bbs.taobao.com/catalog/963001-12271010.htm#ThreadList" target="_blank">天天特价</a></li>
-<li class="subnav-last" id="J_Subnav_yingxiao"><a href="http://bbs.taobao.com/catalog/963001-11632011.htm#ThreadList" target="_blank">促销汇</a></li>
 
 </ul>
 </div>

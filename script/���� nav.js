@@ -31,7 +31,7 @@ KISSY.add('search', function(S){
 			 tabWrap.on("mouseenter mouseleave", function(ev) {
 				tabWrap[(ev.type == 'mouseenter') ? "addClass" : "removeClass"]('hover');
 			});
-			//
+
 			S.each(tabList, function(tab) {
 				E.on(tab, 'click', function(ev) {
 					var tar = ev.target,
@@ -96,7 +96,7 @@ KISSY.add('msg', function(S){
 	var isLogin = S.Cookie.get('_l_g_') && S.Cookie.get('_nk_') || S.Cookie.get('ck1') && S.Cookie.get('tracknick'),
 		loc = window.location.href,
 		isDaily = loc.indexOf('bbs.daily.taobao.net') !== -1 ?  1 : 0,
-		URL = isDaily ? 'http://bbs.daily.taobao.net/json/get_message_count.htm':'http://bbs.taobao.com/json/get_message_count.htm',
+		
 		PURL = isDaily ? 'http://bbs.daily.taobao.net/forum/pc/my_message_list.htm?message_status=0' : 'http://bbs.taobao.com/forum/pc/my_message_list.htm?message_status=0';
 	function Msg(){
 		this.init();
@@ -113,7 +113,7 @@ KISSY.add('msg', function(S){
 		ajax : function(){
 			S.io({
 				dataType:'jsonp',
-				url:URL,
+				url:PURL,
 				jsonpCallback:"getMessageCount",
 				success:function (d) {
 
@@ -246,6 +246,7 @@ KISSY.add('nav', function(S) {
                     if(self.headerWrap) {
 
                         D.css(self.headerWrap, 'margin-bottom', '48px');
+
                     }
                 }
             }else{

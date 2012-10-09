@@ -57,22 +57,29 @@ KISSY.add('viewCount', function(S){
 						infoId = infos[i]['id'];
 						replyEl = D.get('#reply' + infoId);
 						if(!replyEl) return;
-						replyNum = infos[i]['reply'];
+						replyNum = that.format(infos[i]['reply']);
 						if(D.get('#view' + infoId)){
 							viewEl = D.get('#view' + infoId);						
-							viewNum = infos[i]['view'];
+							viewNum = that.format(infos[i]['view']);
 							D.html(viewEl, viewNum);
 							D.html(replyEl, replyNum);
 						}else{							
-							D.html(replyEl, replyNum + '回复');
+							D.html(replyEl, replyNum + '跟贴');
 						}
 						
 					}					
 				}
 			});
-		}
+		},
+        format: function(num){
+             if(num < 10000) return num;
+            var _num = 0;
+            _num = (num/10000).toString();
+           // _num = _num.substring(0, _num.indexOf('.')+2);
+            return _num + 'w';
+        }
 	}	
-})
+});
 KISSY.add('ie6Hover', function(S){
 	var D = S.DOM,
 		E = S.Event,

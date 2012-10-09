@@ -7,14 +7,19 @@
  /*>>> +++ sprite +++ <<<*/
  .word,
  .icon-title strong{ 
- 	background: url(http://img03.taobaocdn.com/tps/i3/T1Z5jLXilnXXXlREAI-120-370.png) no-repeat 0 9999px;
+ 	background: url(http://img02.taobaocdn.com/tps/i2/T1NBbSXl4iXXcpMd_M-160-370.png) no-repeat 0 9999px;
  }
  .icon,
  .dot,
- .line-list,
+ .line-list li,
  .rank-list{
  	background: url(http://img02.taobaocdn.com/tps/i2/T1gsHQXf0hXXX1sykM-75-475.png) no-repeat 0 9999px
  }
+#site-nav-bd {
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+}
 /*>>> +++ global +++ <<<*/
 #content{
 	width: 990px;
@@ -76,8 +81,9 @@
 	padding-top: 18px;
 	padding-bottom: 11px;
 	font: 30px/38px "Microsoft YaHei", Tahoma;
-	border-bottom: 1px dotted #dfdfdf; 
-	margin-bottom: 9px; 
+	border-bottom: 1px dashed #e3dfe0;
+	margin-bottom: 9px;
+    width: 185px;
 }
 .focus .hot-info dt a{
 	color: #333;
@@ -102,6 +108,11 @@
 }
 .focus .post-view{
 	margin-right: 18px;
+	border-right: none;
+}
+.hot-post .post-view{
+	margin-right: 10px;
+    padding-right: 12px;
 	border-right: 1px solid #e9e9e9;
 }
 .focus .post-reply a{
@@ -247,6 +258,7 @@
 	font: 16px/20px "Microsoft YaHei",Tahoma;
 	color: #333;
 	margin-bottom: 10px;
+    overflow:  hidden;
 }
 .hot-post .post-title a{
 	color: #d84300;
@@ -326,7 +338,7 @@
 .right-box{
 	clear: both;
 }
-.service,
+#content .service,
 .assess{
 	margin-top: 7px;
 }
@@ -413,12 +425,22 @@
 	color: #cfcfcf;
 	margin-right: 8px;
 }
+.rank-list li .J_Reply_Num{
+    width: 60px;
+    overflow:  hidden;
+    white-space: nowrap;
+    text-align:right;
+    margin-right: 0;
+}
+.ts-box .post-list li .J_Reply_Num{
+    margin-right: 0;
+}
 .post-list li .J_Reply:hover,
 .rank-list li .J_Reply_Num:hover,
-.{
+.post-list li .J_Reply_Num:hover{
 	color: #EB5500;
 }
-.rank-list li.top .J_Reply{
+.rank-list li.top .J_Reply_Num{
 	line-height: 46px;
 }
 .news-img-info{
@@ -469,7 +491,7 @@
 	width: 300px;
 	padding: 0 15px;
 	_display: inline;
-	height: 325px;
+	height: 310px;
 	overflow: hidden;
 }
 .ss-box .icon-title,
@@ -490,6 +512,7 @@
 .ts-box .post-list li p{
 	height: 30px;
 	line-height: 30px;
+    width: 216px;
 }
 /*special*/
 .ss-box .news-img-info{
@@ -546,7 +569,7 @@
 }
 .ranking-list .icon-title strong{
 	background-position: 0 -225px;
-	width: 120px;
+	width: 160px;
 }
 .zatan .icon-title strong{
 	background-position: 0 -250px;
@@ -605,14 +628,28 @@
 	display: none;
 }
 .line-list{
-	height: 120px;
-	background-position: 0 -124px;
-	*background-position: 0 -125px;
+	
+
 }
 .line-list li{
 	height: 20px;
 	padding: 5px 0;
 	line-height: 20px;
+    overflow: hidden;
+    float: left;
+    width: 297px;
+}
+.line-list li.one{
+    background-position: 0 -124px;
+}
+.line-list li.two{
+    background-position: 0 -154px;
+}
+.line-list li.three{
+    background-position: 0 -184px;
+}
+.line-list li.four{
+    background-position: 0 -214px;
 }
 .line-list li a{
 	color: #666;
@@ -623,18 +660,21 @@
 	width: 62px;
 	margin-right: 9px;
 	color: #fff;
+   
 }
 .line-list .line-subject{
 	float: left;
 	padding-right: 8px;
 	font-weight: bold;
+    font-size: 14px;
 }
 .line-list .line-title{
-	width: 165px;
+	width: 145px;
 	height: 20px;
 	overflow: hidden;
 	display: block;
 	float: left;
+    font-size: 14px;
 }
 .line-list .line-subject:hover,
 .line-list .line-title:hover{
@@ -652,7 +692,7 @@
 	padding-left: 46px;
 	width: 244px;
 	background-position: 0 -246px;
-	height: 228px;
+	height: 230px;
 }
 .rank-list li{
 	height: 30px;
@@ -666,13 +706,15 @@
 }
 .rank-list li.third{
 	margin-bottom: 5px;
-	*margin-bottom: 2px;
+	*margin-bottom: 0px;
+    _margin-bottom: -3px;
 }
 .rank-list li p{
-	width: 175px;
+	width: 165px;
 	white-space: nowrap;
 	overflow: hidden;
 	float: left;
+    font-size: 14px;
 }
 .rank-list li p a{
 	color: #666666;
@@ -702,8 +744,8 @@
 }
 .carve{
 	float: left;
-	width: 300px;
-	padding: 0 14px;
+	width: 292px;
+	padding: 0 22px 0 14px;
 	border-right: none;
 }
 .ts-img{
@@ -718,6 +760,14 @@
 .carve .ts-img{
 	margin-top: 3px;
 	margin-bottom: 9px;
+}
+.carve .ts-img,
+.carve .ts-img img{
+    width: 292px;
+    height: 140px;
+}
+.carve .ts-img span{
+    width: 292px;
 }
 .seller-speak .ts-img{
 	margin-top: 14px;
@@ -759,7 +809,7 @@
 	float: left;
 	border-top: 1px solid #f1f1f1;
 	border-left: 1px solid #f1f1f1;
-	width: 988px;
+	width: 989px;
 	margin-bottom: 15px;
 }
 .seller-tools-list li{
@@ -770,12 +820,12 @@
 	height: 124px;
 }
 .seller-tools-list li img{
-	width: 164x;
+	width: 164px;
 	height: 124px;
 }
 .seller-tools-list li.last{
 	width: 163px;
-	border-right: none;
+	border-right: 1px solid #f1f1f1;
 }
 .seller-tools-list li.last img{
 	width: 163px;

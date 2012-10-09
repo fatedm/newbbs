@@ -7,7 +7,7 @@
 <!--高亮导航-->
 <input type="hidden" value="J_Nav_index" id="J_NavLight">
 <!--高亮二级导航-->
-<input type="hidden" value="J_Subnav_xit" id="J_SubnavLight">
+
 <div id="content">
 	<div class="layout layout-fs">
 		<div class="col-main">
@@ -406,22 +406,22 @@
                         </div>
                     </div>
                     <ul class="line-list">
-                         <li>
+                         <li class="one">
                             <span class="line-date">9月25日</span>
                             <a href="#" class="line-subject">天贸</a>
                             <a href="#" class="line-title">手游渠道生变产品上线2周</a>
                         </li>
-                        <li>
+                        <li class="two">
                             <span class="line-date">9月25日</span>
                             <a href="#" class="line-subject">天贸</a>
                             <a href="#" class="line-title">手游渠道生变产品上线2周</a>
                         </li>
-                        <li>
+                        <li class="three">
                             <span class="line-date">9月25日</span>
                             <a href="#" class="line-subject">天贸</a>
                             <a href="#" class="line-title">手游渠道生变产品上线2周</a>
                         </li>
-                        <li>
+                        <li class="four">
                             <span class="line-date">9月25日</span>
                             <a href="#" class="line-subject">天贸</a>
                             <a href="#" class="line-title">手游渠道生变产品上线2周</a>
@@ -443,26 +443,12 @@
                         </div>
                     </div>
                     <ul class="line-list">
-                         <li>
+                         <li class="one">
                             <span class="line-date">9月2日</span>
                             <a href="#" class="line-subject">天贸</a>
                             <a href="#" class="line-title">手游渠道生变产品上线2周</a>
                         </li>
-                        <li>
-                            <span class="line-date">9月15日</span>
-                            <a href="#" class="line-subject">天贸</a>
-                            <a href="#" class="line-title">手游渠道生变产品上线2周</a>
-                        </li>
-                        <li>
-                            <span class="line-date">9月25日</span>
-                            <a href="#" class="line-subject">天贸</a>
-                            <a href="#" class="line-title">手游渠道生变产品上线2周</a>
-                        </li>
-                        <li>
-                            <span class="line-date">9月25日</span>
-                            <a href="#" class="line-subject">天贸</a>
-                            <a href="#" class="line-title">手游渠道生变产品上线2周</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
