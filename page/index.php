@@ -187,7 +187,7 @@
                 </div>
             </div>
             <div class="right-box policy">
-                <h2 class="icon-title"><strong>政策解读</strong></h2>
+                <h2 class="icon-title"><a href="http://taobao.com">政策解读</a></h2>
                 <div class="hot-news">
                     <a href="#" target="_blank">
                         
@@ -214,7 +214,8 @@
                 </ul>
             </div>
             <div class="right-box ju">
-                <h2 class="icon-title"><strong>聚划算专区</strong></h2>
+                
+                <h2 class="icon-title"><a href="http://taobao.com">聚划算专区</a></h2>
                 <div class="hot-news">
                     <a href="#" target="_blank">
                        
@@ -242,7 +243,7 @@
             </div>
        
 		      <div class="right-box service">
-                <h2 class="icon-title"><strong>服务之声专区</strong></h2>
+                <h2 class="icon-title"><a href="http://taobao.com">服务之声专区</a></h2>
                 <div class="news-img-info">
                     <a class="news-img" href="#" target="_blank">                    
                         <img src="http://img.f2e.taobao.net/img.png_100x100.jpg">                     
@@ -275,7 +276,7 @@
             </div>
         
         <div class="right-box assess">
-                <h2 class="icon-title"><strong>评价专区</strong></h2>
+                <h2 class="icon-title"><a href="http://taobao.com">评价专区</a></h2>
                 <div class="news-img-info">
                     <a class="news-img" href="#" target="_blank">                    
                         <img src="http://img.f2e.taobao.net/img.png_100x100.jpg">                     
@@ -312,7 +313,7 @@
 	</div>
     <div class="layout layout-ss">
         <div class="ss-box experience">
-            <h2 class="icon-title"><strong></strong></h2>
+            <h2 class="icon-title"><a href="http://taobao.com">经验畅谈</a></h2>
             <div class="news-img-info">
                 <a class="news-img" href="#" target="_blank">                    
                     <img src="http://img.f2e.taobao.net/img.png_100x100.jpg">                     
@@ -349,7 +350,7 @@
             </ul>
         </div>
         <div class="ss-box honest">
-            <h2 class="icon-title"><strong></strong></h2>
+            <h2 class="icon-title"><a href="http://taobao.com">诚信防骗</a></h2>
             <div class="news-img-info">
                 <a class="news-img" href="#" target="_blank">                    
                     <img src="http://img.f2e.taobao.net/img.png_100x100.jpg">                     
@@ -454,7 +455,7 @@
             </div>
         </div>
         <div class="ss-box share">
-            <h2 class="icon-title"><strong></strong></h2>
+            <h2 class="icon-title"><a href="http://taobao.com">干货分享</a></h2>
             <div class="news-img-info">
                 <a class="news-img" href="#" target="_blank">                    
                     <img src="http://img.f2e.taobao.net/img.png_100x100.jpg">                     
@@ -566,9 +567,7 @@
     </div>
     <div class="layout layout-ts">
         <div class="ts-box zatan">
-            <h2 class="icon-title">
-                <strong></strong>
-            </h2>
+            <h2 class="icon-title"><a href="http://taobao.com" target="_blank">淘宝杂谈</a></h2>
             <a href="#" class="ts-img">
                 <img src="http://img.f2e.taobao.net/img.png_300x140.jpg">
                 <span>大幅度反对方</span>
@@ -612,9 +611,7 @@
             </ul>
         </div>
         <div class="ts-box seller-speak">
-            <h2 class="icon-title">
-                <strong></strong>
-            </h2>
+            <h2 class="icon-title"><a href="http://taobao.com" target="_blank">网商论剑</a></h2>
             
             <ul class="post-list">
                 <li>
@@ -659,9 +656,7 @@
             </a>
         </div>
         <div class="carve ts-box">
-            <h2 class="icon-title">
-                <strong></strong>
-            </h2>
+            <h2 class="icon-title"><a href="http://taobao.com" target="_blank">创业先锋</a></h2>
             <a href="#" class="ts-img">
                 <img src="http://img.f2e.taobao.net/img.png_300x140.jpg">
                 <span>大幅度反对方</span>

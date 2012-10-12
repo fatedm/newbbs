@@ -8,7 +8,7 @@
 		<link href="../style/<?php echo $page; ?>.css" rel="stylesheet">
 		<script src="http://a.tbcdn.cn/s/kissy/1.1.6/kissy-min.js"></script>
 		<script src="../script/nav.js"></script>
-        
+        <base target="_blank">
 	</head>
 	<body>
 		<div id="header">
