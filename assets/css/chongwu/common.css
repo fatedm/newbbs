@@ -1,0 +1,113 @@
+/**
+ * 宠物论坛定制样式 -- 布局
+ * @author ck0123456@gmail.com
+ */
+
+#content {
+	background: url("http://img03.taobaocdn.com/tps/i3/T1Du9CXX4VXXXXXXXX-65-65.jpg") repeat;
+}
+
+.grid-wrap .clip1, .grid-wrap .clip2 {
+	background: url("http://img03.taobaocdn.com/tps/i3/T17kKCXfhmXXXXXXXX-418-129.png") no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="crop", src="http://img03.taobaocdn.com/tps/i3/T17kKCXfhmXXXXXXXX-418-129.png");
+}
+
+.grid-wrap .clip3 {
+	background: url("http://img01.taobaocdn.com/tps/i1/T1VCuCXiVaXXXXXXXX-208-508.png") no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="crop", src="http://img01.taobaocdn.com/tps/i1/T1VCuCXiVaXXXXXXXX-208-508.png");
+}
+
+.grid-wrap .clip4 {
+	background: url("http://img02.taobaocdn.com/tps/i2/T1okCCXcloXXXXXXXX-299-37.png") no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="crop", src="http://img02.taobaocdn.com/tps/i2/T1okCCXcloXXXXXXXX-299-37.png");
+}
+
+.grid-wrap .clip5 {
+	background: url("http://img01.taobaocdn.com/tps/i1/T1PQiCXepqXXXXXXXX-281-89.png") no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="crop", src="http://img01.taobaocdn.com/tps/i1/T1PQiCXepqXXXXXXXX-281-89.png");
+}
+
+#content {
+	width: auto;
+	padding: 67px 0;
+	overflow: hidden;
+}
+
+#footer {
+	width:100%;
+	margin: 0 auto;
+}
+
+.grid-wrap {
+	position: relative;
+	width: 990px;
+	margin: 0 auto;
+	border: solid 1px #e8c020;
+	border-top-width: 4px;
+}
+
+.grid-wrap .decoration, .grid-wrap .links {
+	position: absolute;
+}
+
+.grid-wrap .clip1 {
+	top: -94px;
+	left: 64px;
+	width: 418px;
+	height: 90px;
+}
+
+.grid-wrap .clip2 {
+	top: 200px;
+	left: -175px;
+	width: 122px;
+	height: 129px;
+}
+
+.grid-wrap .clip3 {
+	top: 35px;
+	right: -209px;
+	width: 208px;
+	height: 508px;
+}
+
+.grid-wrap .clip4 {
+	top: -41px;
+	right: -2px;
+	width: 299px;
+	height: 37px;
+}
+
+.grid-wrap .clip5 {
+	top: -64px;
+	left: 15px;
+	width: 281px;
+	height: 89px;
+}
+
+.grid-wrap .links {
+	top: -36px;
+	top: -34px\0;
+	*top: -34px;
+	_top: -36px;
+	right: 2px;
+	width: 290px;
+	text-align: center;
+}
+
+.grid-wrap .links a {
+	outline: none;
+	text-decoration: none;
+	color: #333;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}

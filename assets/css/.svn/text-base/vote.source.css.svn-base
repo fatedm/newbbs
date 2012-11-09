@@ -1,0 +1,211 @@
+  /*
+var vote={
+	author:ziya@taobao.com,
+	date:2009-11-27,
+	apply:单独的文字投票模块
+}
+*/
+.vote {
+	width:100%;
+	margin-top:20px;
+}
+.vote .title {
+	height:24px;
+}
+.vote .title .img{
+	width:24px;
+	height:24px;
+	background:url('http://img03.taobaocdn.com/tps/i3/T17p4pXi4eXXXXXXXX-24-24.png') no-repeat;
+	float:left;
+}
+.vote .box{
+	clear:both;
+	width:100%;
+}
+.vote .name{
+	clear:both;
+	width:100%;
+}
+.vote input{
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+}
+.vote .title .txt-title{
+	font-size:14px;
+	color:#3F3F3F;
+	font-weight:bold;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+.vote .title .txt-choose{
+	font-size:12px;
+	float:left;
+	margin-left:10px;
+	margin-top:6px;
+	font-weight:bold;
+	color:#AB9999;
+}
+.vote .title .sum{
+	float:right;
+	margin-right:10px;
+	color:#666;
+	font-size:11px;
+	font-weight:bold;
+}
+.vote .title .sum strong{
+	color:#ff9900;
+	font-size:11px;
+	font-weight:bold;
+}
+.vote ul{
+	list-style-type:none;
+	margin:0px;padding:0px;
+	margin-top:20px;
+}
+.vote ul li{
+	list-style-type:none;
+	color:#999;
+	height:50px;
+	margin:0px;
+	padding:0px;
+	clear:both;
+}
+.vote ul li span{
+	color:#666;
+	font-weight:bold;
+	margin-left:15px;
+}
+.vote p span{
+	color:#999;
+	font-size:12px;
+}
+.vote p{
+	margin-top:10px;
+	display:inline-block;
+	width:100%;
+}
+.vote p .tips{
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+.vote p .time{
+	float:right;
+	margin-top:3px;
+}
+.vote p span span{
+	margin-left:50px;
+}
+.vote .btn-m{
+	margin-left:20px;
+	float:left;
+}
+.vote .opt{
+	display:inline-block;
+	width:40px;
+	color:#999;
+	display:inline;
+	font-size:12px;
+	margin-left:5px;
+}
+.vote .fraction-base{
+	height:10px;
+	line-height:10px;
+	margin-left:22px;
+	margin-top:5px;
+	width:500px;
+	background:#EFEFEF;
+	padding:0px;
+	display:inline;
+	float:left;
+}
+.vote .opt-title{
+	display:inline-block;
+	width:550px;
+	font-size:12px;
+}
+.vote .fraction-base span{
+	height:8px;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	line-height:8px;
+	font-size:6px;
+}
+.vote .fraction{
+	float:left;
+	color:#000;
+	margin-left:10px;
+}
+.vote .fraction em{
+	font-style:normal;
+	font-weight:normal;
+	padding-right:10px;
+}
+.vote .vote-end{
+	width:120px;float:left;
+}
+.vote .button_published{
+	width:83px;
+	height:20px;
+	border:none;
+	background:url('http://img01.taobaocdn.com/tps/i1/T16_FoXchmXXXXXXXX-83-20.png');
+}
+.vote .button_publish-end{
+	width:83px;
+	height:20px;
+	border:none;
+	background:url('http://img03.taobaocdn.com/tps/i3/T1tfXpXhhrXXXXXXXX-83-20.png');
+}
+
+/*detail页投票模块选项-颜色列表*/
+.color1{
+	background:#BDE877;
+	border:1px solid #478F45;
+}
+.color2{
+	background:#6C81B6;
+	border:1px solid #586E97
+}
+.color3{
+	background:#A5CBD6 ;
+	border:1px solid #8AABB4;
+}
+.color4{
+	background:#D843B3;
+	border:1px solid #B0248D;
+}
+.color5{
+	background:#F1FFD3;
+	border:1px solid #67B410;
+}
+.color6{
+	background:#EE335F;
+	border:1px solid #BF2146;
+}
+.color7{
+	background:#FBE096;
+	border:1px solid #E37F24;
+}
+.color8{
+	background:#ECF494;
+	border:1px solid #ADBF0B;
+}
+.color9{
+	background:#E58652;
+	border:1px solid #923305;
+}
+.color10{
+	background:#F7CA9B;
+	border:1px solid #C18F5A;
+}
+
+/* 修正vote模块在编辑器样式文件加入后的一些问题*/
+.ks-editor-post ul li{
+	list-style-type:none;
+}
+.ks-editor-post ul li{
+	margin:0px;padding:0px;
+}

@@ -1,0 +1,110 @@
+/*
+ *帮派聚合说明页面
+ *author @longxiao
+ *date 2010 11 29 
+ */
+
+
+/*
+ * 重写body样式
+ */
+body {
+	/*background: url(http://img04.taobaocdn.com/tps/i4/T1JDlSXo0iXXXXXXXX-1-264.png) repeat-x;*/
+   /* background: url(http://img01.taobaocdn.com/tps/i1/T1sVtTXaVnXXXXXXXX-1-405.png) repeat-x;
+	*background: url(http://img01.taobaocdn.com/tps/i1/T1sVtTXaVnXXXXXXXX-1-405.png) repeat-x 0px -1px;
+	*/
+}
+
+
+#page{
+	width:100%;
+}
+#header{
+	width:950px;
+}
+#footer{
+	width:950px;
+}
+#content{
+	background: url(http://img04.taobaocdn.com/tps/i4/T1JDlSXo0iXXXXXXXX-1-264.png) repeat-x;
+}
+
+/*
+ * 背景图
+ */
+.bp-polymerize-muen, .bp-polymerize-muen li, .bp-polymerize-muen li span, .bp-polymerize-leftbar {
+    background: url(http://img04.taobaocdn.com/tps/i4/T1m_F1XmpuXXXXXXXX-400-1458.gif) no-repeat 0 0;
+}
+
+.bp-polymerize-muen {
+    height: 35px;
+    padding-left: 220px;
+    background-position: 0 -32px;
+}
+
+.bp-polymerize-muen li {
+    display: inline-block;
+	*display:inline;
+    zoom: 1;
+	width:auto;
+    margin-top: 6px;
+    line-height: 29px;
+    height: 35px;
+    background-position: 0 0;
+    padding-left: 15px;
+    height: 29px;
+}
+
+.bp-polymerize-muen li span {
+    height: 29px;
+    display: inline-block;
+    zoom: 1;
+    width: auto;
+    color: #333;
+    background-position: right -68px;
+    padding-right: 15px;
+}
+
+.bp-polymerize-muen li span a{
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+	font-family:'宋体';
+}
+
+.bp-polymerize-muen .rests,.bp-polymerize-muen .rests a,.bp-polymerize-muen .rests span{
+	color:#fff;
+	background:none;
+	font-weight:bold;
+}
+
+
+
+/*left bar*/
+.bp-polymerize-leftbar {
+    width: 240px;
+    height: 663px;
+    background-position: 0 -104px;
+    text-indent: -9999px;
+}
+
+.sellerauth{
+	background-position:-1px -780px;
+}
+
+/*main style*/
+.bp-polymerize-main h1 {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.bp-polymerize-main img.lt {
+    margin-left: 30px;
+}
+
+.bp-polymerize-text {
+    padding-top: 15px;
+    line-height: 22px;
+    color: #666;
+    background: url(http://img01.taobaocdn.com/tps/i1/T1lnxSXblgXXXXXXXX-686-1.png) no-repeat 0px 7px;
+}

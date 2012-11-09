@@ -1,0 +1,86 @@
+/*浮动确认窗口*/
+#popup-warp{
+	width: 455px;
+    height: 265px;
+	_padding-bottom:15px;
+    background: #ccc;
+    display: none;
+	opacity:0.4;
+	filter:alpha(opacity=40); 
+}
+#popup-msg {
+    width: 440px;
+    height: 250px;
+    background: #ffffee;
+    border: #bbb solid 1px;
+}
+#popup-msg h3{
+	position:relative;
+	color:#000;
+}
+#popup-msg-close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    color: #9f9f69;
+    font-size: 18px;
+}
+#popup-msg .popup-table {
+	margin:10px 30px;
+}
+#popup-msg .popup-table tbody th{
+	width:65px;
+	color:#000;
+	font-weight:bold;
+	text-align:right;
+	vertical-align:top;
+}
+#popup-msg .popup-table tbody span{
+	color:#999;
+}
+#popup-msg .popup-table tbody th,#popup-msg .popup-table tbody td{
+	padding-bottom:10px;
+}
+#popup-msg .popup-table tbody tr.last th,#popup-msg .popup-table tbody tr.last td{
+	padding-bottom:20px;
+}
+#popup-msg .popup-table tfoot td{
+	padding-top:9px;
+	border-top:#e7e7e7 dashed 1px;
+	text-align:center;
+}
+#popup-msg .popup-table tfoot td p{
+	margin-bottom:10px;
+}
+
+/*POPUP浮动层*/
+
+/*大的页面遮罩*/
+.bigshade{
+	width:100%;height:100%;position:fixed;left:0px;top:0px;z-index:99999;background:#000;opacity:0.5;filter:alpha(opacity=50);
+	_position:absolute;
+}
+/*背景透明层*/
+.bgshade{
+	width:450px;height:260px;background:#fff;position:absolute;top:-5px;left:-5px;z-index:-1;opacity:0.1;filter:alpha(opacity=10);
+	_display:none;
+	/*IE6不给这个效果了*/
+}
+/*浮动层*/
+.supernatant{
+	position:fixed;z-index:999999;left:50%;top:50%;_position:absolute;
+}
+
+/*退出确认*/
+.affirm {
+    height: 110px !important;
+}
+
+.affirm .bgshade {
+    height: 120px !important;
+}
+
+.affirm .popup-table {
+    width: 360px;
+}

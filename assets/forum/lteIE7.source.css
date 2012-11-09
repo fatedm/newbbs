@@ -1,0 +1,14 @@
+@charset "gb2312";
+/*
+	--------------------------------------
+	
+		针对IE6、7所设置的样式 by xiongsong
+	
+	--------------------------------------
+*/
+	
+
+/*针对IE6、7所单独设置的垂直局中*/
+#personal_centre div.pic{position:relative;overflow:hidden;width:128px;height:133px;display:inline;}
+#personal_centre div.pic span{position:absolute;left:50%;top:50%;}
+#personal_centre div.pic span img{position:relative;left:-50%;top:-50%;}

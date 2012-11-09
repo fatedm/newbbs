@@ -1,0 +1,342 @@
+/*邀请页面*/
+
+#main-content .invite-user{
+	padding:10px 10px 0px 10px;
+}
+
+#main-content .invite-user .inside p {
+    margin-bottom: 7px;
+}
+
+
+
+p.invite-p label{color:#333;}
+
+p.invite-p{margin-top:5px;margin-bottom:5px!important;}
+
+.invite-fieldest p input{
+	height:24px!important;
+}
+
+#main-content .invite-user .invite-warp{
+	margin-top:15px;
+	border-top:#ddd dotted 1px;
+	padding:25px 0px;
+}
+
+#main-content .invite-user .inside{
+	margin:0 15px;
+}
+
+#main-content .invite-user .close{
+	display:none;
+}
+
+#main-content .invite-user h4{
+	font-size:14px;
+	cursor:pointer;
+}
+
+#main-content .invite-user .invite-warp h4{
+	padding:0px 15px;
+	display:inline-block;
+	*display:inline;
+	_zoom:1;
+}
+#main-content .invite-user .invite-warp p{
+	padding:0px 15px;
+	color:#999;
+}
+
+#main-content .invite-user .inside h4{
+	padding:0px;
+	display:inline-block;
+	*display:inline;
+	_zoom:1;
+}
+
+#J_InviteWwForm{ /*IE7 6 bug fix*/
+	*margin-top:-15px;
+}
+
+#main-content .invite-user .inside p{
+	padding:0px;
+}
+
+#main-content .invite-user .inside p.error,#main-content .invite-user .inside p.ok,#main-content .invite-user .inside p.attention{
+	width:492px;
+	text-indent:20px;
+	height:22px;
+	line-height:22px;
+	_display:inline;
+}
+
+#main-content .invite-user .invite-users-silder,#main-content .invite-user .invite-users-panel,#main-content .invite-user .preview-email{
+	border:#e9e9e9 solid 1px;
+	background-color:#F4F4F4;
+	height:350px;
+}
+
+#main-content .invite-user .invite-users-silder{
+	margin-top:5px;
+}
+
+#main-content .invite-user .invite-users-silder{
+	overflow-y:hidden;
+	position:relative;
+	background:#FBFBFB url(http://img02.taobaocdn.com/tps/i2/T14i4TXepxXXXXXXXX-200-404.png) no-repeat 725px -61px;
+}
+#main-content .invite-user .invite-users-panel{
+	height:33px;
+	border-top:none;
+	margin-bottom:10px;
+	line-height:33px;
+	_line-height:22px;
+	padding-left:10px;
+	overflow:hidden;
+	_padding-top:5px;
+	_padding-bottom:5px;
+	_height:22px;
+}
+
+/*邀请成员头像部分*/
+#main-content .invite-user .userwarp{
+	padding:20px;
+	line-height:6px;
+}
+#main-content .invite-user .invite-users-silder ul li{
+	width:210px;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	margin-bottom:14px;
+	*margin-bottom:10px;
+	margin-right:5px;
+	overflow:hidden;
+}
+#main-content .invite-user .invite-users-silder ul li img {
+	border:#ccc solid 1px;
+	margin:0px 5px 0 10px;
+}
+
+/*MSN独立样式*/
+#main-content .invite-user .invite-users-silder .msn li{
+	position:relative;
+	line-height:0px;
+	*line-height:normal;
+	height:28px;
+	margin-bottom:8px;
+}
+
+#main-content .invite-user .invite-users-silder .msn li label{
+	position:absolute;
+	left:55px;
+	*left:62px;
+	top:6px;
+	*top:0px;
+}
+
+#main-content .invite-user .invite-users-silder .msn li span{
+	color:#999;
+	position:absolute;
+	left:55px;
+	*left:62px;
+	top:20px;
+	*top:14px;
+}
+
+#J_Progressbar {
+	line-height:18px;
+}
+/*底部遮挡条*/
+.slider-downlay{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:5px;
+	overflow:hidden;
+	background:#FBFBFB;
+}
+
+
+
+#main-content .invite-user fieldset label,#main-content .invite-user .preview-email p,#main-content .invite-user p.sharpen{
+	color:#333;
+}
+#main-content .invite-user fieldset{position:relative;}
+#main-content .invite-user fieldset p.error,
+#main-content .invite-user fieldset p.ok{
+	width:400px!important;
+	position:absolute;
+	right:-5px;
+	top:-91px;
+	*top:-94px;
+}
+
+#main-content .invite-user fieldset.invite-fieldest p.error,#main-content .invite-user fieldset.invite-fieldest p.ok{
+	width:auto!important;
+	position:static;
+}
+
+#main-content .invite-user fieldset.invite-fieldest .msg{
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+}
+
+#main-content .invite-user fieldset.invite-fieldest .msg p{
+	margin-left:0px;
+}
+
+#main-content .invite-user fieldset.invite-fieldest table{
+	line-height:35px;	
+}
+
+.invite-put input{
+	margin:10px 0px;
+}
+
+#main-content .invite-user .preview-email{
+	width:460px;
+	height:auto;
+	padding:20px;
+	margin-bottom:10px;
+	margin-bottom:0px\9;
+	*margin-bottom:10px;
+}
+
+#main-content .invite-user .preview-email p strong{
+	font-weight:bold;
+}
+
+#main-content .invite-user .invite-email,#main-content .invite-user .invite-url{
+	width:500px;
+}
+#main-content .invite-user .text-tacit,#main-content #upload-badge-control .text-tacit  {
+	background: url("http://a.tbcdn.cn/app/matrix/img/group_input_bg.png") no-repeat scroll left top;
+    border: #999 solid 1px;
+    height: 17px!important;
+    padding: 3px 0 0 2px;
+    overflow-y: hidden;
+}
+
+#main-content .invite-user .invite-url{
+	background-color:#FFFFE5;
+}
+
+#main-content .invite-user .w250{
+	width:250px;
+}
+
+
+/*错误文案信息*/
+.invite-user .invite-warp div.msg{
+	margin-left:20px;
+}
+
+.invite-user .invite-warp strong{
+	color:#000;
+}
+.invite-user .invite-warp strong span{
+	color:red;
+}
+.invite-user .inside div.msg{
+	margin-left:0px;
+}
+.invite-user div.msg p{
+	color:#404040!important;
+	display:block;
+	padding: 2px 10px 2px 23px!important;
+}
+.invite-user .inside div.msg p{
+	width:auto!important;
+	text-indent:0px!important;
+	line-height:18px!important;
+	height:auto!important;
+}
+
+
+
+/*证式*/
+.invite-user .error,.invite-user .attention,.invite-user .ok{
+	display:none;
+}
+
+
+/*小分類*/
+#status-2{
+	padding-left:68px;display:none;
+}
+
+/*邀请方式的交互*/
+.yui-slider-thumb{
+	width:12px;
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+#slider-1,#slider-2{
+	overflow-y:hidden;
+	height:340px;
+}
+
+/*ie8 hack*/
+.ie8top{
+margin-top:0px;
+margin-top:10px\9;
+*margin-top:0px;
+}
+
+/*邀请好友 ---- 特殊错误提示*/
+.invite-user .inside div.msg .invite-error {
+    height: 50px !important;
+    line-height: 50px !important;
+    background-position: 10px -364px;
+	background-color:#FFFFE3;
+    padding-left: 30px !important;
+	margin-top:10px;
+}
+
+.invite-user .inside div.msg .invite-error span,.invite-user p span {
+    color: #E5E5E5;
+}
+
+/*折叠按钮*/
+.J_Trigger{
+	position:static;
+	display:inline-block;
+	_display:inline;
+	_zoom:1;
+	text-indent: 0px;
+	*margin-right:6px;
+}
+
+/*前台套嵌页*/
+.invitestage-bd{
+	background:#fff!important;
+	padding:0px!important;
+}
+
+.invitestage-main{
+	margin:0px!important;
+	border:none!important;
+}
+
+.satagesilder{
+	background-position:705px -61px!important;
+}
+
+.invite-warp-first{
+	border:none!important;
+	margin-top:0px!important;
+}
+
+
+/*复制链接*/
+.J_UrlAjax{
+	width: 115px!important;
+	background-position: -1px -100px!important;
+}
+.J_UrlAjax:hover {
+     background-position: -1px -125px!important;
+}

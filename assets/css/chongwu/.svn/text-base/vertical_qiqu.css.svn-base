@@ -1,0 +1,22 @@
+#content {
+	width: 990px;
+}
+.crumb{
+	padding:16px 0;
+	color:#404040;
+}
+.crumb a{
+	color:#404040;
+}
+.crumb span{
+	color:#bdbdbd;
+	padding-left:4px;
+}
+.crumb .bbs-index{
+	background: url("http://img04.taobaocdn.com/tps/i4/T1kGjaXXdaXXcgg2_v-150-282.png") no-repeat -70px -120px;
+	padding-left:18px;
+	color:#404040;
+}
+#footer {
+    width:100% !important;
+}

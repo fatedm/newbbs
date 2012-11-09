@@ -1,0 +1,25 @@
+各页面引用js列表
+1.threadList
+    tbra-aio.js
+    kissy editor 1.1.7
+    js(内嵌)
+2.detail
+    tbra-aio.js
+    bbs-detail.js
+    author-reply.js
+    bbs-editor.js
+    float_v2.js
+3.发表帖子
+    kissy-editor 1.1.7
+4.发表投票帖
+    tbra－aio.js
+    bangpai.mask.js,
+    bangpai.vote.img_enter.js,
+    bangpai.vote.time.js,
+    bangpai.select.js,
+    post.js,
+    post.vote.js,
+    multi_images_loader.js
+5.发表图片集
+    tbra-aio.js
+    upload.js

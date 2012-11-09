@@ -1,0 +1,1390 @@
+/** bangpai2011.css Document
+* 介绍
+* 用于帮派搜索结果优化项目
+* 创建日期2011.2.23
+* 创建人longjun.zfc@taobao.com
+*/ 
+/* Modules: =修正部分
+ * 修正门户帮派950宽度、页尾
+-------------------------------------------------------------- */
+#page {
+	width:990px;
+}
+#content {
+	margin-top:10px;
+}
+.grid-c2f .main-wrap {
+	margin-right: 210px;
+}
+.grid-c2f .col-sub {
+	margin-left: -190px;
+	width: 190px;
+	background-color:#FAFAFA;
+}
+#footer {
+	width:990px;
+	border-top: 3px solid #7F7F7F;
+	clear: both;
+	margin: 10px auto;
+	padding-top: 10px;
+	text-align: center;
+}
+#footer .foot-nav a, #footer .ali-group a {
+	color:#5C5C5C;
+}
+/* css sprites */
+.search-auto, .search-form .input, .search-tab li.selected, .search-tab li.selected .l, .search-tab li.selected .r, .search-form .l, .search-form form button, .search-form .r {
+	background: url("http://img01.taobaocdn.com/tps/i1/T1.udLXn4aXXXXXXXX.png") repeat-x scroll 0 0 transparent;
+}
+.marrow .bd .item .button, .invitation .hd, .faction .hd, .tao-friend .hd, .gamepage .button {
+	background:url("http://img03.taobaocdn.com/tps/i3/T1rR04XfJbXXXXXXXX-100-300.png") no-repeat scroll -999em -999em transparent;
+}
+/* Modules: =公用部分
+-------------------------------------------------------------- */
+.result-info .result-tip {
+	background: none repeat scroll 0 0 #F7F7F7;
+	border-top:#F27602 solid 3px;
+	margin-bottom: 10px;
+	padding: 5px 3px;
+}
+.result-info .result-tip em {
+	color: #FF5500;
+	font-weight: 700;
+}
+/* 顶部tab  */
+.bangpai-tabs {
+	width: 988px;
+	height:30px;
+	border:#EBEBEB solid 1px;
+	border-bottom:#BFCBCB solid 1px;
+	background-color:#F7F7F7;
+	margin-bottom:15px;
+}
+.bangpai-tabs .ks-switchable-nav {
+	width:600px;
+	height:30px;
+	position:relative;
+}
+.bangpai-tabs .ks-switchable-nav li {
+	position:absolute;
+	width: 100px;
+	height: 30px;
+	line-height:30px;
+	font-size:14px;
+	text-align: center;
+}
+.bangpai-tabs .ks-switchable-nav li a {
+	text-decoration:none;
+	color:#057BD2;
+	text-align: center;
+	cursor:pointer;
+	}
+.bangpai-tabs .ks-switchable-nav li.all { 
+    top:0px;
+    left:0px;
+	background-position:0 -233px;
+}
+.bangpai-tabs .ks-switchable-nav li.tiezi { 
+    top:0px;
+    left:100px;
+	background-position:0 -233px;
+}
+.bangpai-tabs .ks-switchable-nav li.bangpai { 
+    top:0px;
+    left:200px;
+	background-position:0 -233px;
+}
+.bangpai-tabs .ks-switchable-nav li.game { 
+    top:0px;
+    left:300px;
+	background-position:0 -233px;
+}
+.bangpai-tabs .ks-switchable-nav li.taofriend { 
+    top:0px;
+    left:400px;
+	background-position:0 -233px;
+}
+.bangpai-tabs .ks-switchable-nav li.bgnone { background:none;}
+.bangpai-tabs .ks-switchable-nav li.ks-active  {
+	top:0px;
+	height:31px;
+	background-position:0 -198px;
+}
+.bangpai-tabs .ks-switchable-nav li.ks-active a {
+	cursor: default;
+	color:#CC0000;
+	font-size:14px;
+	font-weight:bold;
+}
+/* 底部搜索 */
+.bottom-wrapper {
+	width: 990px;
+	clear:both;
+}
+.search-bottom {
+	padding:20px 0;
+	background:#F5F5F5;
+	margin:10px 0 0;
+	width:auto;
+	height:auto;
+}
+.search-form legend {
+	display: none;
+}
+.search-bottom form {
+	width:572px;
+	margin:0 auto;
+}
+.search-form form .input {
+	background-color: #FFFFFF;
+	background-position: 0 -68px;
+	float: left;
+	height: 32px;
+	position: relative;
+	width: 463px;
+}
+.search-bottom form .input {
+	width:441px;
+	overflow:hidden;
+}
+.search-form form .input input {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	font: 14px/18px verdana, tahoma, arial, 宋体, sans-serif;
+	height: 18px;
+	left: 0;
+	padding: 7px 6px;
+	position: absolute;
+	top: 0;
+	width: 290px;
+}
+.search-bottom form .input input {
+	width:431px;
+	_width:427px;
+}
+.search-bottom .show-cate, .search-bottom .search-tab {
+	display:none;
+}
+.search-form form .input .l {
+	background-position: -136px -36px;
+	left: 0;
+}
+.search-form form .input .l, .search-form form .input .r {
+	height: 32px;
+	position: absolute;
+	top: 0;
+	width: 3px;
+}
+.search-form form .input .r {
+	background-position: -139px -36px;
+	right: 0;
+	z-index: 1;
+}
+.search-form form .input .l, .search-form form .input .r {
+	height: 32px;
+	position: absolute;
+	top: 0;
+	width: 3px;
+}
+.search-form form button {
+	background-position: 0 -36px;
+	border: medium none;
+	float: left;
+	height: 32px;
+	text-indent: -9999px;
+	width: 131px;
+	cursor:pointer;
+}
+/* Modules: =帖子搜索
+-------------------------------------------------------------- */
+.marrow {
+	height:310px;
+	background-color:#FAFAFA;
+	border:#EEEEEE solid 1px;
+	position:relative;
+	z-index:1;
+	margin-bottom:40px;
+}
+.marrow .hd h3 {
+	color:#808080;
+	margin:15px 0px;
+	font-weight:normal;
+	text-indent:20px;
+}
+.marrow .bd ul {
+	margin:0px 0px 0px 22px;
+}
+.marrow .bd .item {
+	display: inline;
+	float: left;
+	width: 130px;
+	overflow:hidden;
+	text-align:left;
+	margin-right:21px;
+	line-height:20px;
+	color:#808080;
+}
+.marrow .bd .item .pic {
+	/* 非IE的主流浏览器识别的垂直居中的方法 */
+	display: table-cell;
+	vertical-align:middle;
+	/* 设置水平居中 */
+	text-align: center;
+	/* 针对IE的Hack */
+	*display: block;
+ *font-size: 105px; /*约为高度的0.873，200*0.873 约为175*/
+ *font-family:Arial;
+	width: 120px;
+	height: 120px;
+	border: 0 none;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.marrow .bd .item .pic a {
+	display:inline;
+}
+.marrow .bd .item .pic img {
+	vertical-align:middle;
+	border:none;
+}
+.marrow .bd .item .title {
+	color:#057BD2;
+	margin-top:5px;
+	height:20px;
+	width:100%;
+	overflow:hidden;
+}
+.marrow .bd .item .time span {
+	color:#3D3D3D;
+}
+.marrow .bd .item .price span {
+	color:#3D3D3D;
+}
+.marrow .bd .item .tprice span {
+	color:#CC0000;
+	font-weight:bold;
+}
+.marrow .bd .item .source a:hover {
+	text-decoration:none;
+}
+.marrow .bd .item .button {
+	width:63px;
+	height:22px;
+	line-height:22px;
+	background-position:-0px -0px;
+	text-align:center;
+	margin-top:5px;
+}
+.marrow .bd .item .button a {
+	color:#4D4D4D;
+}
+.marrow .bd .item .button a:hover {
+	text-decoration:none;
+}
+.marrow .more {
+	width:85px;
+	position:absolute;
+	top:15px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.marrow .more a {
+	color:#057BD2;
+}
+.marrow .more a span {
+	color:#019308;
+}
+.marrow .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+/* invitation */	
+.invitation {
+	border-top:#D9D9D9 solid 1px;
+	position:relative;
+	z-index:1;
+	margin-bottom:30px;
+}
+.invitation .hd {
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:10px;
+	background-position:-95px 3px;
+}
+.invitation .hd h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+.invitation .hd h3 span {
+	color:#808080;
+	font-size:12px;
+	font-weight:normal;
+}
+.invitation .bd .title {
+	font-size:14px;
+	color:#057BD2;
+	line-height:25px;
+}
+.invitation .bd .title a{
+	font-size:14px;
+	color:#057BD2;
+	text-decoration:underline;
+	line-height:25px;
+}
+.invitation .bd .title a:hover{
+	font-size:14px;
+	color:#FF6600;
+	text-decoration:underline;
+	line-height:25px;
+}
+.invitation .bd .summary {
+	padding-right:50px;
+}
+.invitation .bd .summary p {
+	color:#3D3D3D;
+	font-size:12px;
+	line-height:20px;
+	word-wrap:break-word;
+    word-break:break-all;
+}
+.invitation .bd ul li {
+	margin-bottom:15px;
+}
+.rel-info {
+	margin:5px 0px;
+}
+.rel-info .label {
+	color:#808080;
+	margin-right:5px;
+}
+.rel-info .status {
+	border:#D0D3D3 solid 1px;
+	color:#808080;
+	padding:2px 5px;
+	margin:0px 10px;
+}
+.rel-info a {
+	margin-right:5px;
+}
+.rel-info .bdl {
+	padding-left:10px;
+	border-left:#D3D3D3 solid 1px;
+}
+.rel-info .time {
+	margin-right:10px;
+	color:#808080;
+}
+.invitation .more {
+	width:85px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.invitation .more a {
+	color:#057BD2;
+}
+.invitation .more a span {
+	color:#019308;
+}
+.invitation .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+/* faction */
+.faction {
+	border-top:#D9D9D9 solid 1px;
+	position:relative;
+	z-index:1;
+	margin-bottom:35px;
+}
+.faction .hd {
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:10px;
+	background-position:-95px 3px;
+}
+.faction .hd h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+.faction .hd h3 span {
+	color:#808080;
+	font-size:12px;
+	font-weight:normal;
+}
+/* =====================New Css========================= */
+.faction .con-list {
+	color:#808080;
+	margin-top: 7px;
+	overflow: hidden;
+}
+.faction .con-list li {
+	width: 670px;
+	height:100px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.faction .con-list .imgbox {
+	width:80px;
+	height:82px;
+	height:82px\9;
+	*height:81px;
+	_height:81px;
+	margin:-23px 0px 0px 10px;
+}
+.faction .con-list .imgbox a {
+	float: left;
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+    *display: block;
+    *font-size: 70px;
+    *font-family:Arial;
+	width: 80px;
+	height:82px;
+	height:82px\9;
+	*height:81px;
+	_height:81px;
+	line-height:80px;
+	border:none;
+	overflow: hidden;
+}
+.faction .con-list .imgbox a img {
+	vertical-align:middle;
+}
+.space {
+	margin-left:5px;
+	margin-right:10px;
+	padding-right:10px;
+	border-right:#D3D3D3 solid 1px;
+	color:#3D3D3D;
+}
+.mgl {
+	margin-left:10px;
+}
+.faction .con-list li h3 {
+	overflow: hidden;
+	white-space: nowrap;
+	margin:13px 0 2px 105px;
+}
+.faction .con-list li h3 a {
+	color: #057BD2;
+	font-size: 14px;
+	font-weight:normal;
+	width: 375px;
+}
+.faction .con-list .txt {
+	line-height: 16px;
+	margin-top:-60px;
+}
+.con-list .label {
+	color:#808080;
+	margin-right:5px;
+}
+.faction .con-list li p {
+	overflow: hidden;
+	color:#3D3D3D;
+	margin-left:105px;
+}
+.faction .con-list .level {
+	vertical-align: middle;
+}
+.faction .more {
+	width:85px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.faction .more a {
+	color:#057BD2;
+}
+.faction .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+.faction .more a span {
+	color:#019308;
+}
+/* ======================End!======================== */
+/*
+.faction .con-list {
+	color:#808080;
+	margin-top: 7px;
+	overflow: hidden;
+}
+.faction .con-list .con-listimg {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+ *display: block;
+ *font-size: 70px;
+ *font-family:Arial;
+	width: 80px;
+	height: 80px;
+	border: 0 none;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.faction .con-list .con-listimg img {
+	vertical-align:middle;
+	border:none;
+}
+.space {
+	margin-left:5px;
+	margin-right:10px;
+	padding-right:10px;
+	border-right:#D3D3D3 solid 1px;
+	color:#3D3D3D;
+}
+.mgl {
+	margin-left:10px;
+}
+.faction .con-list li h3 {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.faction .con-list li h3 a {
+	color: #057BD2;
+	font-size: 14px;
+	font-weight:normal;
+	width: 375px;
+}
+.faction .con-list li {
+	overflow: hidden;
+	margin: 10px 10px 0 0;
+	padding-bottom: 15px;
+	padding-left: 90px;
+	width: 670px;
+	background-color:#999;
+}
+.faction .con-list li .imgbox {
+	float: left;
+	 margin: -18px 0 0 -90px;
+	 *margin: -22px 0 0 -90px;
+	_margin: -22px 0 0 -90px;
+	_display:inline;
+	width: 80px;
+	height: 80px;
+}
+.faction .con-list li .imgbox a {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+    *display: block;
+    *font-size: 70px;
+    *font-family:Arial;
+	width: 80px;
+	height: 80px;
+	border: 0 none;
+	overflow: hidden;
+}
+.faction .con-list li .imgbox img {
+	vertical-align:middle;
+}
+.faction .con-list .txt {
+	line-height: 16px;
+}
+.con-list .label {
+	color:#808080;
+	margin-right:5px;
+}
+.faction .con-list li p {
+	overflow: hidden;
+	color:#3D3D3D;
+}
+.faction .con-list .level {
+	vertical-align: middle;
+}
+.faction .more {
+	width:85px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.faction .more a {
+	color:#057BD2;
+}
+.faction .more a span {
+	color:#019308;
+}
+.faction .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+*/
+/* tao-friend */
+.tao-friend {
+	border-top:#D9D9D9 solid 1px;
+	position:relative;
+	z-index:1;
+	margin-bottom:40px;
+}
+.tao-friend .hd {
+	margin-top:5px;
+	margin-bottom:10px;
+	padding-left:10px;
+	background-position:-95px 3px;
+}
+.tao-friend .hd h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+.tao-friend .hd h3 span {
+	color:#808080;
+	font-size:12px;
+	font-weight:normal;
+}
+.tao-friend .bd ul {
+	margin:0px;
+}
+.tao-friend .bd .item {
+	display: inline;
+	float: left;
+	width: 145px;
+	overflow:hidden;
+	text-align:left;
+	margin-right:50px;
+	line-height:20px;
+	color:#808080;
+}
+.tao-friend .bd .item .pic {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+ *display: block;
+ *font-size: 105px;
+ *font-family:Arial;
+	width: 120px;
+	height: 120px;
+	border: 0 none;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.tao-friend .bd .item .pic a {
+	display:inline;
+}
+.tao-friend .bd .item .pic img {
+	vertical-align:middle;
+	border:none;
+}
+.tao-friend .bd .item .info {
+	font-size:14px;
+	color:#057BD2;
+	height:20px;
+	overflow:hidden;
+}
+.tao-friend .bd .item .level span {
+	margin-left:10px;
+	color:#3D3D3D;
+	font-size:12px;
+}
+.tao-friend .bd .item .status {
+	color:#057BD2;
+	font-size:12px;
+}
+.tao-friend .more {
+	width:85px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.tao-friend .more a {
+	color:#057BD2;
+}
+.tao-friend .more a span {
+	color:#019308;
+}
+.tao-friend .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+/* subad */
+.subad {
+	width:170px;
+	height:110px;
+	overflow:hidden;
+	margin:10px auto 20px;
+}
+.updoings, .downdoings {
+	width:170px;
+	margin:0px auto;
+}
+.updoings {
+	border-bottom:#EEEEEE solid 1px;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+.updoings li, .downdoings li {
+	padding-top: 6px;
+	padding-left:10px;
+	background:url("http://img03.taobaocdn.com/tps/i3/T1rR04XfJbXXXXXXXX-100-300.png") 0px -270px no-repeat;
+}
+/* Modules: =帖子!
+-------------------------------------------------------------- */
+.updoings li a, .filterform .basic .most-scan, .filterform .basic .most-scanhover, .filterform .basic .most-reply, .filterform .basic .most-replyhover, .filterform .basic .time-invitation, .filterform .basic .time-reply, .filterform .basic .defaultbutton, .filter .allstatus, .filter .alltype, .filterform .basic .most-highest, .filterform .basic .most-highesthover ,.bangpai-tabs .ks-switchable-nav li {
+	background:url("http://img03.taobaocdn.com/tps/i3/T1rR04XfJbXXXXXXXX-100-300.png") no-repeat scroll -999em -999em transparent;
+}
+.invitationpage {
+	border:none;
+}
+#filterForm fieldset {
+	color: #404040;
+	padding: 3px 10px;
+}
+#filterForm fieldset legend {
+	display: none;
+}
+#filterForm .basic {
+	height: 30px;
+}
+.filterform .basic li {
+	float:left;
+	margin-right:5px;
+	position:relative;
+	z-index:1;
+}
+.filterform .basic li ul li {
+	float:none;
+}
+.filterform .basic li ul li.hidden {
+	display:none;
+}
+.filterform .basic li a {
+	color:#808080;
+	font-size:12px;
+	line-height:25px;
+	display:block;
+}
+#filterForm ul.basic li a:hover {
+	text-decoration:none;
+}
+.select-item span {
+	width:78px;
+	height:24px;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.filter .allstatus {
+	width:90px;
+	height:24px;
+	line-height:24px;
+	cursor:pointer;
+	text-indent:5px;
+	text-align:left;
+	background-position: left -148px;
+}
+.filter .alltype {
+	width:90px;
+	height:24px;
+	line-height:24px;
+	cursor:pointer;
+	text-indent:5px;
+	text-align:left;
+	background-position: left -148px;
+}
+.filterform .basic .most-scan {
+	width:67px;
+	height:24px;
+	padding:0px 20px 0px 5px;
+	background-position:0px -73px;
+}
+.filterform .basic .most-scanhover {
+	cursor:pointer;
+	background-position:0px -48px;   /* active修改background-position */
+}
+.filterform .basic .time-invitation {
+	width:56px;
+	height:24px;
+	padding:0px 20px 0px 5px;
+	background-position:0px -98px;
+}
+.filterform .basic .time-invitationhover {
+	cursor:pointer;
+	background-position: 0 -123px;
+}
+.filterform .basic .time-reply {
+	width:56px;
+	height:24px;
+	margin-right:15px;
+	padding:0px 20px 0px 5px;
+	background-position:0px -98px;
+}
+.filterform .basic .time-replyhover {
+	cursor:pointer;
+	background-position: 0 -123px;
+}
+.filterform .basic .defaultbutton {
+	width:67px;
+	height:24px;
+	text-align:center;
+	cursor:pointer;
+	line-height:24px;
+	background-position:0px -173px;
+}
+.allstatus .item-list, .alltype .item-list {
+	width:88px;
+	background-color:#F0F5F5;
+	border:#C0CCCC solid 1px;
+	float:none;
+	position:absolute;
+	top:23px;
+	left:0px;
+	z-index:9999;
+}
+.allstatus .item-list li, .alltype .item-list li {
+	border-top:#D8E0E0 dotted 1px;
+	color:#808080;
+	font-size:12px;
+	margin:0px;
+	display:block;
+	vertical-align:middle;
+	width:88px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.allstatus .item-list li a, .alltype .item-list li a {
+	font-size:12px;
+	color:#808080;
+	height:20px;
+	line-height:20px;
+	margin:0px;
+	padding:2px 0px 2px 0px;
+	display:block;
+	vertical-align:middle;
+}
+.allstatus .item-list li a:hover, .alltype .item-list li a:hover {
+	background-color:#FFFFFF;
+	color:#000000;
+}
+.relation-search {
+	height:auto;
+	border:#F3F3F3 solid 1px;
+}
+.relation-search .hd {
+	border-bottom:#F3F3F3 solid 1px;
+}
+.relation-search .hd h3 {
+	font-size:14px;
+	color:#000;
+	padding:5px 0px;
+	line-height:20px;
+	text-indent:10px;
+}
+.relation-search .bd ul {
+	width:170px;
+	overflow:hidden;
+	margin:10px auto 20px;
+}
+.relation-search .bd ul li {
+	line-height:20px;
+}
+.relation-search .bd ul li a {
+	color:#057BD2;
+	font-size:12px;
+}
+.relation-search .bd ul a:hover {
+	color:#ff6600;
+	font-size:12px;
+}
+/* 活动搜索 */
+.gamepage {
+	margin-bottom:35px;
+}
+.gamepage .hd {
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:10px;
+	background-position:-95px 3px;
+}
+.gamepage .hd h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+.gamepage .hd h3 span {
+	color:#808080;
+	font-size:12px;
+	font-weight:normal;
+}
+.gamepage .con-list {
+	color:#808080;
+	margin-top: 7px;
+	overflow: hidden;
+}
+.gamepage .con-list li {
+	width: 620px;
+	height:125px;
+	margin: 10px 10px 0 0;
+	overflow: hidden;
+	padding-bottom: 15px;
+	padding-left: 130px;
+}
+.gamepage .space {
+	margin-left:5px;
+	margin-right:10px;
+	padding-right:10px;
+	border-right:#D3D3D3 solid 1px;
+	color:#3D3D3D;
+}
+.space .tprice {
+	color:#CC0000;
+	font-size:12px;
+	font-weight:bold;
+}
+.space .tprice del {
+	color:#3D3D3D;
+	font-size:12px;
+	font-weight:normal;
+}
+.gamepage .last {
+	border-right:none;
+}
+.mgl {
+	margin-left:10px;
+}
+.gamepage .con-list li h3 {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.gamepage .con-list li h3 a {
+	color: #057BD2;
+	font-size: 14px;
+	font-weight:normal;
+	width: 375px;
+}
+.gamepage .con-list li h3 span {
+	color: #808080;
+	font-size: 12px;
+	font-weight:normal;
+}
+.con-list li .box {
+	float: left;
+	margin: -20px 0 0 -130px;
+	display:inline;
+}
+.con-list li .box a {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+    *display: block;
+    *font-size: 105px;
+    *font-family:Arial;
+	width: 120px;
+	height: 120px;
+	border: 0 none;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.con-list li .box img {
+	vertical-align:middle;
+	border:none;
+}
+.gamepage .con-list .txt {
+	line-height: 16px;
+}
+.con-list .label {
+	color:#808080;
+	margin-right:5px;
+}
+.gamepage .con-list li p {
+	overflow: hidden;
+	color:#3D3D3D;
+}
+.gamepage .con-list .level {
+	vertical-align:middle;
+}
+.gamepage .button {
+	width:63px;
+	height:22px;
+	line-height:22px;
+	background-position:-0px -0px;
+	text-align:center;
+	margin-top:5px;
+}
+.gamepage .button a {
+	color:#4D4D4D;
+}
+.gamepage .button a:hover {
+	text-decoration:none;
+}
+/* 活动页面tab  */
+.gamepage-tabs {
+	width: 770px;
+	height:28px;
+	border:#EBEBEB solid 1px;
+	border-bottom:#BFCBCB solid 1px;
+	background-color:#F7F7F7;
+	margin-bottom:15px;
+	position:relative;
+}
+.gamepage-tabs .ks-switchable-nav {
+	width:600px;
+	height:28px;
+	position:absolute;
+}
+.gamepage-tabs .ks-switchable-nav li { float: left;
+    list-style-type:none;
+    margin-right:-1px;
+    }
+.gamepage-tabs .ks-switchable-nav li.ks-active {
+	background-color:#ffffff;
+	border-top:#BFCBCB solid 1px;
+	border-right:#BFCBCB solid 1px;
+	border-bottom:#ffffff solid 1px;
+	border-left:#BFCBCB solid 1px;
+	padding-top:2px;
+	_padding-top:1px;
+	margin-top:-1px;
+	_margin-top:0px;
+	}	
+.gamepage-tabs .ks-switchable-nav li a {
+	text-decoration:none;
+	text-align: center;
+	cursor:pointer;
+	color:#333333;
+	font-size:12px;
+	padding:4px 30px;
+	display:block;
+}
+/* 帖子搜索页面 */
+.factionpage {
+	border-top:none;
+}
+.filterform .basic .most-highest {
+	height: 24px;
+	padding: 0 20px 0 0px;
+	width: 61px;
+	text-align:center;
+	margin-right:15px;
+	background-position: 0 -98px;
+}
+.filterform .basic .most-highesthover {
+	cursor:pointer;
+	background-position: 0 -123px;
+}
+.filterform .basic .most-reply {
+	background-position: 0 -98px;
+	height: 24px;
+	padding: 0 20px 0 5px;
+	width: 56px;
+}
+.filterform .basic .most-replyhover {
+	cursor:pointer;
+	background-position:0px -123px;  /* active修改background-position */
+}
+/*  淘友页面 */
+.personpage {
+	border-top:none;
+	position:relative;
+	margin-bottom:40px;
+}
+.personpage .hd {
+	margin-top:5px;
+	margin-bottom:10px;
+	padding-left:10px;
+	background-position:-95px 3px;
+}
+.personpage .hd h3 {
+	font-size:14px;
+	font-weight:bold;
+}
+.personpage .hd h3 span {
+	color:#808080;
+	font-size:12px;
+	font-weight:normal;
+}
+.personpage .bd ul {
+	margin:20px 0 0;
+}
+.personpage .bd .item {
+	display: inline;
+	float: left;
+	width: 145px;
+	overflow:hidden;
+	text-align:left;
+	margin-right:50px;
+	margin-bottom:40px;
+	line-height:20px;
+	color:#808080;
+}
+.personpage .bd .item .pic {
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+ *display: block;
+ *font-size: 105px;
+ *font-family:Arial;
+	width: 120px;
+	height: 120px;
+	border: 0 none;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.personpage .bd .item .pic a {
+	display:inline;
+}
+.personpage .bd .item .pic a img {
+	vertical-align:middle;
+	border:none;
+}
+.personpage .bd .item .info {
+	font-size:14px;
+	color:#057BD2;
+	width:100%;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+}
+.tao-friend .bd .item .level span {
+	margin-left:10px;
+	color:#3D3D3D;
+	font-size:12px;
+}
+.personpage .bd .item .status {
+	color:#057BD2;
+	font-size:12px;
+}
+.personpage .more {
+	width:85px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:none;
+	text-align:right;
+}
+.personpage .more a {
+	color:#057BD2;
+}
+.personpage .more a span {
+	color:#019308;
+}
+.personpage .more a:hover {
+	text-decoration:none;
+	color:#ff6600;
+}
+/* 无结果提示页面 */
+.result {
+    margin-top: 10px;
+	width:100%;
+	margin:0 auto;
+}
+.msgbox {
+    margin-bottom: 10px;
+    position: relative;
+}
+.msgbox .hd, .msgbox .hd h3, .msgbox .rc-tp, .msgbox .rc-tp span, .msgbox .rc-bt, .msgbox .rc-bt span, .msgbox.stone .bd, .info .bd .avatar {
+    background: url("http://a.tbcdn.cn/app/matrix/img/box_bg.png") no-repeat scroll 0 0 transparent;
+}
+.msgbox .rc-tp span, .msgbox .rc-bt span {
+    float: right;
+    height: 5px;
+    width: 5px;
+}
+.msgbox .bd {
+    border: 1px solid #D6D6D6;
+    height: auto !important;
+    min-height: 10px;
+    padding: 10px;
+}
+.result .result-tip {
+    background: none repeat scroll 0 0 #F1F9FB;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+.result .result-tip em {
+    color: #FF5500;
+    font-weight: 700;
+}
+.msgbox .bd .msg .naked {
+    padding: 50px 0;
+    text-align: center;
+}
+.msg .naked, .msg24 .naked {
+    background-color: transparent;
+    border: medium none;
+}
+.msgbox .rc-bt {
+    background-position: -4px -4px;
+    margin-top: -5px;
+}
+.msgbox .rc-tp, .box .rc-bt {
+    display: block;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+}
+.msgbox .rc-tp {
+    background-position: -4px 0;
+    margin-bottom: -5px;
+}
+.msgbox .rc-tp, .msgbox .rc-bt {
+    display: block;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1000;
+}
+.msgbox .rc-bt span {
+    background-position: 0 -4px;
+}
+.msgbox .rc-tp span, .box .rc-bt span {
+    float: right;
+    height: 5px;
+    width: 5px;
+}
+/* pagination */
+.pagination {
+	height:22px;
+	font-size:12px;
+	font-family:Tahoma;
+	clear:both;
+}
+.page-top:after, .page-bottom:after {
+	content:"";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.page-top, .page-bottom {
+	zoom:1;
+}
+#pagination_div .page-top {
+	float:right;
+	margin-right:60px;
+}
+.page-mini {
+	padding-top:3px;
+}
+.pagination a, .page-info, .page-prev, .page-cur, .page-start, .page-end, .page-break {
+	float:left;
+	width:20px;
+	height:20px;
+	margin:0 3px 0 0;
+	overflow:hidden;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height:20px;
+}
+.page-mini a, .page-mini .page-cur, .page-mini .page-prev, .page-mini .page-cur, .page-mini .page-start, .page-mini .page-end, .page-mini .page-break {
+	height:14px;
+	width:auto;
+	padding:0 2px;
+	line-height:16px;
+}
+.pagination a {
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+.page-mini a {
+	border:none;
+	background-color:transparent;
+}
+.pagination .page-100 {
+	width:26px;
+}
+.page-mini .page-100 {
+	width:auto;
+}
+.pagination a:link {
+	color:#03c;
+	text-decoration:none;
+}
+.pagination a:visited {
+	color:#953597;
+	text-decoration:none;
+}
+.pagination a:hover, .pagination a:active {
+	color:#fff;
+	background-color:#09f;
+	text-decoration:none;
+}
+.pagination .mini a:hover, .pagination .mini a:active {
+	color:#f50;
+	background-color:transparent;
+}
+.pagination .page-cur, .pagination .mini-page .page-cur {
+	margin:0;
+	font-weight:700;
+	color:#f60;
+	vertical-align:super;
+	width:auto;
+	padding:0 5px 0 2px;
+}
+.page-break {
+	font-family:SimSun;
+	border-width:0;
+	width:22px;
+	height:22px;
+}
+.pagination .page-trigger {
+	background-position:-83px -43px;
+}
+.pagination .page-trigger:hover, .pagination .page-trigger:active {
+	background-position:-47px -43px;
+}
+.page-prev, .page-next, .page-start, .page-end, .page-skip button, .page-trigger {
+	background-image:url(http://a.tbcdn.cn/app/matrix/img/group_pagination.gif);
+	background-color:#fff;
+	background-repeat:no-repeat;
+}
+.page-mini .page-prev, .page-mini .page-next {
+	background-color:#fff;
+}
+.page-info, .page-mini .page-info {
+	width:auto;
+	color:#a0a0a4;
+	letter-spacing:1px;
+}
+.pagination .page-prev {
+	border:1px solid #ccc;
+	background-position:6px 5px;
+}
+.page-mini .page-prev {
+	width:14px;
+	padding:0;
+	background-position:4px 3px;
+}
+.pagination .page-start {
+	border:1px solid #ccc;
+	background-position:6px -11px;
+}
+.page-mini .page-start {
+	width:14px;
+	padding:0;
+	background-position:4px -13px;
+}
+.pagination .page-next, .pagination .page-end {
+	padding:0 12px 0 5px;
+	width:auto;
+	border:1px solid #ccc;
+	background-position:-52px 5px;
+}
+.page-mini .page-next, .page-mini .page-end {
+	width:42px;
+	padding:0;
+	border:1px solid #ccc;
+	background-position:2px -29px;
+}
+.pagination .page-end {
+	background-position:-52px -11px;
+}
+.page-prev span, .page-start span, .page-mini .page-next span, .page-mini .page-end span, .page-skip button span {
+	display:none;
+}
+
+/* Modules: =END!
+-------------------------------------------------------------- */

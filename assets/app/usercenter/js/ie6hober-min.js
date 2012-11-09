@@ -1,0 +1,1 @@
+(function(){var b=YAHOO;D=b.util.Dom;E=b.util.Event;if(YAHOO.env.ua.ie===6){var a=D.getElementsByClassName("bangpai-item");E.on(a,"mouseover",function(){D.addClass(this,"ie6-hover")});E.on(a,"mouseout",function(){D.removeClass(this,"ie6-hover")})}})();

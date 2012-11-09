@@ -1,217 +1,68 @@
-(function () {
-    KISSY.use("editor/full", function (S, Editor) {
-
-        var cfg = {
-            // 是否初始聚焦
-            focused:false,
-            autoRender:true,
-            attachForm:true,
-            // 自定义样式
-            // customStyle:"p{line-height: 1.4;margin: 1.12em 0;padding: 0;}",
-            // 自定义外部样式
-            // customLink:["http://localhost/customLink.css","http://xx.com/y2.css"],
-            // render:"#container",           
-            render:'#editorContainer',
-            width:'80%',
-            height:"400px"
-        };
-
-        var plugins = ("source-area" +
-            ",separator" +
-            ",bold" +
-            ",italic," +
-            "font-family," +
-            "font-size," +
-            "strike-through," +
-            "underline," +
-            "separator," +
-            "checkbox-source-area" +
-            ",image" +
-            ",link" +
-            ",fore-color" +
-            ",back-color" +
-            ",resize" +
-            ",draft" +
-            ",undo" +
-            ",indent" +
-            ",outdent" +
-            ",unordered-list" +
-            ",ordered-list" +
-            //",elementPath" +
-            ",page-break" +
-            ",preview" +
-            ",maximize" +
-            ",remove-format" +
-            ",heading" +
-            ",justify-left" +
-            ",justify-center" +
-            ",justify-right" +
-            ",table" +
-            ",smiley" +
-            ",flash" +
-            ",xiami-music" +
-            ",multiple-upload" +
-            ",video" +
-            ",drag-upload").split(",");
-
-        var fullPlugins = [];
-
-        S.each(plugins, function (p, i) {
-            fullPlugins[i] = "editor/plugin/" + p + "/";
-        });
-
-        var pluginConfig = {
-            link:{
-                target:"_blank"
-            },
-            "image":{
-                defaultMargin:0,
-                // remote:false,
-                upload:{
-                    serverUrl:"upload.php",
-                    serverParams:{
-                        waterMark:function () {
-                            return S.one("#ke_img_up_watermark_1")[0].checked;
-                        }
-                    },
-                    suffix:"png,jpg,jpeg,gif",
-                    fileInput:"Filedata",
-                    sizeLimit:1000, //k
-                    extraHtml:"<p style='margin-top:10px;'><input type='checkbox' id='ke_img_up_watermark_1' checked='checked'> 图片加水印，防止别人盗用</p>"
+(function(){
+    if( !window.DM ) window.DM = {};
+    function $ () {
+        var elements = new Array();
+        if ( arguments.length === 1 ) {
+            if ( typeof arguments[0] === 'string') {
+                return document.getElementById( arguments[0] );
+            } else if ( isArray( arguments[0] ) ) {
+                for ( var i = 0; i < arguments[0].length; i++) {
+                    var element = document.getElementById( arguments[0][i] );
+                    elements.push( element );
                 }
-            },
-            "flash":{
-                "defaultWidth":"300",
-                "defaultHeight":"300"
-            },
-            "templates":[
-                {
-                    demo:"模板1效果演示html",
-                    html:"<div style='border:1px solid red'>模板1效果演示html</div><p></p>"
-                },
-                {
-                    demo:"模板2效果演示html",
-                    html:"<div style='border:1px solid red'>模板2效果演示html</div>"
-                }
-            ],
-            "multiple-upload":{
-                serverUrl:"http://localhost/kissy_git/kissy/src/editor/demo/upload.php",
-                serverParams:{
-                    waterMark:function () {
-                        return S.one("#ke_img_up_watermark_2")[0].checked;
-                    }
-                },
-                "previewWidth":"80px",
-                sizeLimit:1000, //k,, numberLimit:15,
-                extraHtml:"<p style='margin-top:10px;'>" +
-                    "<input type='checkbox' " +
-                    "style='vertical-align:middle;margin:0 5px;' " +
-                    "id='ke_img_up_watermark_2'>" +
-                    "<span style='vertical-align:middle;'>图片加水印，防止别人盗用</span></p>"
-            },
-            "video":{
-                urlCfg:[
-                    {
-                        reg:/tudou\.com/i,
-                        url:"http://bangpai.daily.taobao.net/json/getTudouVideo.htm",
-                        paramName:"url"
-                    }
-                ],
-                "urlTip":"请输入优酷网、土豆网、酷7网的视频播放页链接...",
-                "providers":[
-                    {
-                        // 允许白名单
-                        reg:/taohua\.com/i,
-                        //默认高宽
-                        width:480,
-                        height:400,
-                        detect:function (url) {
-                            return url;
-                        }
-                    },
-                    {
-                        reg:/youku\.com/i,
-                        width:480,
-                        height:400,
-                        detect:function (url) {
-                            var m = url.match(/id_([^.]+)\.html$/);
-                            if (m) {
-                                return "http://player.youku.com/player.php/sid/" + m[1] + "/v.swf";
-                            }
-                            m = url.match(/v_playlist\/([^.]+)\.html$/);
-                            if (m) {
-                                return;
-                                //return "http://player.youku.com/player.php/sid/" + m[1] + "/v.swf";
-                            }
-                            return url;
-                        }
-                    },
-                    {
-                        reg:/tudou\.com/i,
-                        width:480,
-                        height:400,
-                        detect:function (url) {
-                            return url;
-                        }
-                    },
-                    {
-                        reg:/ku6\.com/i,
-                        width:480,
-                        height:400,
-                        detect:function (url) {
-                            var m = url.match(/show[^\/]*\/([^.]+)\.html$/);
-                            if (m) {
-                                return "http://player.ku6.com/refer/" + m[1] + "/v.swf";
-                            }
-                            return url;
-                        }
-                    }
-                ]
-            },
-            "draft":{
-                // 当前编辑器的历史是否要单独保存到一个键值而不是公用
-                // saveKey:"xxx",
-                interval:5,
-                limit:10,
-                "helpHtml":"<div " +
-                    "style='width:200px;'>" +
-                    "<div style='padding:5px;'>草稿箱能够自动保存您最新编辑的内容，" +
-                    "如果发现内容丢失，" +
-                    "请选择恢复编辑历史</div></div>"
-            },
-            "resize":{
-                //direction:["y"]
-            },
-
-            "drag-upload":{
-                suffix:"png,jpg,jpeg,gif",
-                fileInput:"Filedata",
-                sizeLimit:1000,
-                serverUrl:"upload.php",
-                serverParams:{
-                    waterMark:function () {
-                        return true;
-                    }
-                }
+                return elements;
+            } else {
+                throw new error( 'arguments illegal' );
             }
-        };
+        }
 
-        KISSY.use(fullPlugins, function (S) {
-            var args = S.makeArray(arguments);
+        for ( var j = 0, len = arguments.length; j < len; j++) {
+            var element = arguments[j];
+            element = document.getElementById( element );
+            elements.push( element );
+        }
+        return elements;
+    }
+    window['DM']['$'] = $;
+    function isArray ( arr ) {
+        return typeof arr === 'object' && arr instanceof Array;
+    }
+    window['DM']['isArray'] = isArray;
+    function addEvent ( node, type, listener ){
+        if ( !( node = $( node ) ) ) return false;
+        if ( node.addEventListener ) {
+            node.addEventListener( type, listener, false);
+        } else if ( node.attachEvent ){
+            node['e'+ type + listener ] = listener;
+            node[type + listener] = function(){
+                node['e' + type + listener]( window.event );
+            }
+            node.attachEvent( type, node[type + listener]);
+        }
+    }
+    window['DM']['addEvent'] = addEvent;
+    function removeEvent( node, type, listener ){
+        if ( !( node = $( node ) ) ) return false;
+        if ( node.removeEventListener ) {
+            node.removeEventListener( type, listener, false );
+        } else if ( node.detachEvent ) {
+            node.detachEvent( type, node[type + listener]);
+            node[type + listener] = null;
+        }
+    }
+    window['DM']['removeEvent'] = removeEvent;
+     function getElementsByClassName ( className, tag, parent ) {
+        parent = parent || document;
+        if ( !( parent = $( parent ) ) ) return false;
+         var allTags = ( tag === '*' && parent.all ) ? parent.all : parent.getELementsByTagName( tag );
+         className = className.replace( /\-/g, '\\-');
+     }
+})()
 
-            args.shift();
+console.log( DM.$( ['t1', 't2'] ) );
+function click(){
+    console.log( 't1 click' );
+    DM.removeEvent( 't1', 'click', click);
+}
+DM.addEvent('t1', 'click', click);
 
-            S.each(args, function (arg, i) {
-                var argStr = plugins[i], cfg;
-                if (cfg = pluginConfig[argStr]) {
-                    args[i] = new arg(cfg);
-                }
-            });
-
-            cfg.plugins = args;
-
-            new Editor(cfg);
-        });
-
-    });
-})();

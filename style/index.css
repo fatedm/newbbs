@@ -6,7 +6,8 @@
  */
  /*>>> +++ sprite +++ <<<*/
  .word,
- .icon-title strong{ 
+ .icon-title strong,
+ .icon-title a{
  	background: url(http://img02.taobaocdn.com/tps/i2/T1NBbSXl4iXXcpMd_M-160-370.png) no-repeat 0 9999px;
  }
  .icon,
@@ -346,7 +347,8 @@
 	height: 18px;
 	padding: 28px 0 9px 0;
 }
-.icon-title strong{
+.icon-title strong,
+.icon-title a{
 	display: block;
 	line-height: 99em;
 	height: 18px;
@@ -502,7 +504,9 @@
 	padding: 15px 0 11px 0;
 }
 .ss-box .icon-title strong,
+.ss-box .icon-title a,
 .layout-ts .icon-title strong,
+.layout-ts .icon-title a,
 .seller-tools .icon-title strong,
 .seller-nav .icon-title strong{
 	height: 20px;
@@ -541,43 +545,43 @@
 
 }
 /*icon*/
-.policy .icon-title strong{
+.policy .icon-title a{
 	background-position: 0 -25px;
 }
-.ju .icon-title strong{
+.ju .icon-title a{
 	background-position: 0 -50px;
 	width: 89px;
 }
-.service .icon-title strong{
+.service .icon-title a{
 	background-position: 0 -75px;
 	width: 107px;
 }
-.assess .icon-title strong{
+.assess .icon-title a{
 	background-position: 0 -100px;
 }
 .experience .icon-title strong{
 	background-position: 0 -125px;
 }
-.honest .icon-title strong{
+.honest .icon-title a{
 	background-position: 0 -150px;
 }
-.share .icon-title  strong{
+.share .icon-title  a{
 	background-position: 0 -175px;
 }
-.deep .icon-title strong{
+.deep .icon-title a{
 	background-position: 0 -200px;
 }
 .ranking-list .icon-title strong{
 	background-position: 0 -225px;
 	width: 160px;
 }
-.zatan .icon-title strong{
+.zatan .icon-title a{
 	background-position: 0 -250px;
 }
-.seller-speak .icon-title strong{
+.seller-speak .icon-title a{
 	background-position: 0 -275px;
 }
-.carve .icon-title strong{
+.carve .icon-title a{
 	background-position: 0 -300px;
 }
 .seller-nav .icon-title strong{

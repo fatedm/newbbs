@@ -1,44 +1,44 @@
 <div id="footer">
 
-    <div class="g_foot">
+<div class="g_foot">
 
     <div class="g_foot-ali">
 
-        <a href="http://page.china.alibaba.com/shtml/about/ali_group1.shtml">é˜¿é‡Œå·´å·´é›†å›¢</a> <b>|</b>
+        <a href="http://page.china.alibaba.com/shtml/about/ali_group1.shtml">°¢Àï°Í°Í¼¯ÍÅ</a> <b>|</b>
 
-        <a href="javascript:void(0)" target="_self" class="g_foot-nohover">é˜¿é‡Œå·´å·´ç½‘ç»œï¼š</a>
+        <a href="javascript:void(0)" target="_self" class="g_foot-nohover">°¢Àï°Í°ÍÍøÂç£º</a>
 
-        <a href="http://www.alibaba.com/">å›½é™…ç«™</a>
+        <a href="http://www.alibaba.com/">¹ú¼ÊÕ¾</a>
 
-        <a href="http://china.alibaba.com/">ä¸­æ–‡ç«™</a>
+        <a href="http://china.alibaba.com/">ÖĞÎÄÕ¾</a>
 
-        <a href="http://seller.aliexpress.com/">å…¨çƒé€Ÿå–é€š</a> <b>|</b>
+        <a href="http://seller.aliexpress.com/">È«ÇòËÙÂôÍ¨</a> <b>|</b>
 
-        <a href="http://www.taobao.com/?id=shouye_taobao">æ·˜å®ç½‘</a>
-
-        <b>|</b>
-
-        <a href="http://www.tmall.com/">å¤©çŒ«</a>
+        <a href="http://www.taobao.com/?id=shouye_taobao">ÌÔ±¦Íø</a>
 
         <b>|</b>
 
-        <a href="http://www.etao.com/">ä¸€æ·˜</a>
+        <a href="http://www.tmall.com/">ÌìÃ¨</a>
 
         <b>|</b>
 
-        <a href="http://www.aliyun.com/">é˜¿é‡Œäº‘</a>
+        <a href="http://www.etao.com/">Ò»ÌÔ</a>
 
         <b>|</b>
 
-        <a href="http://www.yahoo.com.cn/">ä¸­å›½é›…è™</a>
+        <a href="http://www.aliyun.com/">°¢ÀïÔÆ</a>
 
         <b>|</b>
 
-        <a href="http://www.alipay.com/">æ”¯ä»˜å®</a>
+        <a href="http://www.yahoo.com.cn/">ÖĞ¹úÑÅ»¢</a>
 
         <b>|</b>
 
-        <a href="http://ju.taobao.com/">èšåˆ’ç®—</a>
+        <a href="http://www.alipay.com/">Ö§¸¶±¦</a>
+
+        <b>|</b>
+
+        <a href="http://ju.taobao.com/">¾Û»®Ëã</a>
 
         <b>|</b>
 
@@ -46,15 +46,15 @@
 
           <span class="footer-more-panel">
 
-            <a href="http://www.aliresearch.com/">é˜¿é‡Œç ”ç©¶</a><br>
+            <a href="http://www.aliresearch.com/">°¢ÀïÑĞ¾¿</a><br>
 
-            <a href="http://www.alihz.com/">é˜¿é‡Œä¼šå±•</a><br>
+            <a href="http://www.alihz.com/">°¢Àï»áÕ¹</a><br>
 
-            <a href="http://www.hitao.com/">å—¨æ·˜ç½‘</a><br>
+            <a href="http://www.hitao.com/">àËÌÔÍø</a><br>
 
           </span>
 
-          <a href="javascript:void(0);" target="_self" class="footer-more-trigger">æ›´å¤š <s class="arrow arrow-d"></s></a>
+          <a href="javascript:void(0);" target="_self" class="footer-more-trigger">¸ü¶à <s class="arrow arrow-d"></s></a>
 
         </span>
 
@@ -62,25 +62,25 @@
 
     <div class="g_foot-nav">
 
-        <a href="http://www.taobao.com/about/">å…³äºæ·˜å®</a>
+        <a href="http://www.taobao.com/about/">¹ØÓÚÌÔ±¦</a>
 
-        <a href="http://www.taobao.com/about/partners.php">åˆä½œä¼™ä¼´</a>
+        <a href="http://www.taobao.com/about/partners.php">ºÏ×÷»ï°é</a>
 
-        <a href="http://pro.taobao.com/">è¥é”€ä¸­å¿ƒ</a>
+        <a href="http://pro.taobao.com/">ÓªÏúÖĞĞÄ</a>
 
-        <a href="http://service.taobao.com/support/main/service_route.htm">è”ç³»å®¢æœ</a>
+        <a href="http://service.taobao.com/support/main/service_route.htm">ÁªÏµ¿Í·ş</a>
 
-        <a href="http://open.taobao.com/">å¼€æ”¾å¹³å°</a>
+        <a href="http://open.taobao.com/">¿ª·ÅÆ½Ì¨</a>
 
-        <a href="http://www.taobao.com/about/join.php">è¯šå¾è‹±æ‰</a>
+        <a href="http://www.taobao.com/about/join.php">³ÏÕ÷Ó¢²Å</a>
 
-        <a href="http://www.taobao.com/about/contact.php">è”ç³»æˆ‘ä»¬</a>
+        <a href="http://www.taobao.com/about/contact.php">ÁªÏµÎÒÃÇ</a>
 
-        <a href="http://www.taobao.com/sitemap.php">ç½‘ç«™åœ°å›¾</a>
+        <a href="http://www.taobao.com/sitemap.php">ÍøÕ¾µØÍ¼</a>
 
-        <a href="http://www.taobao.com/about/copyright.php">æ³•å¾‹å£°æ˜</a>
+        <a href="http://www.taobao.com/about/copyright.php">·¨ÂÉÉùÃ÷</a>
 
-        <span>&copy; 2012 Taobao.com ç‰ˆæƒæ‰€æœ‰</span>
+        <span>&copy; 2012 Taobao.com °æÈ¨ËùÓĞ</span>
 
     </div>
 
@@ -92,19 +92,19 @@
 
 <script>
 
-// hover effect for ie6
+    // hover effect for ie6
 
-(function(){
+    (function(){
 
-		
 
-		if(-[1,]) return;
 
-    	
+        if(-[1,]) return;
 
-    	var ie6FootHover = document.getElementById("J_FooterMore");
 
-		
+
+        var ie6FootHover = document.getElementById("J_FooterMore");
+
+
 
         ie6FootHover.onmouseenter=function() {
 
@@ -118,7 +118,7 @@
 
         }
 
-})();
+    })();
 
 
 
@@ -132,39 +132,39 @@
 
 .g_foot{
 
-  width: 960px;
+    width: 960px;
 
-  margin: 0 auto;
+    margin: 0 auto;
 
-  font: 12px/1.5 tahoma,arial,å®‹ä½“b8b\4f53;
+    font: 12px/1.5 tahoma,arial,ËÎÌåb8b\4f53;
 
-  padding: 7px 0 9px;
+    padding: 7px 0 9px;
 
-  color: #b0b0b0;
+    color: #b0b0b0;
 
-  text-align: left !important;
+    text-align: left !important;
 
-  position: relative;
+    position: relative;
 
-  clear:both;
+    clear:both;
 
 }
 
 .g_foot a{
 
-  margin: 0 4px;
+    margin: 0 4px;
 
-  color: #3e3e3e;
+    color: #3e3e3e;
 
-  text-decoration:none;
+    text-decoration:none;
 
 }
 
 .g_foot a:hover{
 
-  color: #F60;
+    color: #F60;
 
-  text-decoration: underline;
+    text-decoration: underline;
 
 
 
@@ -172,35 +172,35 @@
 
 .g_foot-ali{
 
-  margin-right: 100px;
+    margin-right: 100px;
 
-  padding-left: 0;
+    padding-left: 0;
 
-  border-bottom: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
 
-  padding-bottom: 8px;
+    padding-bottom: 8px;
 
-  height: 18px;
+    height: 18px;
 
 }
 
 .g_foot-nohover{
 
-  cursor: default;
+    cursor: default;
 
 }
 
 .g_foot-nohover:hover{
 
-  color:#3e3e3e !important;
+    color:#3e3e3e !important;
 
-  text-decoration:none !important;
+    text-decoration:none !important;
 
 }
 
 .g_foot-ali a,.g_foot-ali b{
 
-  float: left;
+    float: left;
 
 
 
@@ -208,75 +208,75 @@
 
 .g_foot-ali b {
 
-  margin: 0 4px;
+    margin: 0 4px;
 
-  color:#d3d3d3;
+    color:#d3d3d3;
 
-  font-weight: normal;
+    font-weight: normal;
 
-  *margin-top:-1px;
+    *margin-top:-1px;
 
-  margin-top:-1px \0/;
+    margin-top:-1px \0/;
 
 }
 
 .g_foot-nav{
 
-  margin-top: 8px;
+    margin-top: 8px;
 
-  line-height: 20px;
+    line-height: 20px;
 
 }
 
 .g_foot-nav span{
 
-  margin-left: 50px;
+    margin-left: 50px;
 
 }
 
 .g_foot-toy{
 
-  position: absolute;
+    position: absolute;
 
-  background: url(http://img01.taobaocdn.com/tps/i1/T1MMPaXkNjXXaXezbh-48-70.png) no-repeat;
+    background: url(http://img01.taobaocdn.com/tps/i1/T1MMPaXkNjXXaXezbh-48-70.png) no-repeat;
 
-  _background: url(http://img01.taobaocdn.com/tps/i1/T1XgzaXX0kXXaXezbh-48-70.png) no-repeat;
+    _background: url(http://img01.taobaocdn.com/tps/i1/T1XgzaXX0kXXaXezbh-48-70.png) no-repeat;
 
-  width: 69px;
+    width: 69px;
 
-  height: 100px;
+    height: 100px;
 
-  display: block;
+    display: block;
 
-  right: 0px;
+    right: 0px;
 
-  top:0px;
+    top:0px;
 
 }
 
-/* IE9 only */
+    /* IE9 only */
 
 :root .g_foot-toy {
 
-    right:-20px\9; 
+    right:-20px\9;
 
- } 
+}
 
 .g_foot-line{
 
-  display: none;
+    display: none;
 
-  position: absolute;
+    position: absolute;
 
-  background: url(http://img01.taobaocdn.com/tps/i1/T1I_56Xl0wXXXXXXXX-104-1.png) no-repeat;
+    background: url(http://img01.taobaocdn.com/tps/i1/T1I_56Xl0wXXXXXXXX-104-1.png) no-repeat;
 
-  width: 104px;
+    width: 104px;
 
-  height: 1px;
+    height: 1px;
 
-  right: 45px;
+    right: 45px;
 
-  top:33px;
+    top:33px;
 
 }
 
@@ -284,21 +284,21 @@
 
 .footer-more {
 
-  cursor: pointer;
+    cursor: pointer;
 
-  z-index: 1;
+    z-index: 1;
 
-  position: relative;
+    position: relative;
 
-  padding-top: 1px;
+    padding-top: 1px;
 
-  width: 82px;
+    width: 82px;
 
-  float: left;
+    float: left;
 
-  *top:-1px;
+    *top:-1px;
 
-  top:-2px \0/;
+    top:-2px \0/;
 
 
 
@@ -306,21 +306,21 @@
 
 .footer-more-trigger {
 
-  position: absolute;
+    position: absolute;
 
 
 
-  padding: 6px 11px 4px 14px;
+    padding: 6px 11px 4px 14px;
 
-  width: 37px;
+    width: 37px;
 
-  line-height: 1.3;
+    line-height: 1.3;
 
-  border: 1px solid #fff;
+    border: 1px solid #fff;
 
-  left:-12px;
+    left:-12px;
 
-  top:-5px;
+    top:-5px;
 
 }
 
@@ -346,63 +346,63 @@
 
 .footer-more-trigger .arrow-d {
 
-  border-color: #666 transparent transparent transparent;
+    border-color: #666 transparent transparent transparent;
 
-  border-top-style: solid;
+    border-top-style: solid;
 
-  right: 12px;
+    right: 12px;
 
-  top: 11px;
+    top: 11px;
 
 }
 
 .footer-more-panel {
 
-  text-align: left;
+    text-align: left;
 
-  position: absolute;
+    position: absolute;
 
-  right: 26px;
+    right: 26px;
 
-  bottom: -90px;
+    bottom: -90px;
 
-  padding: 7px 3px 2px 2px;
+    padding: 7px 3px 2px 2px;
 
-  border: 1px solid #C5C5C5;
+    border: 1px solid #C5C5C5;
 
-  width: 57px;
+    width: 57px;
 
-  background: 
+    background:
 
-  white;
+        white;
 
-  line-height: 1.9;
+    line-height: 1.9;
 
-  display: none;
+    display: none;
 
 }
 
 .footer-more-panel a {
 
-  float: none;
+    float: none;
 
-  margin-right: 3px;
+    margin-right: 3px;
 
 }
 
 .footer-more-hover .footer-more-trigger,.footer-more:hover .footer-more-trigger {
 
-  border-color: #c5c5c5;
+    border-color: #c5c5c5;
 
-  background: #fff;
+    background: #fff;
 
-  border-bottom: 0;
+    border-bottom: 0;
 
 }
 
 .footer-more-hover .footer-more-panel,.footer-more:hover .footer-more-panel  {
 
-  display: block;
+    display: block;
 
 }
 
@@ -410,31 +410,31 @@
 
 .footer-more-hover .footer-more-trigger .arrow-d,.footer-more:hover .footer-more-trigger .arrow-d {
 
-  -moz-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
 
-  -moz-transform-origin: 50% 30%;
+    -moz-transform-origin: 50% 30%;
 
-  -o-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 
-  -o-transform-origin: 50% 30%;
+    -o-transform-origin: 50% 30%;
 
-  -webkit-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 
-  -webkit-transform-origin: 50% 30%;
+    -webkit-transform-origin: 50% 30%;
 
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 
-  transform-origin: 50% 30%;
+    transform-origin: 50% 30%;
 
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation = 2);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation = 2);
 
-  *top: 8px;
+    *top: 8px;
 
-  top:8px \0/;
+    top:8px \0/;
 
 }
 
-</style>   
+</style>
 
 </div>
 <script src="../script/<?php echo $page ?>.js"></script>

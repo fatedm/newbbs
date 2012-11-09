@@ -1,0 +1,21 @@
+#mytaobao-extra .mytaobao-bar-grey {
+	display: none;
+}
+
+#mytaobao-extra .inquiry {
+	padding: 0;
+}
+
+#mytaobao-extra .inquiry p {
+	margin: 5px 0;
+}
+
+#mytaobao-extra .inquiry textarea {
+	width: 335px;
+	height: 60px;
+}
+
+#mytaobao-extra .inquiry .submit {
+	margin: 5px 0;
+	text-align: center;
+}

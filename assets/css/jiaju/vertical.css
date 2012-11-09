@@ -1,0 +1,702 @@
+#main-sub-nav{
+	display:none;
+}
+
+#content{
+	width:990px;
+	margin:0 auto;
+}
+
+.crumb{
+	padding:16px 0;
+	color:#404040;
+}
+.crumb a{
+	color:#404040;
+}
+.crumb span{
+	color:#bdbdbd;
+	padding-left:4px;
+}
+.crumb .bbs-index{
+	background:url(http://img01.taobaocdn.com/tps/i1/T1SnSoXdBlXXXXXXXX-16-800.png) no-repeat 2px -208px;
+	padding-left:18px;
+	color:#404040;
+}
+.upload-topic {
+	width: 988px;
+}
+
+#footer {
+    width:100% !important;
+}
+
+
+    #J_slide_play {
+		position: relative;
+		width: 240px;
+        height: 300px;
+        /* border: 1px solid #B6D1E6; */
+        overflow: hidden;
+    }
+
+    #J_slide_play .ks-switchable-nav {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        z-index: 99;
+    }
+
+    #J_slide_play .ks-switchable-nav li {
+        float: left;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin-left: 2px;
+        background-color: #fff;
+        /*border: 1px solid #F47500;*/
+        color: #000;
+        text-align: center;
+        cursor: pointer;
+        list-style: none;
+
+    }
+
+    #J_slide_play .ks-switchable-nav li.ks-active {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin-top: 0;
+        color: #FFF;
+        background-color: #7b2705;
+    }
+
+    #J_slide_play .ks-switchable-content {
+        margin: 0;
+        padding: 0;
+    }
+    #J_slide_play .ks-switchable-content li {
+        height: 300px;
+        width: 240px;
+        overflow: hidden;
+        margin: 0;
+    }
+    #J_slide_play .ks-switchable-content li a{
+		position:relative;
+	}
+    #J_slide_play .ks-switchable-content li a:hover{
+        text-decoration:none;
+    }
+	#J_slide_play .ks-switchable-content li a span{
+		position:absolute;
+		bottom:10px;
+		display:inline-block;
+		color:#fff;
+		left:10px;
+		font-weight:bold;
+		cursor:pointer;
+	}
+    #J_slide_play .ks-switchable-nav li,
+    #J_slide_play .ks-switchable-trigger-content {
+        position: relative;
+		border-radius:8px;
+    }
+
+    #J_slide_play .ks-switchable-trigger-mask {
+        position: absolute;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        background-color: none;
+        visibility: hidden;
+		border-radius:8px;
+    }
+
+    #J_slide_play .ks-active .ks-switchable-trigger-mask {
+        visibility: visible
+    }
+
+    .list li {
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        list-style-type: circle;
+    }
+	
+	
+	
+#site-search {
+	float:right;
+}
+#site-search .search-box{
+	border: 1px solid #c88266;
+	height:23px;
+	width:252px;
+	float:none;
+	overflow:hidden;
+}
+#site-search span{
+	display:inline-block;
+	height:23px;
+	float:left;
+}
+#site-search span.search-type{
+	width:52px;
+}
+#site-search select{
+	width:52px;
+	border:0 none;
+	height:21px;
+	margin-top:1px;
+	line-height:21px;
+}
+#site-search span.search-query{
+	width:176px;
+}
+#site-search input{
+	border:0 none;
+	border-left:1px solid #e3e3e3;
+	margin-top:1px;
+	height:21px;
+	line-height:21px;
+	background:#fff;
+	width:176px;
+}
+#site-search button{
+	float:left;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	border-radius:2px;
+	font-size:13px;
+	width:23px;
+	height:23px;
+	line-height:23px;
+	background:url(http://img01.taobaocdn.com/tps/i1/T1y.GoXnlbXXXXXXXX-85-200.png) no-repeat 2px -124px;
+	text-indent:-9999px;
+}
+
+
+
+
+/**
+ * 分页样式
+ *
+ * @author yuanxin@taobao.com, mingcheng@taobao.com
+ * @date   2009-03-10
+ */
+
+.pagination {
+    height:22px;
+    font-size:12px;
+    font-family:Tahoma;
+}
+
+/*清除浮动*/
+.page-top:after, .page-bottom:after {
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.page-top, .page-bottom {
+    zoom:1;
+}
+
+
+.page-mini {
+    padding-top:3px;
+}
+
+/*定义浮动元素*/
+.pagination a, .page-info, .page-prev, .page-cur, .page-start, .page-next, .page-end, .page-break {/*默认的翻页采取固定宽度*/
+    float:left;
+    width:26px;
+    height:24px;
+    margin:0 3px 0 0;
+    overflow:hidden;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    line-height:24px;
+}
+.page-mini a, .page-mini .page-cur, .page-mini .page-prev, .page-mini .page-cur, .page-mini .page-start, .page-mini .page-end, .page-mini .page-break {/*袖珍型翻页采取自适应宽度*/
+    height:14px;
+    width:auto;
+    padding:0 2px;
+    line-height:16px;
+}
+
+/*定义a元素的边框和背景色*/
+.pagination a {
+    border:1px solid #a36850;
+	background-color:#fdd3c2;
+	color:#7b2705;
+}
+.page-mini a {
+    border:none;
+    background-color:transparent;
+}
+
+/*单独定义翻页第100页的宽度*/
+.pagination .page-100 {
+    width:26px;
+}
+.page-mini .page-100 {
+    width:auto;
+}
+
+/*定义翻页中链接的样式*/
+/* .pagination a:link {
+    color:#03c;
+    text-decoration:none;
+}
+.pagination a:visited {
+    color:#953597;
+    text-decoration:none;
+} */
+.pagination a:hover{/* ,.pagination a:active */
+    color:#fff;
+    background-color:#7b2705;
+    text-decoration:none;
+}
+.pagination .mini a:hover, .pagination .mini a:active {
+    color:#f50;
+    background-color:transparent;
+}
+
+/*当前页*/
+.pagination .page-cur, .pagination .mini-page .page-cur {
+    /* margin:0; */
+    font-weight:700;
+	color:#7b2705;
+    vertical-align:super;
+	width:28px;
+	height:26px;
+	/* padding:0 5px 0 2px; */
+}
+
+/*定义更多触发器的字体样式*/
+.page-break {
+    font-family:SimSun;
+    border-width:0;
+    width:22px;
+    height:22px;
+    color:#7b2705
+}
+.pagination .page-trigger {
+    background-position:-83px -43px;
+}
+.pagination .page-trigger:hover,.pagination .page-trigger:active {
+    background-position:-47px -43px;
+}
+
+
+/*统一定义翻页插件部分的背景色和背景图片*/
+/*  .page-skip button, .page-trigger {
+    background-image:url(http://a.tbcdn.cn/app/matrix/img/group_pagination.gif);
+    background-color:#fff;
+    background-repeat:no-repeat;
+} */
+.page-prev, .page-next, .page-start, .page-end{
+	background-image:url(http://img01.taobaocdn.com/tps/i1/T1y.GoXnlbXXXXXXXX-85-200.png);
+}
+.page-mini .page-prev, .page-mini .page-next {
+    background-color:#fff;
+}
+
+
+/*翻页信息：当前页数&总页数*/
+.page-info,.page-mini .page-info {
+    width:auto;
+    color:#a0a0a4;
+    letter-spacing:1px;
+}
+
+
+
+/*上一页样式*/
+.pagination .page-prev {
+    border:1px solid #ccc;
+	width:auto;
+    background-position:5px -56px;
+	padding:0 5px 0 12px;
+	background-color: #fff;
+}
+.pagination .page-prev:hover{
+	border: 1px solid #a36850;
+	background-color: #fff;
+	color: #7b2705;
+}
+.page-mini .page-prev { /*袖珍型的向上翻页采用固定宽度*/
+    width:14px;
+    padding:0;
+    background-position:4px 3px;
+}
+
+.pagination .page-start {
+    border:1px solid #ccc;
+    background-position:5px -88px;
+	width:auto;
+	padding:0 5px 0 12px;
+}
+.page-mini .page-start {
+    width:14px;
+    padding:0;
+    background-position:4px -13px;
+}
+
+/*下一页样式*/
+.pagination .page-next, .pagination .page-end { /*向下翻页采用自适应宽度*/
+    padding:0 12px 0 5px;
+    width:auto;
+    border:1px solid #ccc;
+    background-position:-20px -56px;
+	background-color: #fff;
+}
+.pagination a.page-next:hover{
+	border: 1px solid #a36850;
+	background-color: #fff;
+	color: #7b2705;
+}
+.page-mini .page-next,.page-mini .page-end {
+    width:42px;
+    padding:0;
+    border:1px solid #ccc;
+    background-position:2px -29px;
+}
+
+.pagination .page-end{
+    background-position:-20px -88px;
+}
+.page-mini .page-end {
+    background-position:-60px -29px;
+}
+
+/*快捷搜索翻页*/
+.page-skip {
+    float:left;
+    padding:0 0 0 8px;
+	display:inline-block;
+	height:26px;
+	line-height:26px;
+	color:#333;
+}
+.page-skip input{
+    margin:0 2px;
+	text-align:center;
+    vertical-align:middle;
+    height:24px;
+    font-size:10px;
+    line-height:24px;
+    padding:0;
+    width:26px;
+    font-size:12px;
+	border:1px solid #dcdcdc;
+}
+.page-skip button{
+    cursor:pointer;
+    border:1px solid #d2d2d2;;
+    margin:0 0 0 8px;
+    /* vertical-align:text-bottom; */
+    vertical-align:middle;
+    width:50px;
+    height:18px;
+    background-color:#fbfbfb;
+    line-height:26px\9\0;
+    line-height:18px\0;
+    /* background-position:0 100%; */
+}
+
+/*隐藏部分文字*/
+/* .page-prev span, .page-start span ,*/ .page-mini .page-next span, .page-mini .page-end span, .page-skip button span {
+    display:none;
+}
+
+.col-sub .sidebar {
+    background-color:#fff;
+	border:2px solid #c88266;
+}
+
+.col-sub .sidebar a, .col-sub .sidebar a:visited {
+    font-size:12px;
+    color:#666;
+    text-decoration:none;
+    line-height:25px;
+}
+.col-sub .sidebar a:hover {
+    color:#FF9900;
+    width:150px;
+}
+.col-sub .sidebar dt {
+    padding:8px 0 8px 0;
+    margin:0 5px;
+    border-bottom:1px solid #f1f1f1;
+    cursor:pointer;
+}
+.col-sub .sidebar strong {
+    padding-left:20px;
+    font-size:13px;
+	background: url(http://img04.taobaocdn.com/tps/i4/T1SIFKXe8rXXXXXXXX-12-12.gif) no-repeat 5px 5px;
+	_background-position: 5px 0;
+}
+.col-sub .sidebar dt.closed strong {
+	background: url(http://img01.taobaocdn.com/tps/i1/T1GJdKXnXgXXXXXXXX-12-12.gif) no-repeat 5px 5px;
+	_background-position: 5px 0;
+}
+.col-sub .sidebar dd.hidden {
+    display:none;
+}
+
+.col-sub .sidebar dd {
+    margin-left:5px;
+}
+.col-sub .sidebar li{
+    border-bottom:1px solid #f1f1f1;
+    margin:0 5px;
+	padding-left:10px;
+}
+.col-sub .sidebar li a {
+    margin-left:5px;
+}
+.col-sub .sidebar li.current {
+	background-color: #a2390e;
+	font-weight:bold;
+	margin-right:10px;
+/*	margin:5px 5px 5px 0;*/
+}
+.col-sub .sidebar li.current a {
+	font-size:12px;
+	line-height:20px;
+	color:#fff !important;
+}
+
+/* 搜索提示 */
+.searchh3{
+	border:1px solid #a36850;
+	background-color:#f4f0ea;
+	padding:5px;
+	font-size:12px;
+	font-weight:normal;
+	margin-top:5px;
+}
+.searchh3 span{
+	color:#f60;
+	font-weight:bold;
+}
+
+/*---------------------------------改版 by ck0123456@gmail.com---------------------------------------*/
+
+.ext-sub-channel,
+.ext-sub-channel .ext-sub-channel-l,
+.ext-sub-channel .ext-sub-channel-r,
+.ext-sub-channel .ext-sub-channel-item:hover,
+.ext-sub-channel .ext-sub-channel-selected,
+.ext-sub-channel .ext-sub-channel-item span {
+	background: url("http://img04.taobaocdn.com/tps/i4/T1oROxXdBcXXXXXXXX-16-120.png") no-repeat;
+}
+
+.ext-sub-channel {
+	position: relative;
+	height: 33px;
+	_height: 26px;
+	margin-bottom: 8px;
+	padding: 0px 6px;
+	_padding-top: 7px;
+	border-bottom: solid 2px #a36850;
+	background-repeat: repeat-x;
+	background-position: 0px -33px;
+	color: #ffc8cf;
+	line-height: 33px;
+}
+
+.catalog-page .ext-sub-channel {
+	margin-top: 30px;
+}
+
+.detail-page .ext-sub-channel {
+	margin: 30px auto 0 auto;
+}
+
+.ext-sub-channel a,
+.ext-sub-channel a:hover {
+	text-decoration: none;
+}
+
+.ext-sub-channel .ext-sub-channel-l,
+.ext-sub-channel .ext-sub-channel-r {
+	position: absolute;
+	top: 0px;
+	width: 4px;
+	height: 33px;
+}
+
+.ext-sub-channel .ext-sub-channel-l {
+	left: 0px;
+	background-position: 0px 0px;
+}
+
+.ext-sub-channel .ext-sub-channel-r {
+	right: 0px;
+	background-position: -5px 0px;
+}
+
+.ext-sub-channel .ext-sub-channel-item {
+	display: inline-block;
+	*position: relative;
+	position: relative\0;
+	height: 20px;
+	padding: 0px 6px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #591b02;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.ext-sub-channel .ext-sub-channel-item:hover,
+.ext-sub-channel .ext-sub-channel-selected {
+	background-repeat: repeat-x;
+	background-position: 0px -67px;
+	color: #591b02;
+}
+
+.ext-sub-channel .ext-sub-channel-bar {
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	background: #d1cbbb;
+	border-right: solid 1px #d6bfa4;
+	vertical-align: middle;
+	font-size: 0px;
+}
+
+.ext-sub-channel .ext-sub-channel-item span {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 4px;
+	height: 20px;
+	font-size: 0px;
+}
+
+.ext-sub-channel .ext-sub-channel-selected .ext-channel-item-l {
+	display: block;
+	left: 0px;
+	background-position: 0px -94px;
+}
+
+.ext-sub-channel .ext-sub-channel-selected .ext-channel-item-r {
+	display: block;
+	right: 0px;
+	background-position: -5px -94px;
+}
+
+#pagination_div .page-top, #pagination_div_top .page-top {
+	margin-bottom: 5px;
+	float: right;
+}
+
+.pagination a {
+	border: 1px solid #a36850;
+	background-color: #fdd3c2;
+}
+
+.pagination .page-start, .pagination .page-prev {
+	padding-left: 15px;
+}
+
+.pagination .page-next, .pagination .page-end {
+	padding-right: 15px;
+}
+
+.pagination .page-start {
+	background-position: 5px -92px;
+}
+
+.pagination .page-end , .pagination span.page-next {
+	background-position: -20px -92px;
+	border:1px solid #ccc;
+}
+
+.pagination .page-prev {
+	background-position: 5px -60px;
+}
+
+.pagination a.page-next {
+	background-position: -20px -60px;
+	border:1px solid #ccc;
+}
+
+.pagination a, .page-info, .page-prev, .page-cur, .page-start, .page-next, .page-end, .page-break, .pagination .page-cur, .pagination .mini-page .page-cur {
+	_display: inline;
+	*zoom: 1;
+	width: auto;
+	height: 18px;
+	padding: 0 6px;
+	line-height: 18px;
+	color: #591b02;
+}
+
+.pagination a, .pagination .page-cur {
+	font-weight: bold;
+}
+
+.pagination .page-start, .pagination .page-prev, .pagination .page-next, .pagination .page-end, .pagination span.page-next {
+	font-weight: normal;
+}
+
+.pagination .page-cur {
+	border: solid 1px #a36850;
+	background: #904323;
+	color: #fff;
+}
+
+.page-break {
+	padding: 0;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.page-skip input {
+	height: 18px;
+	margin: 0;
+	line-height: 16px;
+}
+
+.page-skip {
+	float: none\0;
+	*float: none;
+	*zoom: 1;
+	height: 18px;
+	line-height: normal;
+}
+
+.page-skip button {
+	height: 20px;
+	background: #fff;
+	border-color: #dcdcdc;
+	line-height: 18px;
+}
+
+.top-pag {
+	float: right;
+	text-align: right;
+}
+
+.top-pag .pagination {
+	_float: right;
+	_text-align: right;
+}
+
+.catalog-page #site-search {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	float: none;
+}
+
+/*---------------------------------end---------------------------------------*/
+

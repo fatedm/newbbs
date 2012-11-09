@@ -1,0 +1,1 @@
+(function(){var c=YAHOO,b=c.util.Dom,a=c.util.Event;TB.namespace("CheckFileType");TB.CheckFileType=function(g,f){var e=g.lastIndexOf("."),h=g.substring(e+1,g.length).toLowerCase();for(var d=0;d<f.length;d++){if(h==f[d]){return true}}return false}})();

@@ -1,0 +1,294 @@
+/* 背景 */
+.table tr th, .button1, .button2, .button3, .button4, .text-input, .rank-star
+{ background:url(http://img01.taobaocdn.com/tps/i1/T1vaxVXbduXXXXXXXX-400-94.png) no-repeat 0 -999em; }
+
+/* 表格 */
+#table-form {
+	width:720px;
+	padding:14px;
+	font:12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+	color:#4D4D4D;
+}
+
+#table-form h2 {
+	border-bottom:1px solid #BFC5C7;
+	font-size:14px;
+	line-height:32px;
+	font-weight:400;
+	margin-bottom:20px;
+}
+
+#table-form p.one-line-text{
+	margin-bottom:15px;
+}
+
+#textarea-form {
+	width:720px;
+	padding:14px;
+	padding-top:0px;
+}
+
+.check-box li {
+	margin-bottom:15px;
+	padding-left:80px;
+	line-height:25px;
+	position:relative;
+}
+
+.check-box li.last {
+	padding-top:5px;
+}
+
+.check-box li.last input {
+	margin-right:5px;
+}
+
+.check-box li label {
+	float:left;
+	width:80px;
+	height:25px;
+	text-align:right;
+	margin-left:-85px;
+}
+
+.check-box li span {
+	padding-left:7px;
+}
+
+.check-box li p {
+	line-height:1em;
+	font-size:12px;
+	margin-bottom:-5px;
+	padding-top:5px;
+}
+
+.text-input {
+	width:300px;
+	height:23px;
+	line-height:23px;
+	padding:0 4px;
+	border:1px solid #ABC0CC;
+	background-position:0 -71px;
+	vertical-align:middle;
+}
+
+select.text-input {
+	width:310px;
+	height:25px;
+	padding:4px 0;
+}
+
+select.text-input option {
+	line-height:1em;
+	height:15px;
+	padding:5px;
+	*height:25px;
+}
+
+textarea.text-input {
+	width:610px;
+	height:53px;
+	background:#fff;
+}
+
+/* 按钮 */
+.buttons {
+	height:30px;
+	line-height:29px;
+	border:none;
+	color:#E8EEF2;
+	font-size:14px;
+	cursor:pointer;
+	text-align:center;
+	vertical-align:middle;
+	*line-height:30px;
+}
+
+a.buttons:hover{
+	text-decoration:none;
+	color:#E8EEF2;
+}
+
+.button1 {
+	float:right;
+	width:93px;
+	background-position:-148px 0;
+}
+
+.button2 {
+	width:73px;
+	background-position:-74px 0;
+}
+
+.button3 {
+	width:73px;
+	background-position:0 0;
+	color:#006D8D;
+}
+
+a.button3 {
+	display:inline-block;
+	_display:inline;
+	*zoom:1;
+}
+
+a.button3:hover {
+	color:#006D8D;
+}
+
+.button4 {
+	width:63px;
+	height:25px;
+	background-position:-243px 0;
+}
+
+.rank-star {
+	display:inline-block;
+	width:18px;
+	height:15px;
+	padding-right:1px;
+	background-position:-382px 0;
+	_display:inline;
+	_zoom:1;
+}
+
+/* table */
+.table {
+	width:720px;
+	border:1px solid #BFC6C8;
+	border-bottom:none;
+	border-right:none;
+}
+
+.table tr th, .table tr td {
+	padding:0 15px;
+	height:36px;
+	line-height:36px;
+	background-color:#F5F5F5;
+	border-bottom:1px solid #D8D8D8;
+	border-right:1px solid #D8D8D8;
+	text-align:left;
+}
+
+.table tr th {
+	height:39px;
+	line-height:39px;
+	background-position:0 -31px;
+	background-repeat:repeat-x;
+	border-bottom:1px solid #D3D2D1;
+	border-right:1px solid #bbb;
+	font-size:14px;
+}
+
+td.operate a {
+	padding-right:17px;
+	color:#2181D3;
+	*padding-right:16px;
+}
+
+td.operate a:hover{
+	text-decoration:underline;
+}
+
+td.checkbox input {
+	position:relative;
+	bottom:-2px;
+	margin-right:5px;
+}
+
+td.img img {
+	float:left;
+	width:18px;
+	height:22px;
+	padding-right:1px;
+}
+
+/* box */
+.box {
+	
+}
+
+.box .hd {
+	height:34px;
+	line-height:34px;
+	padding:0 10px;
+	background:#E4E6E7;
+	border:1px solid #B3C2CA;
+	border-bottom:none;
+	font-size:14px;
+}
+
+.box .bottom {
+	border-top:none;
+	border-bottom:1px solid #B3C2CA;
+}
+
+.box .hd em {
+	font-size:12px;
+	color:#808080;
+	font-style:normal;
+}
+
+.box .bd {
+	padding:18px 10px;
+	border:1px solid #BFC6C8;
+	background:#FAFAFA;
+}
+
+.box .page-nav {
+	position:relative;
+	padding-left:37px;
+	font-size:12px;
+}
+
+.box .page-nav .checkbox {
+	position:absolute;
+	top:11px;
+	left:15px;
+	*top:5px;
+	_top:7px;
+}
+
+.box .page-nav .delete-button {
+	position:absolute;
+	top:7px;
+	left:90px;
+}
+
+.page-nav ul {
+	position:absolute;
+	top:0;
+	right:10px;
+	_padding-top:5px;
+}
+
+.page-nav ul li {
+	display:inline;
+}
+
+
+.clearfix {
+	margin-bottom:10px;
+	*zoom:1;
+}
+.clearfix:after {
+    content:'\0020';
+    display:block;
+    height:0;
+    clear:both;
+}
+
+/*
+ * 系统信息
+ */
+.sys-message{
+	color:red;
+	font-size:12px;
+	word-wrap:break-word;
+}
+/*
+ * IE6 7 BUG fix
+ */
+.pagination{
+	*margin-top:-35px;
+}

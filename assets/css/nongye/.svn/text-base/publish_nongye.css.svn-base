@@ -1,0 +1,94 @@
+/**
+ * 宠物论坛定制样式 -- 发布按钮
+ * @author ck0123456@gmail.com
+ */
+
+#J_PublishButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 81px;
+	background: url("http://img04.taobaocdn.com/tps/i4/T1pNLdXnliXXcgg2_v-150-282.png") no-repeat;
+	overflow: hidden;
+	text-align: center;
+	font-size: 12px;
+}
+
+#J_PublishButton a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.catalog-page #J_PublishButton {
+	background-position: 0px -75px;
+}
+
+.catalog-page #J_PublishButton:hover, .catalog-page #J_PublishButton.hover {
+	background-position: 0px -96px;
+}
+
+.detail-page #J_PublishButton {
+	background-position: 0px 0px;
+}
+
+.detail-page #J_PublishButton:hover, .detail-page #J_PublishButton.hover {
+	background-position: 0px -25px;
+}
+
+.catalog-page #J_PublishButton a {
+	height: 21px;
+	line-height: 21px;
+}
+
+.detail-page #J_PublishButton a {
+	height: 25px;
+	line-height: 25px;
+}
+
+.catalog-page #J_PublishButton ul a {
+	height: 25px;
+	line-height: 25px;
+}
+
+#J_PublishButton ul {
+	display: none;
+	list-style: none;
+	position: relative;
+	top: -1px;
+	background: #d4f1fc;
+	border: solid 1px #3dbcf0;
+	border-top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#J_PublishButton:hover ul, #J_PublishButton.hover ul {
+	display: block;
+}
+
+#J_PublishButton ul a:hover {
+	background: #94dcfa;
+}
+
+#J_PublishButton a s {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	vertical-align: middle;
+	background: url("http://img01.taobaocdn.com/tps/i1/T15MtUXedCXXXXXXXX-16-800.png") no-repeat;
+	font-size: 0;
+}
+
+#J_PublishButton .detail-href s {
+	background-position: 0px 0px;
+}
+
+#J_PublishButton .vote-href s {
+	background-position: 0px -20px;
+}
+
+#J_PublishButton .picset-href s {
+	background-position: 0px -773px;
+}

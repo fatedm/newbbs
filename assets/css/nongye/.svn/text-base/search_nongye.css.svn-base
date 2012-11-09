@@ -1,0 +1,71 @@
+/**
+ * 宠物论坛定制样式 -- 搜索框
+ * @author ck0123456@gmail.com
+ */
+
+#site-search {
+	float:right;
+	font-size: 12px;
+}
+#site-search .search-box{
+	border: 1px solid #668f00;
+	height:23px;
+	width:252px;
+	float:none;
+	overflow:hidden;
+}
+#site-search span{
+	display:inline-block;
+	height:23px;
+	float:left;
+}
+#site-search span.search-type{
+	width:52px;
+}
+#site-search select{
+	width:52px;
+	border:none;
+	height:21px;
+	margin-top:1px;
+	line-height:21px;
+}
+#site-search span.search-query{
+	width:176px;
+}
+#site-search input{
+	border:0 none;
+	border-left:1px solid #668f00;
+	margin-top:1px;
+	height:21px;
+	line-height:21px;
+	background:#fff;
+	width:176px;
+	outline: none !important;
+}
+#site-search button{
+	float:left;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	border-radius:2px;
+	font-size:13px;
+	width:23px;
+	height:23px;
+	line-height:23px;
+	background:url("http://img04.taobaocdn.com/tps/i4/T1pNLdXnliXXcgg2_v-150-282.png") no-repeat 2px -118px;
+	text-indent:-9999px;
+}
+
+/* 搜索提示 */
+.searchh3 {
+	border: 1px solid #668f00;
+	background-color: #7f9db9;
+	padding: 5px;
+	font-size:12px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+.searchh3 span {
+	color: #f60;
+	font-weight: bold;
+}

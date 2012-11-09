@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="gbk"/>
+    <title> 淘宝论坛 </title>
+    <link rel="shortcut icon" href="http://www.taobao.com/favicon2.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://a.tbcdn.cn/??tbsp/reset-grids.css,apps/bbs/css/muying/bbs.v3.css?t=201210161113.css"/>
+    <script src="http://a.tbcdn.cn/??s/kissy/1.2.0/kissy-min.js?t=201210161113.js"></script>
+    <link rel="stylesheet" href="http://a.tbcdn.cn/??tbsp/reset-grids.css,apps/bbs/css/bbs.v3.css?t=201210161113.css"/>
+    <style>html, body { overflow: hidden; }</style>
+    <script src="http://a.tbcdn.cn/tbra/1.0/tbra-aio.js?t=201003241751.js"></script>
+</head>
+<body scroll="no">
+<script type=text/javascript>
+    var _SPM_a='';
+    var _SPM_b='';
+</script>
+<script type="text/javascript">
+    (function (d) {
+        var t=d.createElement("script");t.type="text/javascript";t.async=true;t.id="tb-beacon-aplus";
+        t.setAttribute("exparams","category=&userid=&aplus");
+        t.src=("https:"==d.location.protocol?"https://s":"http://a")+".tbcdn.cn/s/aplus_v2.js";
+        d.getElementsByTagName("head")[0].appendChild(t);
+    })(document);
+</script>
+
+<script type="text/javascript">
+    (function (d) {
+        var ta=d.createElement("script");ta.type="text/javascript";ta.async=true;ta.id="tb-beacon";
+        ta.setAttribute("exparams","category=&userid=&tid=cp%3d0%26ci%3d1%5f1&channel=112&atpanel_end");
+        ta.src=("https:"==d.location.protocol?"https://s":"http://a")+".tbcdn.cn/s/atp.js";
+        d.getElementsByTagName("head")[0].appendChild(ta);
+    })(document);
+</script>
+
+<script type="text/javascript">
+    (function (d) {
+        var ta=d.createElement("script");ta.type="text/javascript";ta.async=true;ta.id="tb-beacon-ac";
+        ta.setAttribute("exparams","category=&userid=&channel=112&");
+        ta.src=("https:"==d.location.protocol?"https://s":"http://a")+".tbcdn.cn/s/ac.js";
+        d.getElementsByTagName("head")[0].appendChild(ta);
+    })(document);
+</script>
+
+
+
+
+
+<div class="pop" id="zhuwei_iframe">
+    <form id="weiwang_form" method="post" >
+        <input type="hidden" value="anything" name="event_submit_do_rate">
+        <input type="hidden" name="action" value="/forum/forum_thread_action"/>
+        <input type="hidden" value="1338197" name="_fmw.ra._0.g">
+        <input type="hidden" value="259452549" name="_fmw.ra._0.t">
+        <input type="hidden" value="0" name="_fmw.ra._0.r">
+        <input type="hidden" value="e6fb8ee6e338e" name="_fmw.ra._0.tb" id="tbToken">
+        <div class="hd"> 威望：
+            <select name="_fmw.ra._0.ra" id="J_weiwang_select_coin">
+                <option>请选择</option>
+                <option value="-3" >-3</option>
+                <option value="-2" >-2</option>
+                <option value="-1" >-1</option>
+                <option value="1" >+1</option>
+                <option value="2" >+2</option>
+                <option value="3" >+3</option>
+                <option value="4" >+4</option>
+                <option value="5" >+5</option>
+            </select>
+            点,您的助威点数还有<em id="J_zhuwei_remainCount">50</em>点<a target="_blank" class="help" href="http://bangpai.taobao.com/group/thread/151303-6663255.htm">助威有什么用?</a> </div>
+        <hr>
+        <div class="bd">
+            <textarea name="_fmw.ra._0.c" id="J_weiwang_textarea" class="text"></textarea>
+        </div>
+        <div id="share"><input type="checkbox" checked="true" name="share-check" id="share-check">同时分享</div>
+        <div>
+            <div class="red">提醒:评论最多输入30个汉字，不支持英文和数字</div>
+            <button type="button" title="发表" id="J_weiwang_submit">发表</button>
+            <div class="msg zhuwei-tip-error"  style="display:none;" >
+                <div class="error" id="zhuwei-error"></div>
+            </div>
+        </div>
+    </form>
+</div>
+<style>
+    #share{
+        line-height:24px;
+    }
+    #share-check{
+        vertical-align:middle;
+    }
+    #zhuwei_iframe #J_weiwang_textarea{
+        width:420px;
+    }
+    body{
+        background:none !important;
+    }
+</style>
+<script src="http://a.tbcdn.cn/p/snsdk/core.js"></script>
+<script>
+    (function(S){
+        var D = S.DOM,
+            E = S.Event;
+
+        var Detail = window.parent.Detail,
+            title = window.parent.document.title,
+            href = window.parent.location.href,
+            coin_select = D.get("#J_weiwang_select_coin"),
+            text_area = D.get("#J_weiwang_textarea"),
+            checkSubmitFlg = false,
+            error = D.get("#zhuwei-error"),
+            server_error = D.get(".zhuwei-error");
+
+        window.canSubmit = false,
+
+        D.css(text_area, 'width', '420px');
+
+        E.on("#J_weiwang_submit","click",function(ev){
+            checkSubmit();
+            if(canSubmit){
+                Detail.overlay.setHeight(400);
+                var weiwangForm = D.get("#weiwang_form");
+                if(D.get('#share-check').checked){
+                    //分享
+
+                    var configs = {
+                        "type":"webpage",
+                        "key":href,
+                        "app_id" : '12076894',
+                        "title" : '淘宝论坛',
+                        /*"ui":{
+                         isIframe:true,
+                         width:470, //设置到充足大
+                         height:390
+                         },*/
+                        "callback":{
+                            "failure":function () {
+                                //console.log('分享失败');
+                                weiwangForm.submit();
+                                Detail.overlay.hide();
+                            },
+                            "success" :function () {
+                                //console.log('分享成功');
+                                weiwangForm.submit();
+                                Detail.overlay.hide();
+                            },
+                            "hide" : function(){
+                                weiwangForm.submit();
+                                Detail.overlay.hide();
+                            }
+                        },
+                        "comment" : D.val('#J_weiwang_textarea') + '??' + title
+                    }
+                    SNS.login(function () {
+                        SNS.ui("share", configs);
+                    });
+
+
+                }else{
+                    weiwangForm.submit();
+                    Detail.overlay.hide();
+                }
+            }
+        });
+
+        function checkSubmit(){
+            if(!checkDoubleSubmit()){
+                canSubmit = false;
+                return;
+            }
+            if(coin_select.selectedIndex == 0 || text_area.value == "" || /[a-zA-Z0-9]/.test(text_area.value) == true || text_area.value.length > 30) {
+                canSubmit=false;
+                error.parentNode.style.display="block";
+
+                if(coin_select.selectedIndex == 0 && text_area.value==""){
+                    errorMsg = "你还没有选择助威点数和填写评论内容";
+                }else if(coin_select.selectedIndex==0){
+                    errorMsg = "你还没有选择助威点数";
+                }else if(text_area.value == ""){
+                    errorMsg = "你还没有填写评论内容";
+                }else if(text_area.value==""||/[a-zA-Z0-9]/.test(text_area.value)==true){
+                    errorMsg = "助威内容只能输入中文";
+                }else{
+                    errorMsg = "你的评论已经超出30个汉字";
+                }
+
+                error.innerHTML = errorMsg;
+                checkSubmitFlg = false;
+            }else {
+                canSubmit=true;
+                error.parentNode.style.display="none";
+            }
+        }
+
+        function checkDoubleSubmit(){
+            if(!checkSubmitFlg){
+                checkSubmitFlg = true;
+                return true;
+            } else {
+                return false;
+            }
+        }
+    })(KISSY)
+</script>
+
+</body>
+</html>

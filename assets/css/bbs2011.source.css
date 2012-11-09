@@ -1,0 +1,1328 @@
+/* ======== 公用样式 ======== */
+
+/* == 链接 == */
+
+a:link,
+a:visited {
+	color: #4c4c4c;
+}
+
+a:hover,
+a:active {
+	color: #f60;
+}
+/*>>> +++ 解决首页吊顶右侧与正文边框不对齐 +++ <<<*/
+#first-screen .col-extra,#second-screen .col-extra{
+      margin-left:-228px;
+   }
+   #site-nav .quick-menu li.menu-item{
+      _margin-right:2px;
+   }
+
+
+/* == 背景图 == */
+/*#main-nav,*/
+#chl-nav li,
+#chl-nav .current a,
+#chl-nav .current b,
+#category li,
+#J_slide_player .tb-slide-triggers li,
+#J_slide_player .tb-slide-triggers li.current,
+.com-mod .col-head h2,
+.news-2 li,
+.news-4 li,
+#nice-active .ks-switchable-nav li,
+.friends-links dt,
+ol.top,
+#star-show .left-list,
+.separator,
+.nav-popup .close,
+#chl-nav .person-center-con {
+	background:url(http://img02.taobaocdn.com/tps/i2/T1UXCQXb4jXXXXXXXX-950-500.gif) no-repeat;
+}
+
+/* == 文字标题背景 == */
+
+.com-box .brush-title h3 span,
+.com-box .icon-title span,
+.com-mod .col-head h2 span {
+	background: url(http://img02.taobaocdn.com/tps/i2/T1pa2rXlljXXXhT0Lh-141-900.png) no-repeat 999px 999px;
+}
+
+/* == 通用方框：渐变色背景、浅边框、下边距10px == */
+.com-box {
+	border: 1px solid #cfcfcf;
+	
+	background: url(http://img04.taobaocdn.com/tps/i4/T1h16rXnBgXXaXyqTa-5-77.png) repeat-x top;
+	text-align:left;
+}
+
+.com-box h3 {
+	margin:0 15px;
+	padding:7px 0 4px;
+	line-height:1;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.com-box .brush-title {
+	margin-bottom:6px;
+}
+
+.com-box .brush-title h3 {
+	padding-bottom:0;
+	height:25px;
+}
+
+.com-box .brush-title h3 span {
+	display:block;
+	margin-bottom:-10px;
+	text-indent: -999px;
+	overflow:hidden;
+	position: absolute;
+}
+
+.com-box .brush-title h3 img {
+	margin-bottom:-10px;
+}
+
+.com-box .icon-title span {
+	display: block;
+	width:100px;
+	height:20px;
+	text-indent: -999px;
+	overflow:hidden;
+}
+
+/* == 带半透明文本条的图片 == */
+a.photo {
+	display: block;
+	overflow:hidden;
+	text-decoration: none;
+}
+
+a.photo:hover,
+a.photo:hover img,
+a.photo:hover span {
+	text-decoration: none;
+	border: 0 none;
+}
+
+a.photo img {
+	display: block;
+}
+
+.photo span {
+	display: block;
+	text-align:center;
+	height:20px;
+	line-height: 20px;
+	margin-top: -20px;
+	color: #fff;
+	background:rgba(0, 0, 0, 0.3); 	/*IE利用滤镜来模拟RGBA*/
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#99000000, endColorStr=#99000000);
+	cursor:pointer;
+	*zoom:1;
+	position: relative;
+	z-index:3;
+}
+
+/* == 新闻列表 == */
+/* == 大标题新闻 == */
+.news-topic {
+	padding-bottom: 15px;
+	margin: 0 25px 15px;
+}
+
+.com-mod .news-topic {
+	border-bottom: 1px solid #e3e4e4;
+}
+
+.news-topic dt {
+	text-align: center;
+	margin:0 auto 5px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+}
+
+.news-topic dt a {
+	color: #057bd2;
+	font:bold 16px "Microsoft Yahei";
+}
+
+.news-topic dd {
+	color: #909090;
+	line-height: 18px;
+}
+
+/* == 列表一：带另类和说明文字的‘三段式’ == */
+.news-1 li {
+	position: relative;
+	line-height: 24px;
+	height: 24px;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.news-1 em {
+	padding-right: 6px;
+}
+
+.news-1 em a {
+	color: #9a9a9a;
+}
+
+.news-1 b {
+	color: #bb9d8e;
+	font-weight:normal;
+	position: absolute;
+	right:0;
+	top:0;
+	_top:-5px;
+	font-size:12px;
+}
+
+.news-1 span {
+	color: #bb9d8e;
+	margin-left: 10px;
+	font-size:12px;
+}
+
+.news-1 span a {
+	color: #bb9d8e;
+}
+
+/* == 列表二：列表前缀图片为方块点 == */
+.news-2 {
+*zoom:1;
+}
+
+.news-2 li {
+	background-position: -943px -313px;
+	line-height: 24px;
+	height:24px;
+	padding-left: 15px;
+	overflow:hidden;
+}
+
+/* == 图片列表 == */
+.pic-list li {
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+
+/* == 右侧广告图片 == */
+.exp-ad,
+.exp-ad .photo,
+.exp-ad img {
+	width:200px;
+	height:110px;
+}
+
+.exp-ad {
+	margin-bottom: 5px;
+}
+
+
+/* == 数字顺序排行榜 == */
+ol.top {
+	background-position: -100px -255px;
+}
+
+ol.top li {
+	padding-left: 21px;
+	line-height: 24px;
+	height: 24px;
+	overflow: hidden;
+}
+
+/*== 带图列表新闻 ==*/
+.picnews {
+	clear:both;
+	position:relative;
+}
+
+.picnews .thumb {
+	display: block;
+	position:absolute;
+	overflow:hidden;
+}
+
+.picnews .thumb img {/* width:100px; height:100px; */
+	display:block;
+}
+
+.picnews h4 a {
+	color:#057bd2;
+	font: bold 16px "Microsoft Yahei";
+}
+
+.picnews p {
+	color:#909090;
+	line-height:18px;
+}
+
+/* == 列表间的分隔 == */
+.separator {
+	background-position:-310px -169px;
+	height:20px;
+}
+
+.space {
+	margin-bottom: 25px;
+}
+
+/* == 结构 == */
+.grid-c3-s7e6 .main-wrap {
+	margin: 0 240px 0 280px;
+}
+
+.grid-c3-s7e6 .col-main {
+	width: 948px;
+}
+
+.grid-c3-s7e6 .col-sub {
+	margin-left: -948px;
+	width: 270px;
+}
+
+.grid-c3-s7e6 .col-extra {
+	margin-left: -230px;
+	width: 230px;
+	overflow: hidden;
+}
+
+/* == 通用模块：大模块 == */
+.com-mod {
+	border: 1px solid #cfcfcf;
+	background: url(http://img01.taobaocdn.com/tps/i1/T1f3p2Xo8cXXXXXXXX-5-40.gif) repeat-x bottom;
+	text-align:left;
+	height:430px;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.com-mod .col-head {
+	height:40px;
+	background: url(http://img03.taobaocdn.com/tps/i3/T1Cfl2XlpqXXXXXXXX-5-50.gif) repeat-x top;
+}
+
+.com-mod .col-head h2 {
+	background-position:0 -200px;
+	position: absolute;
+	width:139px;
+	height:39px;
+	left:16px;
+	top:-5px;
+	padding-top:6px;
+	padding-left:9px;
+}
+
+.com-mod .col-head h2.l {
+	background-position: -150px -200px;
+	width:172px;
+}
+
+.com-mod .col-head h2 span {
+	display: block;
+	height:36px;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.com-mod .col-head h3 {
+	margin-left:184px;
+	margin-right: 10px;
+	border-bottom: 1px solid #e0e0e0;
+	padding-top: 11px;
+	height: 26px;
+	font-weight: normal;
+	color: #cccccc;
+	font-size: 14px;
+	position: relative;
+}
+
+.com-mod .col-head h3.l {
+	margin-left:201px;
+}
+
+.com-mod .col-head .chl-more {
+	position: absolute;
+	top:11px;
+	right:10px;
+}
+
+.com-mod .col-head .chl-more a {
+	color: #3b3b3b;
+	font-size: 14px;
+}
+
+.com-mod .main-wrap {
+	margin-top: 19px;
+	overflow: hidden;
+}
+
+.com-mod .wrap-pic {
+	margin: 19px 0 0 19px;
+	border-right: 1px solid #dedede;
+}
+
+.com-mod .wrap-pic .photo {
+	width: 230px;
+	height: 350px;
+	overflow: hidden;
+	display:block;
+	text-align: center;
+}
+
+.com-mod .extra-cont {
+	border-left: 1px solid #dedede;
+	margin: 19px auto 0;
+	padding:0 15px;
+}
+
+.com-mod .sub-mod {
+	border: 1px solid #c9caca;
+	position: relative;
+	padding: 12px 0;
+	width:426px;
+}
+
+.com-mod .sub-mod h4,
+.com-mod .sub-mod .chl-more {
+	display: inline-block;
+	position:absolute;
+	background: #fff;
+	padding: 0 10px;
+}
+
+.com-mod .sub-mod h4 {
+	left: 5px;
+	top: -10px;
+	font-size: 14px;
+	font-weight: bold;
+	color:#4d4d4d;
+}
+
+.com-mod .sub-mod .news-1 {
+	margin:0 0 0 14px; /*width:398px; */
+}
+
+.com-mod .sub-mod .news-1 li b {
+	right: 15px;
+}
+
+.com-mod .chl-more {
+	right:9px;
+	top: -7px;
+}
+
+/**/
+.com-mod .picnews {
+	padding-left:110px;
+	height: 100px;
+}
+
+.grid-c3-s7e6 .picnews {
+	width: 316px;
+}
+
+.com-mod .picnews .thumb {
+	margin-left:-110px;
+	width:100px;
+}
+
+.com-mod .picnews .thumb img {
+	display:block;
+}
+
+.com-mod .picnews h4 a {
+	color:#057bd2;
+	font: bold 16px "Microsoft Yahei";
+	
+}
+
+.com-mod .picnews p {
+	color:#909090;
+	line-height:18px;
+}
+
+/* ======== 具体模块详细样式 ======== */
+
+/* == 菜单栏 == */
+/*#main-nav {
+	width:950px;
+	height:120px;
+	margin:0 auto 10px auto;
+	position:relative;
+}*/
+
+#chl-nav {
+	height:37px;
+	overflow:hidden;
+	font-size: 14px;
+	position:relative;
+}
+
+#chl-nav ul {
+	margin-left:7px;
+}
+
+#chl-nav li {
+	float:left;
+	background-position:-948px -157px;
+	padding-top:6px;
+	margin-right:-2px;
+}
+
+#chl-nav li.second {
+	background:none;
+}
+
+#chl-nav a,
+#chl-nav b {
+	line-height:31px;
+	display:inline-block;
+	height:31px;
+	text-decoration:none;
+	cursor:pointer;
+	color:#fff;
+}
+
+#chl-nav a {
+	padding:0 0 0 2px;
+}
+
+#chl-nav b {
+	padding:0 17px 0 16px;
+}
+
+#chl-nav a:hover {
+	text-decoration:none;
+}
+
+#chl-nav .current a {
+	background-position:left -126px;
+}
+
+#chl-nav .current a b {
+	color:#ab0101;
+}
+
+#chl-nav .current b {
+	background-position:right -126px;
+}
+
+#chl-nav a:hover b {
+	text-decoration: underline;
+}
+
+#chl-nav .person-center-con {
+	display:block;
+	position:absolute;
+	left:767px;
+	top:6px;
+	width:82px;
+	height:31px;
+	line-height: 31px;
+	overflow: hidden;
+	background-position:-868px -163px;
+	text-align:center;
+	font-size:14px;
+}
+#chl-nav .person-center-con a{
+	color:#ffffff;
+	font-size:14px;
+	font-weight:700;
+	padding:0;
+}
+.msg-notice-con{
+	position:absolute;
+	top:6px;
+	left:857px;
+	padding-right:21px;
+	background-image:url(http://img01.taobaocdn.com/tps/i1/T1CXCQXcNjXXXXXXXX-15-93.gif);
+	background-repeat:no-repeat;
+	font-size:14px;
+	font-weight:700;
+	background-position:right -31px;
+	color:#ffffff;
+}
+
+#chl-nav .msg-notice-red a{
+	color:#cd0000;
+}
+.msg-notice-red{
+	background-position:right -69px;
+}
+#chl-nav .msg-notice-link a{
+	padding:0;
+}
+
+/* == 带你淘 == */
+#category {
+	position:relative;
+	height: 83px;
+}
+
+#category li,
+#category li dt,
+#category li dd {
+	float:left;
+}
+
+#category li a {
+	color:#6e4212;
+}
+
+#category li {
+	background-position:right -206px;
+	padding:13px 0 0 20px;
+	width:276px;
+}
+
+#category li.last {
+	background:none;
+	width:270px;
+}
+
+#category li dl {
+	vertical-align:middle;
+	padding-bottom:5px;
+}
+
+#category li dt {
+	font-weight:800;
+	width:31px;
+	clear:left;
+}
+
+#category li dd {
+	float:left;
+	color:#6f4012;
+	width:53px;
+	border-left:1px solid #e4d2b6;
+	padding-left:5px;
+}
+
+#category li dd.first {
+	border: 0 none;
+}
+
+#category .chl-more {
+	position:absolute;
+	width:54px;
+	height:34px;
+	text-align:center;
+	line-height:34px;
+	top:19px;
+	right:9px;
+}
+
+#category .chl-more a {/* display:block;*/
+	width:54px;
+	height:34px;
+	line-height:34px;
+	color:#ab0101;
+}
+
+/* == 第一、二屏 == */
+#first-screen {
+	height:409px;
+}
+
+#first-screen .col-sub {
+	background: url(http://img02.taobaocdn.com/tps/i2/T1i6X2XipvXXXXXXXX-31-390.gif) no-repeat right top;
+}
+
+#first-screen .news-topic {
+	padding-bottom: 5px;
+}
+
+#first-screen .news-topic dt {
+	margin:0
+}
+
+#first-screen .news-topic dd {
+	color: #4c4c4c;
+	line-height: 24px;
+}
+
+#first-screen .col-extra .box-bd,
+#second-screen .col-extra .box-bd {
+	margin:15px 14px 0;
+}
+
+#second-screen {
+	height:520px;
+	margin-bottom: 10px;
+}
+
+#second-screen .col-sub .box-bd {
+	margin:15px 19px 0;
+}
+
+#second-screen .news-1 em a {
+	color: #057bd2;
+}
+
+#second-screen .col-main .box-bd {
+	margin:10px 15px 0;
+}
+
+/* == 幻灯片 == */
+#J_slide_player .tb-slide-list{
+	width:240px;
+	overflow: hidden;
+}
+#J_slide_player .tb-slide-triggers {
+	bottom: 0px;
+	left: 1px;
+	right: 0px;
+	height: 16px;
+	background:rgba(0, 0, 0, 0.4); 	/*IE利用滤镜来模拟RGBA*/
+filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#99000000, endColorStr=#99000000);
+	z-index: 5;
+	padding-top:1px;
+	width:239px;
+}
+
+#J_slide_player .tb-slide-triggers li {
+	background-position:0 -170px;
+	border: 0 none;
+	color: #0e0e0f;
+	height: 16px;
+	margin: 0px 1px 0 0;
+	width: 47px;
+}
+
+#J_slide_player .tb-slide-triggers li.current {
+	background-position:-53px -170px;
+	background-color: transparent;
+	border: 0 none;
+	color: #a82404;
+	font-weight: normail;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 1px 0 0;
+	width: 46px;
+}
+
+/* == 疯狂促销 == */
+#crazy-sale {
+	height:198px;
+}
+
+#crazy-sale .icon-title span {
+	background-position: 0 -180px;
+}
+
+/* == 淘新鲜 == */
+#tao-hot {
+	height: 409px;
+	background: url(http://img01.taobaocdn.com/tps/i1/T1f3p2Xo8cXXXXXXXX-5-40.gif) repeat-x bottom;
+	border-bottom:0 none;
+	border-color: #e4e4e4;
+}
+
+#tao-hot .brush-title {
+	
+	background: url(http://img01.taobaocdn.com/tps/i1/T1JeTrXipgXXXPHYnb-8-78.png) repeat-x top;
+}
+
+#tao-hot .brush-title h3 span {
+	width:83px;
+	height: 35px;
+	background-position: 0 0;
+}
+
+#tao-hot .news-topic {
+	margin-top: 15px;
+}
+
+#tao-hot .news-topic dt {
+	height: 27px;
+	line-height:27px;
+	overflow:hidden;
+}
+
+#tao-hot .news-topic dt a {
+	font-size: 20px;
+}
+
+/* == 网商论剑 == */
+#seller {
+	height: 197px;
+	border-bottom: 0 none;
+	border-color: #e4e4e4;
+}
+
+#seller .brush-title h3 span {
+	
+	background-position:0 -42px;
+	width:89px;
+	height:29px;
+}
+
+#seller .picnews {
+	margin:15px 15px 0;
+	padding-left: 150px;
+	width: 246px;
+}
+
+#seller .picnews h4 {
+	text-align: center;
+	font-size: 14px;
+	height:21px;
+	overflow: hidden;
+}
+
+#seller .picnews .thumb {
+	margin-left:-150px;
+	width:140px;
+}
+
+#seller .picnews .thumb img {
+	width:140px;
+	height:130px;
+}
+
+/* == 淘精华 == */
+#tao-elite {
+	height:320px;
+	background: url(http://img01.taobaocdn.com/tps/i1/T1f3p2Xo8cXXXXXXXX-5-40.gif) repeat-x bottom;
+	border-color: #e4e4e4;
+}
+
+#tao-elite .brush-title {
+	background: url(http://img04.taobaocdn.com/tps/i4/T1h16rXnBgXXaXyqTa-5-77.png) repeat-x top;
+}
+
+#tao-elite .brush-title h3 span {
+	width: 89px;
+	height:33px;
+	background-position: 0 -79px;
+}
+
+#tao-elite .news-1 { /*width:398px;*/
+}
+
+.news-3 {
+	margin-right:-40px;
+}
+
+.news-3 li {
+	float:left;
+	width:196px;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+	font-size: 14px;
+	padding-right: 9px;
+}
+
+/* == 公告栏 == */
+#bulletin {
+	height: 398px;
+}
+
+#bulletin .icon-title span {
+	background-position: 0 -120px;
+}
+
+#bulletin .photo {
+	margin: 8px auto 10px;
+}
+
+/* == 晓涵搜店 == */
+#search-shop {
+	height: 319px;
+	border-bottom: 0 none;
+	position:relative;
+}
+
+#search-shop .icon-title span {
+	background-position: 0 -210px;
+}
+
+#search-shop .keys {
+	position: absolute;
+	right:12px;
+	top:10px;
+	color:#ccc;
+}
+
+#search-shop .keys a {
+	color:#057bd2;
+	padding:0 4px 0 0;
+}
+
+#search-shop .news-2 {
+	margin-top: 7px;
+}
+
+/* == 精彩活动 == */
+#nice-active {
+	height: 319px;
+	border-bottom: 0 none;
+}
+
+#nice-active {
+	position: relative;
+}
+
+#nice-active h3 {
+	margin:0;
+	padding-left: 20px;
+}
+
+#nice-active .icon-title span {
+	background-position: 0 -150px;
+}
+
+#nice-active .ks-switchable-nav {
+	position: absolute;
+	right:0;
+	top:7px;
+}
+
+#nice-active .ks-switchable-nav li {
+	float:left;
+	width: 72px;
+	border-top:1px solid #cfcfcf;
+	border-left:1px solid #cfcfcf;
+	height:24px;
+	background-position: -214px -164px;
+	text-align: center;
+	line-height:24px;
+	color: #4d4d4d;
+	cursor: pointer;
+}
+
+#nice-active .ks-switchable-nav li.ks-active {
+	background-position: -140px -164px;
+}
+
+#nice-active .news-2 {
+	margin-top: 7px;
+}
+
+/* == 疯狂促销 == */
+#crazy-sale {
+	height:198px;
+}
+
+#crazy-sale .pic-list li {
+	width: 100px;
+	color: #4d4d4d;	
+	text-align:left;
+}
+
+#crazy-sale .pic-list li.left {
+	margin-right: 28px;
+}
+
+#crazy-sale .pic-list li p {
+	margin-top: 3px;
+}
+
+#crazy-sale .pic-list li em {
+	color:#f60;
+	font-weight:bold
+}
+
+/* == 客户之声 == */
+#customer-voice {
+	height:198px;
+}
+
+#customer-voice .icon-title span {
+	background-position: 0 -240px;
+}
+
+/* == 会员风采、论坛之星 == */
+#star-show {
+	margin-bottom: 10px;
+	height: 130px;
+}
+
+#star-show h3 {
+	border-bottom: 0 none;
+}
+
+#star-show h3 span {
+	background-position:0 -270px;
+}
+
+#star-show .left-list h3 span {
+	background-position:0 -300px;
+}
+
+#star-show .pic-list {
+	float: left;
+}
+
+#star-show .pic-list ul {
+	padding-left: 25px;
+	padding-bottom: 10px;
+	width:435px;
+}
+
+#star-show .pic-list ul li {
+	width: 80px;
+	margin-right: 7px;
+}
+
+#star-show .left-list {
+	background-position: 471px -352px;
+}
+
+#star-show .left-list ul {
+	padding-left: 20px;
+	padding-right:18px;
+}
+
+/* == 列表四：列表前缀图片为红圆点 == */
+.col-extra h4.t1 {
+	margin-bottom:-10px;
+}
+
+.col-extra h4.t1 span {
+	font-size: 14px;
+	background-color: #fff;
+	padding-right: 5px;
+	color: #4d4d4d;
+	line-height: 20px;
+	position:relative;
+}
+
+.news-4 {
+	border-top: 1px solid #c9caca;
+	padding-top:10px;
+}
+
+.news-4 li {
+	background-position: -940px -356px;
+	line-height: 24px;
+	padding-left: 20px;
+}
+
+/* == 论坛达人秀 == */
+#daren-show {
+	height: 380px;
+}
+
+#daren-show .col-head h2 span {
+	background-position: 0 -340px;
+}
+
+#daren-show .col-main {
+	width:948px;
+}
+
+#daren-show .main-wrap {
+	margin-left: 260px;
+}
+
+#daren-show .col-sub {
+	width: 250px;
+	margin-left: -948px;
+}
+
+#daren-show .col-sub .box-bd {
+	margin: 19px 0 0 20px;
+}
+
+
+#daren-show .col-sub p {
+	background-color: #fafafa;
+	border:1px solid #e6e6e6;
+	border-top: 0 none;
+	padding:10px;
+	margin-bottom: 5px;
+	color: #808080;
+}
+
+#daren-show .col-sub .news-2 {
+	width: 230px;
+}
+
+#daren-show .pic-list li {
+	width:210px;
+	height: 300px;
+}
+
+#daren-show .pic-list li.a {
+	margin-right: 15px;
+}
+
+#daren-show .pic-list li.b {
+	margin-right: 10px;
+}
+
+/* == 淘友茶馆 == */
+#tao-caff .col-head h2 span {
+	background-position: 0 -400px;
+}
+
+/* == 经验畅谈 == */
+#exp-speaking .col-head h2 span {
+	background-position: 0 -460px;
+}
+
+/* == 超级买家秀 == */
+#super-seller .col-head h2 span {
+	background-position: 0 -520px;
+}
+
+/* == 二手闲置 == */
+#second-hand .col-head h2 span {
+	background-position: 0 -580px;
+}
+
+/* == 时尚生活 == */
+#fashion-life .col-head h2 span {
+	background-position: 0 -700px;
+}
+
+/* == 居家美食 == */
+#house-food .col-head h2 span {
+	background-position: 0 -640px;
+}
+
+/* == 合作专区 == */
+#cooperation {
+	height: 230px;
+}
+
+#cooperation .col-head h2 span {
+	background-position: 0 -760px;
+}
+
+#cooperation .main-wrap {
+	margin-top: 0;
+}
+
+#cooperation .picnews {
+	height: 150px;
+	padding-left: 240px;
+	margin: 20px;
+}
+
+#cooperation .picnews .thumb {
+	width:230px;
+	margin-left: -240px;
+}
+
+#cooperation .picnews li {
+	line-height: 22px;
+	height: 22px;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+#cooperation .picnews .depart {
+	padding-bottom:6px;
+	margin-bottom:6px;
+}
+
+/* == 论坛地图 == */
+#bbs-map {
+	height: auto;
+}
+
+#bbs-map .col-head h2 span {
+	background-position: 0 -820px;
+}
+
+#bbs-map .col-main {
+	background: url(http://img04.taobaocdn.com/tps/i4/T1pel2XoJEXXXXXXXX-948-283.gif) no-repeat;
+}
+
+#bbs-map .col-main ul{
+	padding-bottom: 10px;
+}
+
+#bbs-map .col-main li {
+	float:left;
+	width: 350px;
+	height:70px;
+	padding: 25px 0px 0 90px;
+	color: #808080;
+	overflow: hidden;
+}
+
+#bbs-map .col-main li .map-more-layer {
+	display: none;
+}
+
+#bbs-map .col-main li.show-all {
+	height: auto;
+	min-height: 70px;
+}
+
+#bbs-map .col-main li.show-all .chl-more{
+	display:none;
+}
+
+#bbs-map .col-main li.show-all .map-more-layer{
+	display:block;
+}
+
+#bbs-map .col-main li h4 {
+	font-weight: normal;
+}
+
+#bbs-map .col-main li h4 b {
+	color: #4d4d4d;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#bbs-map .col-main li p a {
+	color: #808080;
+	display:inline-block;
+	padding:0 6px 0 4px;
+	line-height:24px;
+}
+#bbs-map .col-main li p a:hover{
+	color:#f60;
+}
+
+#bbs-map .col-main li p a.first {
+	padding-left:0;
+}
+
+#bbs-map .col-main li p a.chl-more {
+	color:#057bd2;
+}
+
+/* == 自助广告 == */
+.friends-links {
+	margin-bottom:10px;
+	height:100px;
+}
+
+.friends-links dt {
+	text-align: center;
+	width:79px;
+	padding-right:5px;
+	padding-top:18px;
+	height:58px;
+	background-position: 0 -260px;
+	float:left;
+}
+
+.friends-links dt span {
+	display:block;
+	margin: auto;
+	color:#5a5a5a;
+}
+
+.friends-links dt a {
+	display:block;
+	width:64px;
+	height:24px;
+	margin:4px auto;
+	line-height:24px;
+	color:#ab0101;
+}
+
+#pic-links {
+}
+
+#pic-links dd {
+	float: left;
+	margin-left:12px;
+	width: 75px;
+}
+
+#pic-links dd p {
+	line-height:20px;
+	*line-height:24px;
+	text-align: center;
+}
+
+#pic-links dd.first {
+	margin-left: 8px;
+}
+
+#txt-links{
+	height: 75px;
+	border-top: 1px solid #d1d7dc;
+	padding-top:10px;
+}
+
+#txt-links dd a {
+	color: #4d4d4d;
+	line-height:24px;
+	padding:0 5px;
+}
+
+#txt-links .chl-more {
+	color:#057bd2;
+}
+
+
+/* == 广告通栏间距 == */
+.ad-banner{
+	margin-bottom: 10px;
+}
+
+/* == 产品库弹出框 == */
+
+.nav-popup {
+	position: absolute;
+	right:35px;
+	top:90px;
+	z-index:20;
+	text-align:right;
+}
+
+.popup-wrap {
+	position:relative;
+	padding:15px;
+	border:4px solid #7f7f7f;
+	display:inline-block;
+*display:inline;
+*zoom:1;
+	background-color:#fff;
+}
+
+.nav-popup dl {
+	display: inline-block;
+*display:inline;
+*zoom:1;
+	text-align:left;
+	width:78px;
+	border-left:1px solid #f1f1f1;
+	padding-left:25px;
+	line-height:22px;
+}
+
+.nav-popup dl.first {
+	border-left: 0 none;
+}
+
+.nav-popup dt a {
+	font-size:14px;
+	color:#4d4d4d;
+}
+
+.nav-popup dd {
+	font-size: 12px;
+	color:#808080;
+}
+
+.nav-popup .close {
+	display: block;
+	width:26px;
+	height:26px;
+	background-position:-350px -210px;
+	right:-12px;
+	top:-12px;
+	position:absolute;
+	overflow:hidden;
+	text-indent: -999px;
+}

@@ -1,0 +1,1 @@
+(function(){var c=YAHOO,b=c.util.Dom,a=c.util.Event;TB.namespace("iehover");TB.iehover=function(d,f){if(YAHOO.env.ua.ie==6){var e=b.getElementsByClassName(d);a.on(e,"mouseover",function(){b.addClass(this,f)});a.on(e,"mouseout",function(){b.removeClass(this,f)})}}})();

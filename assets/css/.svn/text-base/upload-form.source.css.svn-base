@@ -1,0 +1,114 @@
+@charset "gb2312";
+
+/* CSS Document */
+
+html, body {
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+#demo {
+	position: relative;
+	width: 578px;
+	overflow:hidden;
+	border:solid 1px #cdcdcd;
+	border-top:none;
+	padding-bottom:12px;
+}
+
+#demo .normal-tab {
+	position:relative;
+	height:27px;
+	border:solid 1px #d7d9d8;
+	background:#F1F1F1;
+	border-style:solid none;
+}
+
+#demo .tab-list ul {
+	height:27px;
+	position:absolute;
+	z-index:2;
+	left:0;
+	top:0;
+}
+
+#demo .ks-switchable-nav li {
+	float: left;
+	height:23px;
+	text-align:center;
+	line-height:27px;
+	border-right:none;
+	margin-left:-1px;
+	padding:0 20px;
+	background:url(http://img01.taobaocdn.com/tps/i1/T1i.hOXipGXXXXXXXX.png) right 3px no-repeat;
+	cursor:pointer;
+}
+
+#demo .ks-switchable-nav li.ks-active {
+	border-top:solid 3px #f60;
+	cursor: default;
+	background:#fff;
+	position:relative;
+	border-right:solid 1px #d7d9d8;
+	border-left: solid 1px #d7d9d8;
+	top:-2px;
+	height:27px;
+	padding:0 19px;
+	font-weight:bold;
+	left:-1px;
+}
+
+#demo .ks-switchable-content {
+	position: relative;
+	padding: 17px 10px 0 10px;
+	color:#555;
+}
+
+#demo .ks-switchable-content div.msg {
+	height:0;
+	overflow:hidden;
+}
+
+#demo .ks-switchable-content p {
+	padding:5px 5px 5px 0;
+}
+
+#demo .ks-switchable-content div.msg p {
+	padding:2px 10px 2px 23px;
+}
+
+#demo .ks-switchable-content p.file {
+	position:relative;
+	padding:0;
+	zoom:1;
+}
+
+#demo .ks-switchable-content p.file input {
+	padding:2px;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#demo p.upload-control {
+	padding:12px 10px 5px 10px;
+	vertical-align:middle;
+}
+
+#demo p.upload-control input#upload-file {
+	padding:2px 5px;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#demo p.upload-control label.watermark {
+	display:block;
+	cursor:pointer;
+	margin-bottom:1em;
+	line-height:13px;
+}
+
+#demo p.upload-control label.watermark input {
+	vertical-align:middle;
+	margin-right:5px;
+	padding:0;
+}

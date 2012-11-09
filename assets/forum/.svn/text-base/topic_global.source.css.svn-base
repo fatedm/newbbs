@@ -1,0 +1,140 @@
+@charset "gb2312";
+/* 
+	------------------------
+		个人中心，全局样式表
+		xiong_song
+	------------------------
+*/
+img{vertical-align:middle;}
+#content{width:950px;margin:10px auto 0 auto;font-size:14px;color:#666;}
+#main_container{float:right;width:790px;border:solid 1px #E0EBF4;padding-bottom:12px;}
+/*面包屑*/
+.community_crumbs{background:#80B8E7 url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) left -160px repeat-x;height:28px;line-height:29px;font-size:12px;font-weight:bold;padding-left:17px;color:#fff;position:relative;font-family:"宋体";overflow:hidden;}
+	.community_crumbs a{color:#fff;}
+	.community_crumbs a:hover{color:#f60;}
+	.community_crumbs b{display:inline-block;width:6px;height:28px;text-indent:-999em;background:#FFF url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) left -132px no-repeat;margin:0 7px;}
+	/*面包屑右部的菜单*/
+	.community_crumbs ul.other_link{display:inline-block;position:absolute;right:1em;top:0; line-height:normal;padding:8px 0;}
+		.community_crumbs ul.other_link li{float:left;}
+		.community_crumbs ul.other_link li.goback a{background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) left -286px no-repeat;padding-left:17px;}
+			.community_crumbs ul.other_link li.goback a{line-height:normal;}
+	
+/*开始展现数据*/
+#main_container h2{margin:14px 0 0 0;color:#FF913D;font-size:14px;}
+	.normal_table{width:773px;margin:0 auto;background:url(http://img08.taobaocdn.com/tps/i8/T1OyJCXaFXXXXXXXXX-9-21.png) left top repeat-x;}
+		.normal_table table{width:100%;margin:0 auto;}
+			.normal_table th{height:25px;font-size:12px;text-align:center;vertical-align:top;line-height:20px;}
+			.normal_table th.last{text-align:left;}
+			.normal_table td{height:40px;border-bottom:solid 1px #DEDEDC;}
+			.normal_table th.last{text-align:left;}
+			.normal_table td.title{padding-left:8px;width:460px;}
+			.normal_table td.chk{vertical-align:middle;font-family:"宋体";padding:0 3px 0 6px;}
+			.normal_table td.chk input{ vertical-align:middle;}
+			.normal_table td.sort{font-size:12px;width:112px;text-align:center;}
+			.normal_table td.read_reply{width:110px;font-size:12px;text-align:center;color:#999;}
+			.normal_table td.read_reply b,td.read_reply strong{font-weight:normal;color:#f60;margin-left:2px;margin-right:2px;}
+			.normal_table td.other{font-size:12px;width:92px;}
+			.normal_table td.other a{white-space:nowrap;}
+			.normal_table td.other span{display:block;font-size:90%;}
+			.normal_table td.other b{font-weight:normal;}
+			.normal_table tr th.other{text-align:left;}
+
+/*侧栏 菜单*/
+#main_sidebar{float:left;width:147px;background:#E8F0F6;border:solid 1px #DDE9F4;border-top:none;}
+	#sidebar_menu h2{height:26px;border-bottom:solid 1px #C0D6DF;border-top:solid 1px #E1EBF4;font-size:100%;background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) left -52px repeat-x;cursor:pointer;font-family:"宋体";}
+		#sidebar_menu h2 b{display:inline-block;height:26px;line-height:26px;background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) 19px 0 no-repeat;padding-left:42px;}
+		#sidebar_menu h2.show b{background-position:19px -26px;}
+	#sidebar_menu ul{line-height:26px;padding:6px 0 9px 0;}
+		#sidebar_menu ul li a{display:block;height:26px;line-height:26px;padding-left:42px;background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) 24px -78px no-repeat;color:#676767;}
+		#sidebar_menu ul li a:hover,#sidebar_menu ul li.current a{background-color:#fff;color:#f60;}
+/*TIPS 提示信息*/
+.msg24{padding:20px 10px;}
+
+/*通用Tab导航*/
+ul.tab { border-bottom:solid 1px #B8D7F4; height:27px; margin:13px auto 0 auto; width:773px; font-family:"宋体";}
+ul.tab li { float:left; margin:4px 3px 0 0; display:inline; }
+ul.tab li a {display:inline-block; height:23px; background:url(http://img05.taobaocdn.com/tps/i5/T1dSXDXhVIXXXXXXXX-260-380.png) left -52px; padding-left:3px; float:left; line-height:normal; position:relative;overflow:hidden}
+ul.tab li a b {display:block; height:18px; float:left; background:url(http://img05.taobaocdn.com/tps/i5/T1dSXDXhVIXXXXXXXX-260-380.png) right -26px; cursor:pointer; padding:5px 13px 0 10px; font-weight:normal; }
+ul.tab li.current {position:relative; z-index:1; margin-top:0px; bottom:-2px; }
+ul.tab li.current a {height:26px; background-color:#fff; }
+ul.tab li.current a b{height:22px; padding-top:6px; font-weight:bold; }
+
+/*表格上方的表单操作按钮*/
+.control_data{width:auto;margin:0 9px;padding:1em 0 6px 0;}
+
+#main_content{width:455px;float:left;display:inline;padding-left:17px;}
+	#main_content .post_status{margin-top:14px;}
+	#main_content .post_status li{border-bottom:dashed 1px #E8E8E8;padding:7px 5px;}
+		#main_content .post_status li{background:url(http://img01.taobaocdn.com/tps/i1/T15B8DXaXKXXXXXXXX-4-7.png) left 15px no-repeat;padding-left:12px;margin-right:4px;}
+		#main_content .post_status li img{margin:0 2px;}
+		#main_content .post_status li b{display:inline-block;height:40px;float:left;font-size:13px;font-family:"宋体";margin-top:3px;}
+		#main_content .post_status li span.date{font-size:12px;color:#BABABA;margin-left:9px;}
+	#main_content .post_status li.more{text-align:right;border-bottom:none;font-size:12px;background:none;}
+		#main_content .post_status li.more a{background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) right -220px no-repeat;padding-right:17px;display:inline-block;font-family:"宋体";}
+/*小纸条*/
+#main_content p.small_note,#main_content p.other_note{height:25px;font-size:12px;background:#EEF3F7 url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) 8px -189px no-repeat;margin:17px auto 0 auto;line-height:25px;text-indent:27px;}
+#main_content p.other_note{background-image:none;text-align:center;}
+	#main_content p.other_note a.show{background:url(http://img07.taobaocdn.com/tps/i7/T1.r8DXjxiXXXXXXXX-13-400.png) left -234px no-repeat;padding-left:17px;display:inline-block;text-indent:0;}
+	#main_content p.small_note a,#main_content p.other_note a{color:#5F879D;}
+/*自定义提示信息*/
+#main_content div.tips{padding:97px 0;text-align:center;font-weight:bold;letter-spacing:1px;color:#787878;}
+	#main_content div.tips a{color:#F60;text-decoration:underline;margin:0 2px;}
+
+/*个人信息*/
+#personal_centre{float:right;width:309px;background-color:#EEF3F7;padding:18px 0 20px 0;position:relative;}
+	/*针对标准浏览器的垂直局中*/
+	#personal_centre div.pic{display:table;text-align:center;width:128px;height:133px;background:url(http://img07.taobaocdn.com/tps/i7/T1EDpDXjhEXXXXXXXX-128-133.png) left top no-repeat;float:left;margin:0 12px 0 11px;}
+		#personal_centre div.pic span{display:table-cell;vertical-align:middle;}
+		#personal_centre div.pic span img{margin-top:-6px;}
+
+/*帐号基本资料*/
+#personal_centre ul.date{font-size:12px;line-height:22px;float:left; margin:0; padding:0}
+		#personal_centre ul.date li b{font-weight:bold;color:#666;}
+/*rank*/
+#personal_centre ul.rank{clear:both;width:284px;height:52px;margin:11px 0 0 13px;padding-top:14px;background:url(http://img01.taobaocdn.com/tps/i1/T1sqxDXXBgXXXXXXXX-283-63.png) left top no-repeat;float:left;color:#5F879D;display:inline;}
+	#personal_centre ul.rank li{float:left;width:50%;text-indent:40px;height:23px;}
+
+/*statis*/
+#personal_centre h3.community{clear:both;margin:22px auto 0 9px;display:inline-block;width:279px;border-top:solid 1px #C0D6DF;padding:8px 0 0 8px;}
+#personal_centre ul.statis{margin:5px 0 0 20px;line-height:22px;width:270px;}
+	#personal_centre ul.statis li{width:50%;float:left;}
+		#personal_centre ul.statis li strong{font-size:13px;}
+
+/*
+	分页
+	直接拷贝的线上代码
+-------------------------------------------------------
+*/
+.pagination .page-bottom, .pagination .page-top, .result .pagination .page-bottom, .result .pagination .page-top { float:right; }
+.pagination{height:22px;font-size:12px;font-family:Tahoma;padding:1em;}
+.page-top:after, .page-bottom:after { content:""; display:block; height:0; clear:both; visibility:hidden; }
+.page-top, .page-bottom { zoom:1; }
+.page-mini { padding-top:3px; }
+.pagination a, .page-info, .page-prev, .page-cur, .page-start, .page-end, .page-break { float:left; width:20px; height:20px; margin:0 3px 0 0; overflow:hidden; text-align:center; white-space:nowrap; vertical-align:middle; line-height:20px; }
+.page-mini a, .page-mini .page-cur, .page-mini .page-prev, .page-mini .page-cur, .page-mini .page-start, .page-mini .page-end, .page-mini .page-break { height:14px; width:auto; padding:0 2px; line-height:16px; }
+.pagination a { border:1px solid #ccc; background-color:#fff; }
+.page-mini a { border:none; background-color:transparent; }
+.pagination .page-100 { width:26px; }
+.page-mini .page-100 { width:auto; }
+.pagination a:link { color:#03c; text-decoration:none; }
+.pagination a:visited { color:#953597; text-decoration:none; }
+.pagination a:hover, .pagination a:active { color:#fff; background-color:#09f; text-decoration:none; }
+.pagination .mini a:hover, .pagination .mini a:active { color:#f50; background-color:transparent; }
+.pagination .page-cur, .pagination .mini-page .page-cur { margin:0; font-weight:700; color:#f60; vertical-align:super; width:auto; padding:0 5px 0 2px; }
+.page-break { font-family:SimSun; border-width:0; width:22px; height:22px; }
+.page-prev, .page-next, .page-start, .page-end, .page-skip button{ background-image:url(http://a.tbcdn.cn/app/matrix/img/group_pagination.gif); background-color:#fff; background-repeat:no-repeat; }
+.page-mini .page-prev, .page-mini .page-next { background-color:#fff; }
+.page-info, .page-mini .page-info { width:auto; color:#a0a0a4; letter-spacing:1px; }
+.pagination .page-prev { border:1px solid #ccc; background-position:6px 5px; }
+.page-mini .page-prev { width:14px; padding:0; background-position:4px 3px; }
+.pagination .page-start { border:1px solid #ccc; background-position:6px -11px; }
+.page-mini .page-start { width:14px; padding:0; background-position:4px -13px; }
+.pagination .page-next, .pagination .page-end { padding:0 12px 0 5px; width:auto; border:1px solid #ccc; background-position:-52px 5px; }
+.page-mini .page-next, .page-mini .page-end { width:42px; padding:0; border:1px solid #ccc; background-position:2px -29px; }
+.pagination .page-end { background-position:-52px -11px; }
+.page-mini .page-end { background-position:-60px -29px; }
+.page-skip { float:left; padding:0 0 0 8px; }
+.page-skip input { margin:0 2px; vertical-align:text-bottom; height:10px; font-size:10px; line-height:10px; padding:0; width:24px; font-size:12px; }
+.page-skip button { cursor:pointer; border:none; margin:0 0 0 8px; vertical-align:text-bottom; width:31px; height:15px; background-position:0 100%; }
+.page-prev span, .page-start span, .page-mini .page-next span, .page-mini .page-end span, .page-skip button span { display:none; }
+.page-popup a { margin:2px 0 0 2px; *display:inline;}

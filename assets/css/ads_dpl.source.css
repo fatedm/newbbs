@@ -1,0 +1,602 @@
+/* Copyright (c) 2010, Taobao.com Inc. All rights reserved. */
+
+/**
+ * Particular style of DPL, Project UserCenter.
+ *
+ * @author      fahai
+ * @version     1.0.0
+ */
+
+/**
+ * Basic styles which overwrite the super style.
+ */
+
+#content a:hover {
+    color: #36c;
+}
+
+#content img {
+    vertical-align: middle;
+}
+
+#content button {
+    font-size: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#content button.h {
+    color: #fff !important;
+}
+
+/**
+ * Sprites.
+ */
+
+.ph,
+.msg i,
+.pagination i,
+.top-tab s,
+.sidebar i,
+.sidebar b,
+.bangpai-item b,
+.bangpai-item i {
+    background: url(http://img02.taobaocdn.com/tps/i2/T1jpxTXixcXXXXXXXX-220-500.png) transparent no-repeat;
+}
+
+/**
+ * Common styles.
+ */
+
+.crumbs {
+    height: 22px;
+    line-height: 22px;
+    padding-left: 10px;
+    border-bottom: 1px solid #c3d7eb;
+}
+
+.msg {
+    margin: 10px 0;
+    position: relative;
+}
+
+.msg .notice {
+    background-color: #FFFFE5;
+    background-position: 8px -289px;
+    border-color: #FFCC7F;
+    float: none;
+    height: 18px; /* fix background-position bug in ie6 when non-float */
+    padding: 8px 10px 8px 25px;
+}
+
+.msg i {
+    display: block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-position: -107px -150px;
+}
+
+.flow-steps {
+    _zoom: 1;
+}
+
+.flow-steps li {
+    width: 248px;
+}
+
+.pagination {
+    float: right;
+    margin-top: 10px;
+}
+
+.pagination a,
+.pagination .page-current,
+.pagination .page-next,
+.pagination .page-previous,
+.pagination .page-skip,
+.pagination .page-jump {
+    font-size: 12px;
+    vertical-align: middle;
+    color: #333;
+    display: inline-block;
+    padding: 3px 9px;
+}
+
+.pagination a,
+.pagination .page-next,
+.pagination .page-previous {
+    border: 1px solid #c3d7eb;
+}
+
+.pagination a:hover,
+.pagination .page-next:hover,
+.pagination .page-previous:hover {
+    text-decoration: none;
+    border-color: #77aacc;
+}
+
+.pagination .page-current {
+    font-weight: bold;
+    color: #3366cc;
+    border: 1px solid #77aacc;
+    background-color: #edf5ff;
+}
+
+.pagination .unavailable,
+.pagination .unavailable:hover {
+    color: #999;
+    border: 1px solid #ccc;
+    cursor: default;
+}
+
+.pagination .page-jump {
+    width: 30px;
+    text-align: center;
+    padding: 4px 2px;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination .page-skip .page-total {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.pagination .page-skip label {
+    margin-left: 5px;
+}
+
+.pagination .page-skip button {
+    height: 24px;
+    width: 40px;
+}
+
+.pagination .page-previous,
+.pagination .page-next {
+    _padding-top: 6px; /* fix height bug in ie6 when border-simulation used */
+}
+
+/* border simulation */
+.pagination b.arrow-left,
+.pagination b.arrow-right {
+    font-size: 0;
+    height: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 5px solid #fff;
+    display: inline-block; /* to enable negative margin-top */
+    margin-top: -2px; /* adjust vertical-align of arrow */
+
+    *zoom: 1;
+}
+
+.pagination b.arrow-left {
+    border-right-color: #36c;
+    border-left-width: 0;
+}
+
+.pagination b.arrow-right {
+    border-left-color: #36c;
+    border-right-width: 0;
+    margin-left: 5px;
+}
+
+.pagination .unavailable b.arrow-left {
+    border-right-color: #999;
+}
+
+.pagination .unavailable b.arrow-right {
+    border-left-color: #999;
+}
+
+/* css3 */
+button.size-s,
+button.size-m,
+button.size-l,
+button.size-xl {
+    border: 0 none;
+    height: 24px !important;
+}
+
+button.size-s {
+    background-position: -1px -50px;
+}
+
+button.size-m {
+    background-position: -42px -50px;
+}
+
+button.size-l {
+    background-position: -98px -50px;
+}
+
+button.size-xl {
+    background-position: -1px -100px;
+}
+
+button.size-m.h {
+    background-position: -42px 0;
+}
+
+button.size-l.h {
+    background-position: -98px 0;
+}
+
+button.size-s:hover {
+    background-position: -1px -75px;
+}
+
+button.size-m:hover {
+    background-position: -42px -75px;
+}
+
+button.size-l:hover {
+    background-position: -98px -75px;
+}
+
+button.size-xl:hover {
+    background-position: -1px -125px;
+}
+
+button.size-m.h:hover {
+    background-position: -42px -25px;
+}
+
+button.size-l.h:hover {
+    background-position: -98px -25px;
+}
+
+/* fixed-size */
+button.size-s,
+button.size-m,
+button.size-l,
+button.size-xl {
+    height: 24px; /* height include border and padding, particular height to ensure visual height not effected by ie padding bug */
+}
+
+button.size-s {
+    width: 40px;
+}
+
+button.size-m {
+    width: 55px;
+}
+
+button.size-l {
+    width: 80px;
+}
+
+button.size-xl {
+    width: 115px;
+}
+
+/**
+* Particular styles for each module.
+*/
+
+/* top tab */
+.top-tab {
+    margin-bottom: 10px;
+}
+
+.top-tab hr {
+    height: 6px;
+    background-color: #d3e8fd;
+    border: 1px solid #9bd;
+    color: #d3e8fd;
+    margin: 0;
+
+    *float: left; /* hr margin bug in ie67 */
+}
+
+.top-tab .navigator {
+    overflow: hidden;
+    margin-bottom: -1px;
+
+    _zoom: 1;
+    *position: relative;
+}
+
+.top-tab .navigator li {
+    float: left;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+}
+
+.top-tab .navigator li.current {
+    font-weight: bold;
+}
+
+.top-tab .navigator li a {
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+.top-tab .navigator li a:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/* background-image */
+.top-tab .navigator li {
+    background-position: -117px -100px;
+}
+
+.top-tab .navigator li.current {
+    background-position: -117px -130px;
+}
+
+.top-tab .navigator li a {
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.top-tab s {
+    display: block;
+    height: 6px;
+    font-size: 0;
+    background-position: 0 -204px;
+    background-repeat: repeat-x;
+
+    *margin-top: -14px; /* hr margin bug in ie67 */
+}
+
+/* content tab */
+.content-tab {
+    margin-top: 20px;
+}
+
+.content-tab .navigator {
+    border-bottom: 1px solid #9bd;
+}
+
+.content-tab .navigator li {
+    float: left;
+    overflow: hidden;
+    border: 1px solid #c3d7e8;
+    border-bottom-color: #9bd;
+    margin: 0 0 -1px 5px;
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    height: 27px;
+    line-height: 27px;
+    cursor: pointer;
+
+    _position: relative;
+}
+
+.content-tab .navigator li.first {
+    margin-left: 10px;
+}
+
+.content-tab .navigator li.current {
+    border-bottom-color: #fff;
+    font-weight: bold;
+}
+
+.content-tab .tab-panel {
+    padding: 20px 10px;
+    overflow: hidden;
+
+    _zoom: 1;
+}
+
+.content-tab .no-item {
+    padding: 40px 10px;
+}
+
+/* background-image */
+.content-tab .navigator li {
+    background-position: 0 -239px;
+    background-repeat: repeat-x;
+}
+
+.content-tab .navigator li.current {
+    background-position: 0 -213px;
+    background-repeat: repeat-x;
+}
+
+/* user identifier */
+.user-id {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d7e6f4;
+    background-color: #f2f8ff;
+}
+
+.user-id .avatar {
+    text-align: center;
+}
+
+.user-id .avatar a {
+    border: 1px dotted #bbb;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+}
+
+.user-id .avatar a:hover {
+    text-decoration: none;
+}
+
+.user-id .avatar em {
+    display: none;
+    width: 80px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5); /* FF3+, Saf3+, Opera 10.10+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#7F000000', EndColorStr = '#7F000000'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000', EndColorStr='#7F000000')"; /* IE8 */
+}
+
+/* ie6 hover bug */
+.user-id .avatar a:hover em {
+    display: block;
+}
+
+.user-id .info {
+    margin: 10px 0;
+}
+
+.user-id .decorator {
+    margin: 20px 0 5px;
+}
+
+.user-id .decorator li {
+    float: left;
+}
+
+.user-id .decorator li a {
+    padding: 0 10px;
+    border-left: 1px solid #ddd;
+}
+
+.user-id .decorator li.first a {
+    padding-left: 0;
+    border-left: 0 none;
+}
+
+/* sidebar block */
+.sidebar {
+    border-bottom: 1px solid #d7e6f4;
+}
+
+.sidebar h3 {
+    border: 1px solid #c3d7e8;
+    border-bottom-color: #b1c1d1;
+    font-size: 14px;
+    color: #000;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.sidebar h3 i {
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-position: -194px -86px;
+}
+
+.sidebar h3 b {
+    display: block;
+    width: 9px;
+    height: 6px;
+    position: absolute;
+    left: 12px;
+    bottom: -6px;
+    font-size: 0;
+    text-indent: -9999px;
+    background-position: -96px -151px;
+}
+
+.sidebar .folding h3 i {
+    background-position: -207px -86px;
+}
+
+.sidebar ul {
+    border: 1px solid #d7e6f4;
+    border-top-color: #e5ecf5;
+    border-bottom: 0 none;
+    background-color: #f2f8ff;
+    padding: 10px 0;
+}
+
+.sidebar .folding ul {
+    height: 0;
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+
+.sidebar ul li {
+    padding: 3px;
+    background-position: -193px -295px;
+}
+
+.sidebar ul li.last {
+    background-position: -193px -317px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #333;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 27px;
+}
+
+.sidebar ul li a:hover {
+    color: #333 !important;
+    text-decoration: none;
+    background-color: #e4f1fb;
+}
+
+.sidebar ul li.current a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar ul li.current a:hover {
+    color: #fff !important;
+}
+
+/* background-image */
+.sidebar h3 {
+    background-position: 0 -266px;
+    cursor: pointer; /* expand the folding area */
+}
+
+.sidebar ul li a {
+    background-position: -9999px -9999px;
+}
+
+.sidebar ul li a:hover {
+    background-position: 0 -182px;
+}
+
+.sidebar ul li.current a,
+.sidebar ul li.current a:hover {
+    background-position: 0 -160px;
+}
+
+/* main content container */
+#main-content {
+    border: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+#main-content h3 {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+}

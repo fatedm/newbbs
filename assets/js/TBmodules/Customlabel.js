@@ -1,0 +1,1 @@
+(function(){var c=YAHOO,b=c.util.Dom,a=c.util.Event;TB.namespace("Customlabel");TB.Customlabel=function(f,d){var e=0;for(;e<d.length;e++){(function(g){a.on(d[g],"click",function(){f[g].checked=!f[g].checked?true:false})})(e);a.on(f[e],"click",function(g){a.stopPropagation(g)})}}})();

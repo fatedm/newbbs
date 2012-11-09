@@ -1,0 +1,961 @@
+/* Copyright (c) 2010, Taobao.com Inc. All rights reserved. */
+
+/**
+ * Basic styles which overwrite the super style.
+ */
+
+#content a:hover {
+    color: #36c;
+}
+
+#content img,#content select,#content input,#content span,#content dd,#main-content dt{
+    vertical-align: middle;
+}
+
+#content span.rc-tp{
+	vertical-align:baseline;
+}
+
+#content button {
+    font-size: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#content button.h {
+    color: #fff !important;
+}
+
+/**
+ * Sprites.
+ */
+
+.ph,
+.msg i,
+.pagination i,
+.top-tab s,
+.sidebar i,
+.sidebar b,
+.bangpai-item b,
+.bangpai-item i,
+.J_Trigger,
+.open,
+.invite-user .inside div.msg .invite-error {
+    background: url(http://img04.taobaocdn.com/tps/i4/T185dUXoBtXXXXXXXX-220-400.png) transparent no-repeat;
+}
+
+/**
+ * Common styles.
+ */
+
+.crumbs {
+    height: 22px;
+    line-height: 22px;
+    padding-left: 10px;
+    border-bottom: 1px solid #c3d7eb;
+}
+
+.msg {
+    margin: 10px 0;
+    position: relative;
+}
+
+.invite-warp .msg{
+	margin:0px;
+	*margin:10px 0px;
+} 
+
+.msg .notice {
+    background-color: #FFFFE5;
+    background-position: 8px -289px;
+    border-color: #FFCC7F;
+    float: none;
+    height: 18px; /* fix background-position bug in ie6 when non-float */
+    padding: 8px 10px 8px 25px;
+}
+
+.msg i {
+    display: block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-position: -107px -150px;
+}
+
+.flow-steps {
+    _zoom: 1;
+}
+
+.flow-steps li {
+    width: 248px;
+}
+
+/*分页*/
+.pagination {
+    float: right;
+    margin-top: 10px;
+	margin-right:10px;
+	
+	_display:inline!important;
+}
+.pagination .page-top{
+	_display:inline!important;
+}
+
+
+
+.pagination a,
+.pagination .page-current,
+.pagination .page-next,
+.pagination .page-previous,
+.pagination .page-skip,
+.pagination .page-jump {
+    font-size: 12px;
+    vertical-align: middle;
+    color: #333;
+    display: inline-block;
+	padding:3px 9px;
+}
+
+.pagination .page-next{
+	*line-height:24px;
+	*height:18px;
+	_line-height:18px;
+}
+
+.pagination a,
+.pagination .page-next,
+.pagination .page-previous {
+    border: 1px solid #c3d7eb;
+}
+
+.pagination a:hover,
+.pagination .page-next:hover,
+.pagination .page-previous:hover {
+    text-decoration: none;
+    border-color: #77aacc;
+}
+
+.pagination .page-current {
+    font-weight: bold;
+    color: #3366cc;
+    border: 1px solid #77aacc;
+    background-color: #edf5ff;
+}
+
+.pagination .unavailable,
+.pagination .unavailable:hover {
+    color: #999!important;
+    border: 1px solid #ccc;
+    cursor: default;
+}
+
+.pagination .page-jump {
+    width: 30px;
+    text-align: center;
+    padding: 4px 2px;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination .page-skip .page-total {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.pagination .page-skip label {
+    margin-left: 5px;
+}
+
+.pagination .page-skip button {
+    height: 24px;
+    width: 40px;
+}
+
+
+
+.pagination b.arrow-left,
+.pagination b.arrow-right {
+    font-size: 0;
+    height: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 5px solid #fff;
+    display: inline-block; 
+    margin-top: -2px; 
+    *zoom: 1;
+}
+.pagination b.arrow-left {
+    border-right-color: #36c;
+    border-left-width: 0;
+}
+
+.pagination b.arrow-right {
+    border-left-color: #36c;
+    border-right-width: 0;
+    margin-left: 5px;
+}
+
+.pagination .unavailable b.arrow-left {
+    border-right-color: #999;
+}
+
+.pagination .unavailable b.arrow-right {
+    border-left-color: #999;
+}
+
+
+/**
+* Particular styles for each module.
+*/
+
+/* top tab */
+.top-tab {
+    margin-bottom: 10px;
+}
+
+.top-tab hr {
+    height: 6px;
+    background-color: #d3e8fd;
+    border: 1px solid #9bd;
+    color: #d3e8fd;
+    margin: 0;
+
+    *float: left; /* hr margin bug in ie67 */
+}
+
+.top-tab .navigator {
+    overflow: hidden;
+    margin-bottom: -1px;
+
+    _zoom: 1;
+    *position: relative;
+}
+
+.top-tab .navigator li {
+    float: left;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+}
+
+.top-tab .navigator li.current {
+    font-weight: bold;
+}
+
+.top-tab .navigator li a {
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+.top-tab .navigator li a:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/* background-image */
+.top-tab .navigator li {
+    background-position: -117px -100px;
+}
+
+.top-tab .navigator li.current {
+    background-position: -117px -130px;
+}
+
+.top-tab .navigator li a {
+    width: 100px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.top-tab s {
+    display: block;
+    height: 6px;
+    font-size: 0;
+    background-position: 0 -204px;
+    background-repeat: repeat-x;
+    *margin-top: -14px; /* hr margin bug in ie67 */
+}
+
+/* content tab */
+.content-tab {
+    margin-top: 20px;
+}
+
+.content-tab .navigator {
+    border-bottom: 1px solid #9bd;
+}
+
+.content-tab .navigator li {
+    float: left;
+    overflow: hidden;
+    border: 1px solid #c3d7e8;
+    border-bottom-color: #9bd;
+    margin: 0 0 -1px 5px;
+    font-size: 14px;
+    text-align: center;
+    width: 160px;
+    height: 27px;
+    line-height: 27px;
+    cursor: pointer;
+
+    _position: relative;
+}
+
+.content-tab .navigator li.first {
+    margin-left: 10px;
+}
+
+.content-tab .navigator li.current {
+    border-bottom-color: #fff;
+    font-weight: bold;
+}
+
+.content-tab .tab-panel {
+    padding: 20px 10px;
+    overflow: hidden;
+
+    _zoom: 1;
+}
+
+.content-tab .no-item {
+    padding: 40px 10px;
+}
+
+/* background-image */
+.content-tab .navigator li {
+    background-position: 0 -239px;
+    background-repeat: repeat-x;
+}
+
+.content-tab .navigator li.current {
+    background-position: 0 -213px;
+    background-repeat: repeat-x;
+}
+
+/* user identifier */
+.user-id {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d7e6f4;
+    background-color: #f2f8ff;
+}
+
+.user-id .avatar {
+    text-align: center;
+	width:120px;
+	height:120px;
+	display: table-cell;
+    vertical-align:middle;
+	background-color:#fff;
+	*display: block;
+	*font-size: 85px;
+	line-height:120px;
+	border: 1px dotted #bbb;
+}
+
+.user-id .avatar img {
+	vertical-align:middle;	
+}
+
+.user-id .avatar a:hover {
+    text-decoration: none;
+}
+
+.user-id .avatar em {
+    display: none;
+    width: 80px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    margin: -19px auto 11px; /* include 1px border - (18 + 1) (10 + 1)*/
+    position: relative;
+
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.5); /* FF3+, Saf3+, Opera 10.10+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#7F000000', EndColorStr = '#7F000000'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000', EndColorStr='#7F000000')"; /* IE8 */
+}
+
+/* ie6 hover bug */
+.user-id .avatar a:hover em {
+    display: block;
+}
+
+.user-id .info {
+    margin: 10px 0;
+}
+
+.user-id p.ids{
+	margin: -8px 0pt 12px;
+	text-align: center;
+	position:relative;
+}
+
+
+.user-id .decorator {
+    margin: 20px 0 5px;
+}
+
+.user-id .decorator li {
+    float: left;
+}
+
+.user-id .decorator li a {
+    padding: 0 10px;
+    border-left: 1px solid #ddd;
+}
+
+.user-id .decorator li.first a {
+    padding-left: 0;
+    border-left: 0 none;
+}
+
+/* sidebar block */
+.sidebar {
+    border-bottom: 1px solid #d7e6f4;
+}
+
+.sidebar h3 {
+    border: 1px solid #c3d7e8;
+    border-bottom-color: #b1c1d1;
+    font-size: 14px;
+    color: #000;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.sidebar h3 i,.J_Trigger {
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 0;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-position: -194px -86px;
+}
+
+.sidebar h3 b {
+    display: block;
+    width: 9px;
+    height: 6px;
+    position: absolute;
+    left: 12px;
+    bottom: -6px;
+    font-size: 0;
+    text-indent: -9999px;
+    background-position: -96px -151px;
+}
+
+.sidebar .folding h3 i,.open {
+    background-position: -207px -86px;
+}
+
+.sidebar ul {
+    border: 1px solid #d7e6f4;
+    border-top-color: #e5ecf5;
+    border-bottom: 0 none;
+    background-color: #f2f8ff;
+    padding: 10px 0;
+}
+
+.sidebar .folding ul {
+    height: 0;
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+
+.sidebar ul li {
+    padding: 3px;
+    background-position: -193px -295px;
+}
+
+.sidebar ul li.last {
+    background-position: -193px -317px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #333;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 27px;
+}
+
+.sidebar ul li a:hover {
+    color: #333 !important;
+    text-decoration: none;
+    background-color: #e4f1fb;
+}
+
+.sidebar ul li.current a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar ul li.current a:hover {
+    color: #fff !important;
+}
+
+/* background-image */
+.sidebar h3 {
+    background-position: 0 -266px;
+}
+
+.sidebar ul li a {
+    background-position: -9999px -9999px;
+}
+
+.sidebar ul li a:hover {
+    background-position: 0 -182px;
+}
+
+.sidebar ul li.current a,
+.sidebar ul li.current a:hover {
+    background-position: 0 -160px;
+}
+
+/* bangpai item */
+.bangpai-item {
+    margin: 0 10px;
+    padding: 10px 0;
+    border-top: 1px dashed #e7e7e7;
+    overflow: hidden;
+	cursor:default;
+
+    _zoom: 1;
+	
+}
+
+.bangpai-item:hover,
+.ie6-hover {
+	position: relative;
+    background-color: #f4f4f4;
+	*margin-bottom:-3px;
+}
+
+.bangpai-item .avatar {
+    float: left;
+}
+
+.bangpai-item .avatar img {
+    width: 80px;
+    height: 80px;
+	_height:79px;
+    border: 1px solid #ddd;
+}
+
+/* ie6 hover bug */
+.bangpai-item .avatar a:hover img {
+    border-color: #7ac;
+}
+
+.bangpai-item .info {
+    overflow: hidden;
+    padding-left: 5px;
+
+    _zoom: 1;
+}
+
+.bangpai-item .info h4 {
+    height: 24px;
+    line-height: 24px;
+	display:block!important;
+}
+
+.bangpai-item .info dt,
+.bangpai-item .info dd {
+    display: inline-block;
+
+    *display: inline;
+}
+
+.bangpai-item .info p,
+.bangpai-item .info dt {
+    color: #999;
+}
+
+.bangpai-item .info dd {
+    margin-right: 20px;
+}
+
+.bangpai-item .status {
+    _margin-top: 2px;
+}
+
+.bangpai-item .status i {
+    display: inline-block;
+    width: 81px;
+    height: 11px;
+    line-height: 11px;
+    margin-left: 4px;
+    text-indent: -9999px;
+}
+
+.bangpai-item .status .level-7 i {
+    background-position: 0 -292px;
+}
+
+.bangpai-item .status .level-6 i {
+    background-position: -12px -292px;
+}
+
+.bangpai-item .status .level-5 i {
+    background-position: -24px -292px;
+}
+
+.bangpai-item .status .level-4 i {
+    background-position: -36px -292px;
+}
+
+.bangpai-item .status .level-3 i {
+    background-position: -48px -292px;
+}
+
+.bangpai-item .status .level-2 i {
+    background-position: -60px -292px;
+}
+
+.bangpai-item .status .level-1 i {
+    background-position: -72px -292px;
+}
+
+.bangpai-item .decorator {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: -1px; /* hide last border-right */
+}
+
+.bangpai-item:hover .decorator,
+.ie6-hover .decorator {
+    display: block;
+}
+
+.bangpai-item .action li {
+    float: left;
+}
+
+.bangpai-item .action li a {
+    padding: 0 8px;
+    border-right: 1px solid #ddd;
+}
+
+/* main content container */
+#main-content {
+    border: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+#main-content h3 {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.background-image .size-l {
+     background-position: -98px 0;
+}
+
+.background-image .size-l:hover {
+     background-position: -98px -25px;
+}
+
+/* my tags */
+#my-tags {
+    padding: 15px 0 0;
+    margin: 0 10px;
+    line-height: 22px;
+    border-top: 1px dotted #e7e7e7;
+}
+
+#my-tags p {
+    float: left;
+}
+
+#my-tags ul {
+    overflow: hidden;
+
+    _zoom: 1;
+}
+
+#my-tags ul li {
+    display: inline-block;
+
+    *word-break: keep-all;
+    *display: inline;
+}
+
+#my-tags ul li.action {
+    padding-left: 5px;
+}
+
+#my-tags ul li span {
+    color: #999;
+}
+
+/**
+ * Sprites.
+ */
+
+.posts-info i,
+.posts-filter i,
+.posts-content i {
+    background: url(http://img04.taobaocdn.com/tps/i4/T185dUXoBtXXXXXXXX-220-400.png) transparent no-repeat;
+}
+
+/**
+ * Common styles.
+ */
+.tal {
+    float: left;
+    text-align: left;
+}
+
+/**
+ * Particular styles for each module.
+ */
+
+/* posts info */
+.posts-info {
+    margin: 0 10px;
+}
+
+.posts-info li {
+    width: 160px;
+    float: left;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 10px;
+    vertical-align: bottom;
+    height: 16px;
+    line-height: 16px;
+}
+
+.posts-info li em {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.posts-info li .tal {
+/*_padding-top: 8px;*/
+}
+
+/* table column */
+col.col-topic {
+	width:400px;
+	
+	*width:390px;
+}
+
+col.col-channel {
+    width: 90px;
+
+    *width: 80px;
+}
+
+col.col-statistic {
+    width: 95px;
+
+    *width: 85px;
+}
+
+col.col-last-reply {
+    width: 90px;
+	
+    *width: 80px;
+}
+
+col.col-activity{
+ 	width:430px;
+}
+ 
+col.col-select{
+ 	width:120px;
+}
+ 
+col.col-theme{
+	width:105px;
+}
+
+col.col-time{
+	width:100px;
+}
+
+/*
+ * 消息设置表格样式
+ */
+col.col-remindcontent {
+    width: 275px;
+}
+
+col.col-email {
+    width: 55px;
+}
+
+col.col-instation, col.col-ww {
+    width: 100px;
+}
+
+col.col-lastz {
+    width: 220px;
+}
+
+/* posts filter table */
+#main-content .content-tab .tab-panel {
+    padding: 0 0 20px;
+}
+
+.posts-filter {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.posts-filter table th {
+    font-weight: bold;
+}
+
+.posts-filter table th.statistic span,
+.posts-content table td.statistic span {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.posts-filter table input {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.posts-filter table label {
+    font-weight: 400;
+}
+
+.posts-filter table .last-reply i {
+    width: 11px;
+    height: 12px;
+    font-size: 0;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.posts-filter table .desc i {
+    background-position: -209px -62px;
+}
+
+.posts-filter table .asc i {
+    background-position: -209px -50px;
+}
+
+/* posts content table */
+.posts-content {
+    margin: 0 10px;
+}
+
+.posts-filter table,
+.posts-content table {
+    width: 100%;
+}
+
+.posts-content table tr {
+    height: 48px;
+}
+
+.posts-content table tr.double {
+    background-color: #fbfbfb;
+}
+
+.posts-content table td {
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.posts-content table td.last-reply span {
+    display: block;
+    color: #999;
+}
+
+.posts-filter table th.channel,
+.posts-content table td.channel {
+    text-indent: 20px;
+}
+
+.posts-filter table th.statistic,
+.posts-content table td.statistic {
+    padding-left: 10px;
+    text-align: center;
+}
+
+.posts-filter table th.last-reply,
+.posts-content table td.last-reply {
+    padding-left: 10px;
+    text-align: right;
+}
+
+/* icons */
+.posts-info i,
+.posts-content table td i {
+    width: 14px;
+    height: 15px;
+    font-size: 0;
+    display: inline-block;
+    background-position: -195px -54px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.posts-info i.extractive,
+.posts-content table td i.extractive {
+    width: 16px;
+    height: 16px;
+    background-position: -179px -54px;
+}
+
+.posts-info i.recommend,
+.posts-content table td i.recommend {
+    width: 16px;
+    height: 16px;
+    background-position: -179px -70px;
+}
+
+.posts-info i.hot,
+.posts-content table td i.hot {
+    width: 15px;
+    height: 15px;
+    background-position: -195px -70px;
+}
+
+.posts-info i.voting,
+.posts-content table td i.voting {
+    width: 16px;
+    height: 15px;
+    background-position: -179px -85px;
+}
+
+/*帖子数目高亮*/
+.reply-high,.view-high{
+	color:#f60;
+}
+
+/*鼠标折叠效果*/
+.trigger{
+ cursor:pointer;
+}
+/*无结果时的异常P标签*/
+.tab-panel p.nonelist{
+	padding:35px 0px 15px 10px;color:#999;
+}

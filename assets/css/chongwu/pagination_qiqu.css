@@ -1,0 +1,114 @@
+/**
+ * 宠物论坛定制样式 -- 分页
+ * @author ck0123456@gmail.com
+ */
+
+.pagination {
+	padding: 15px 0;
+	text-align: right;
+	font-size: 12px;
+}
+
+.pagination a,
+.pagination a:hover,
+.pagination span {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	height: 18px;
+	padding: 0 6px;
+	border: solid 1px #6e7317;
+	overflow: hidden;
+	color: #6e7317;
+	line-height: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.pagination .page-num {
+	background: #fffbec;
+}
+
+.pagination .page-cur,
+.pagination .page-num:hover {
+	background: #808528;
+	color: #fff;
+}
+
+.pagination .page-prev,
+.pagination .page-next {
+	position: relative;
+	border: solid 1px #ccc;
+}
+
+.pagination .page-prev,
+.pagination .page-prev:hover {
+	padding-left: 15px;
+	font-weight: normal;
+}
+
+.pagination .page-next,
+.pagination .page-next:hover {
+	padding-right: 15px;
+	font-weight: normal;
+}
+
+.pagination i {
+	display: block;
+	position: absolute;
+	top: 4px;
+	width: 5px;
+	height: 9px;
+	background: url("http://img04.taobaocdn.com/tps/i4/T1kGjaXXdaXXcgg2_v-150-282.png") no-repeat;
+	overflow: hidden;
+}
+
+.pagination .page-prev i {
+	left: 4px;
+	background-position: -50px -120px;
+}
+
+.pagination .page-next i {
+	right: 4px;
+	background-position: -55px -120px;
+}
+
+.pagination a.page-prev i {
+	background-position: -40px -120px;
+}
+
+.pagination a.page-next i {
+	background-position: -45px -120px;
+}
+
+.pagination .page-break {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+.pagination input, .pagination button {
+	padding: 0;
+	background: #fff;
+	border: solid 1px #ccc;
+	font-size: 12px;
+}
+
+.pagination input {
+	height: 18px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.pagination button {
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+	line-height: 18px;
+}
+
+.pagination .page-prev {
+	*line-height: 22px;
+	_line-height: 18px;
+}

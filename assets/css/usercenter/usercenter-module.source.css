@@ -1,0 +1,516 @@
+/*
+ * 个人中心-整合模块通用样式与增加usercenter module
+ * author @longxiao
+ * date 2010 11 29
+ */
+
+ /*
+  * 新增帖子等col宽度
+  */
+col.col-activity{
+ 	width:430px;
+ }
+col.col-select{
+ 	width:120px;
+ }
+col.col-theme{
+	width:105px;
+}
+col.col-time{
+	width:100px;
+}
+
+
+/*
+ * 消息设置表格样式
+ */
+col.col-remindcontent {
+    width: 275px;
+}
+
+col.col-email {
+    width: 55px;
+}
+
+col.col-instation, col.col-ww {
+    width: 100px;
+}
+
+col.col-lastz {
+    width: 220px;
+}
+
+
+ /*
+  * 宽度边距微调样式等
+  */
+select.w105{
+	width:105px;
+}
+select.w70{
+	width:70px;
+}
+th.r10{
+	padding-right:10px;
+}
+/*黑体*/
+.posts-filter th.blod{
+	font-weight:bold;
+}
+
+/*
+ * 设置对齐方式
+ */
+.r-algin{
+	text-align:right;
+}
+
+.c-algin{
+	text-align:center;
+}
+
+.l-algin{
+	text-align:left!important;
+}
+
+/*
+ * 新增表格TD状态样式-通用部分：
+ */
+.posts-content table td.underway,
+.posts-content table td.prosperity,
+.posts-content table td.unplayed,
+.posts-content table td.failing,
+.posts-content table td.ended,
+.posts-content table td.delay{
+	text-indent:15px;
+}
+
+/*
+ * 状态颜色
+ */
+.posts-content table td.prosperity{
+	color:green;
+}
+.posts-content table td.failing,.posts-content table td.ended{
+	color:#999;
+}
+.posts-content table td.delay{
+	color:red;
+}
+.posts-content table td.checkapply,.posts-content table td.verifyapply{
+	text-align:center;
+}
+.posts-content table td.verifyapply a,
+.posts-content table td.verifyapply a:hover,
+em.important{
+	color:red!important;
+}
+
+.posts-content table td.time{
+	text-align:right;
+	font-size:11px;
+	font-family:Arial;
+	color:#999;
+	padding-right:10px;
+}
+
+.posts-content table td.theme{
+	padding-left:10px;
+}
+/*
+ * 消息表格样式
+ */
+table.messages td{
+	vertical-align:top;
+	padding-top:6px;
+	*height:42px;
+}
+
+table.messages tr.unfoldtr{
+	background:#f7f7f7;
+}
+/*
+ * 纠正标签卡功能，添加A标签
+ */
+.content-tab .navigator li a{
+	color:#000;
+}
+.content-tab .navigator li a:hover{
+	text-decoration:none;
+	color:#000!important;
+}
+
+/*
+ * 分页样式
+ */
+
+.pagination{
+	margin-top:20px;
+}
+
+/* sprite */
+.pagination i,
+.pagination .page-skip button{
+    background: url(http://img04.taobaocdn.com/tps/i4/T185dUXoBtXXXXXXXX-220-400.png) transparent no-repeat;
+}
+
+.pagination a, .pagination .page-current, .pagination .page-next, .pagination .page-previous, .pagination .page-skip, .pagination .page-jump {
+    font-size: 12px;
+    vertical-align: middle;
+    color: #333;
+    display: inline-block;
+    padding: 3px 9px;
+}
+
+.pagination a, .pagination .page-next, .pagination .page-previous {
+    border: 1px solid #c3d7eb;
+}
+
+.pagination a:hover, .pagination .page-next:hover, .pagination .page-previous:hover {
+    text-decoration: none;
+    border-color: #77aacc;
+}
+
+.pagination .page-current {
+    font-weight: bold;
+    color: #3366cc;
+    border: 1px solid #77aacc;
+    background-color: #edf5ff;
+}
+
+.pagination .unavailable, .pagination .unavailable:hover {
+    color: #999;
+    border: 1px solid #ccc;
+    cursor: default;
+}
+
+.pagination .page-jump {
+    width: 30px;
+    text-align: center;
+    padding: 4px 2px;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination .page-skip .page-total {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.pagination .page-skip label {
+    margin-left: 5px;
+}
+
+.pagination .page-skip button {
+    border:none;
+	width:42px;
+	height:25px;
+	background-position:0 -50px;
+}
+
+.pagination .page-skip button:hover{
+	background-position:0 -75px;
+}
+
+.pagination .page-previous, .pagination .page-next {
+    _padding-top: 6px; /* fix height bug in ie6 when border-simulation used */
+}
+
+/* background-image */
+.pagination .page-previous i, .pagination .page-next i {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    line-height: 9px;
+    /*text-indent: -9999px;*/
+}
+
+.pagination i.arrow-left {
+    background-position: -215px -30px;
+}
+
+.pagination i.arrow-right {
+    background-position: 0 -30px;
+    margin-left: 5px;
+}
+
+.pagination .unavailable i.arrow-left {
+    background-position: -215px 0;
+}
+
+.pagination .unavailable i.arrow-right {
+    background-position: 0 0;
+}
+
+/* border simulation */
+.pagination b.arrow-left, .pagination b.arrow-right {
+    font-size: 0;
+    height: 0;
+    padding: 0;
+    vertical-align: middle;
+    border: 5px solid #fff;
+    display: inline-block; /* to enable negative margin-top */
+    margin-top: -2px; /* adjust vertical-align of arrow */ *zoom:
+    1;
+}
+
+.pagination b.arrow-left {
+    border-right-color: #36c;
+    border-left-width: 0;
+}
+
+.pagination b.arrow-right {
+    border-left-color: #36c;
+    border-right-width: 0;
+    margin-left: 5px;
+}
+
+.pagination .unavailable b.arrow-left {
+    border-right-color: #999;
+}
+
+.pagination .unavailable b.arrow-right {
+    border-left-color: #999;
+}
+
+/*活动发布统计模块*/
+.activity-module {
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+.activity-module li {
+    display: inline-block;
+    *display:inline;
+    zoom:1;
+    width:380px;
+}
+
+.long li{
+	width:100%;
+}
+
+.activity-module li strong,.posts-content td label.use{
+    font-weight: bold;
+    margin-left: 3px;
+    color: #000;
+}
+
+.posts-content td label.unuse{
+	 color: #999;
+	 margin-left: 3px;
+}
+
+.activity-module li p {
+    line-height: 24px;
+    color: #666;
+}
+
+ul.message li p{
+	color: #000;
+}
+
+ul.message li em{
+	color: #ee0000;
+}
+
+.activity-module li p span {
+    color: #ddd;
+}
+
+.activity-module li p.lt-indent {
+    text-indent: 25px;
+}
+
+/*其他老版本提醒图标样式修改*/
+.posts .subject em.level-1 {
+    margin-right: 5px;
+}
+
+.subject a.important,.subject a.important:hover{
+	color:#ff6600!important;
+}
+
+.subject a.unfold,.subject a.unfold:hover{
+	color:#000!important;
+	font-weight:bold;
+}
+
+.subject div.unfoldlayer{
+	border-top:#ccc solid 1px;
+	border-bottom:#ccc solid 1px;
+	padding:7px;
+	margin-top:10px;
+	color:#666;
+}
+
+.subject div.unfoldbar{
+	text-align:right;
+	padding:5px 0px;
+}
+
+.unfoldbar i{
+	background:url(http://img04.taobaocdn.com/tps/i4/T185dUXoBtXXXXXXXX-220-400.png) no-repeat 0 -329px!important;
+	margin-right:0px!important;
+}
+
+/*
+ * 新增标题栏链接和分割线样式
+ */
+#main-content h3 span,#main-content h3 a{
+	font-size:12px;
+	font-weight:normal;
+}
+
+#main-content h3 span{
+	color:#ddd;
+}
+
+/*
+ * 表格消息部分
+ */
+
+#main-content .message-topbar {
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border-bottom: #ddd dashed 1px;
+    position: relative;
+}
+
+#main-content .message-topbar label,#main-content .message-downbar label {
+    color: #3366CC;
+}
+
+#main-content .message-downbar{
+	float:left;
+	margin-top:25px;
+	margin-left:10px;
+}
+
+#main-content .message-topbar span, .unfoldbar span {
+    color: #ddd;
+}
+
+#main-content .message-topbar input, .posts-content input {
+    vertical-align: middle;
+}
+
+.message-topbar .pagination {
+    margin: 0px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    _padding-bottom: 1px;
+}
+
+.message-topbar .page-size {
+    margin-right: 10px;
+    line-height: 25px;
+}
+
+
+#main-content .message-remind-form {
+    padding: 10px;
+}
+
+#main-content .message-remind {
+    width: 100%;
+}
+
+#main-content .message-remind thead tr {
+    background-color: #f2f8ff;
+    height: 25px;
+    line-height: 25px;
+}
+
+#main-content .message-remind thead tr th, #main-content .message-remind tbody tr th {
+    text-indent: 10px;
+    font-weight: bold;
+    border-top: #d7e6f4 solid 1px;
+    border-bottom: #d7e6f4 solid 1px;
+}
+
+#main-content .message-remind tbody tr, #main-content .message-remind tbody tr th {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: #e7e7e7 dashed 1px;
+    border-top: none;
+}
+
+#main-content .message-remind tbody td {
+    text-indent: 10px;
+    text-align: center;
+    border-bottom: #e7e7e7 dashed 1px;
+}
+
+#main-content .message-remind input {
+    vertical-align: middle;
+}
+
+#main-content .message-remind-bardown {
+    padding: 20px 10px 30px 10px;
+}
+
+/*重新设置这里的确定样式，覆盖IE6 DPL的BUG*/
+/*
+.message-remind-bardown .h{
+	_background-position: -42px 0;
+}
+*/
+
+/*
+ * 新增消息提示加粗样式
+ */
+.sidebar .folder li strong,strong.protrude{
+	font-weight:bold;
+	font-size:12px;
+	font-family:Arial;
+}
+
+/*
+ * 帖子折叠效果
+ */
+
+.J_FloatUl {
+    position: absolute;
+    background: #ffffe3;
+    padding: 10px;
+    border: #ccccbb solid 1px;
+    width: auto;
+    height: auto;
+    z-index: 99;
+}
+
+.J_FloatUl li {
+    white-space: nowrap;
+}
+
+.J_Hyaline {
+    filter: alpha(opacity = 10);
+    opacity: 0.1;
+    position: absolute;
+    background: #000;
+    z-index: 5;
+}
+
+.J_topbar {
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 6px;
+    background: #ffffe3;
+    left: 10px;
+    top: -6px;
+    background: url(http://img04.taobaocdn.com/tps/i4/T185dUXoBtXXXXXXXX-220-400.png) transparent no-repeat 0 -317px;
+}
+
+/*
+ * posts-content table ahover样式
+ */
+
+.posts-content table tbody a:hover{
+	color:#003399!important;
+}
